@@ -1,0 +1,1374 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>IRM fonctionnelle &#8212; Méthodes en neurosciences cognitives</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=87e54e7c" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'irm_fonctionnelle';</script>
+    <link rel="icon" href="_static/favicon.png"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Connectivité fonctionnelle" href="connectivite.html" />
+    <link rel="prev" title="Analyses morphométriques" href="morphometrie.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Méthodes en neurosciences cognitives - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Méthodes en neurosciences cognitives - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Introduction
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="cartes_cerebrales.html">Cartes cérébrales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="irm.html">Imagerie par résonance magnétique</a></li>
+<li class="toctree-l1"><a class="reference internal" href="morphometrie.html">Analyses morphométriques</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">IRM fonctionnelle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="connectivite.html">Connectivité fonctionnelle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="irm_diffusion.html">IRM de diffusion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="imagerie_optique.html">Imagerie optique</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tep.html">Tomographie par émission de positrons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cartes_statistiques.html">Cartes statistiques</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reproductibilite.html">Reproductibilité et controverses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/psy3018/notes_cours_psy3018" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/psy3018/notes_cours_psy3018/edit/main/methodes_neurocog/irm_fonctionnelle.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/psy3018/notes_cours_psy3018/issues/new?title=Issue%20on%20page%20%2Firm_fonctionnelle.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/irm_fonctionnelle.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>IRM fonctionnelle</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objectifs-du-cours">Objectifs du cours</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#principes-physiques-et-physiologiques">Principes physiques et physiologiques</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#images-3d-t">Images 3D+t</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#couplage-neurovasculaire">Couplage neurovasculaire</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#le-signal-bold">Le signal BOLD</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fonction-de-reponse-hemodynamique">Fonction de réponse hémodynamique</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#reponse-a-une-impulsion-courte">Réponse à une impulsion courte</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#le-cerveau-bold-comme-un-systeme">Le cerveau (BOLD) comme un système</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pretraitement-des-donnees-d-irmf">Prétraitement des données d’IRMf</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recalage">Recalage</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#recalage-du-mouvement">Recalage du mouvement</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#recalage-bold-avec-t-1">Recalage BOLD avec <span class="math notranslate nohighlight">\(T_1\)</span></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#recalage-dans-l-espace-stereotaxique">Recalage dans l’espace stéréotaxique</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lissage-spatiale">Lissage spatiale</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#filtrage-des-facteurs-de-non-interet">Filtrage des facteurs de non-intérêt</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analyses-statistiques">Analyses statistiques</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#irmf-experience-basee-sur-une-tache">IRMf - Expérience basée sur une tâche</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#regression-univariee-massive">Régression univariée massive</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#irmf-cartes-d-activation">IRMf - Cartes d’activation</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusions">Conclusions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercices">Exercices</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="irm-fonctionnelle">
+<span id="irmf-chapitre"></span><h1>IRM fonctionnelle<a class="headerlink" href="#irm-fonctionnelle" title="Link to this heading">#</a></h1>
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/anproulx">
+        <img src="https://avatars.githubusercontent.com/u/65092948?v=4?s=100" width="100px;" alt=""/>
+        <br /><sub><b>Andréanne Proulx</b></sub>
+      </a>
+      <br />
+        <a title="Contenu">🤔</a>
+        <a title="Révision du texte">👀</a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/danjgale">
+        <img src="https://avatars.githubusercontent.com/u/14634382?v=4?s=100" width="100px;" alt=""/>
+        <br /><sub><b>Dan J Gale</b></sub>
+      </a>
+      <br />
+        <a title="Figure">🎨</a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/pbellec">
+        <img src="https://avatars.githubusercontent.com/u/1670887?v=4?s=100" width="100px;" alt=""/>
+        <br /><sub><b>Pierre bellec</b></sub>
+      </a>
+      <br />
+        <a title="Contenu">🤔</a>
+        <a title="Révision du texte">👀</a>
+    </td>
+  </tr>
+</table>
+<section id="objectifs-du-cours">
+<h2>Objectifs du cours<a class="headerlink" href="#objectifs-du-cours" title="Link to this heading">#</a></h2>
+<p><a class="reference external" href="https://fr.wikipedia.org/wiki/Imagerie_par_r%C3%A9sonance_magn%C3%A9tique_fonctionnelle">L’imagerie par résonnance magnétique fonctionnelle</a>
+est une modalité d’imagerie qui permet de mesurer indirectement l’activité cérébrale. L’IRMf acquiert des images du cerveau en action en relation avec différentes conditions expérimentales, ayant été conçues pour isoler des processus cognitifs spécifiques. L’IRMf permet donc de cartographier l’organisation fonctionnelle du cerveau, dans différents contextes cognitifs.</p>
+<figure class="align-default" id="irmf-ecran-fig">
+<a class="reference internal image-reference" href="_images/irmf.jpg"><img alt="_images/irmf.jpg" src="_images/irmf.jpg" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 41 </span><span class="caption-text">Les images d’IRMf permettent d’observer l’activation cérébrale, tiré de <a class="reference external" href="https://fr.wikipedia.org/wiki/Imagerie_par_r%C3%A9sonance_magn%C3%A9tique_fonctionnelle#/media/Fichier:Researcher-test.jpg">wikipedia</a>.</span><a class="headerlink" href="#irmf-ecran-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Les objectifs spécifiques du cours sont:</p>
+<ul class="simple">
+<li><p>Comprendre les principes <strong>physiques</strong> et <strong>physiologiques</strong> du signal IRMf.</p></li>
+<li><p>Comprendre le modèle de la <strong>réponse hémodynamique</strong>, invariante dans le temps, qui permet d’estimer le niveau d’activation en réponse à divers paradigmes expérimentaux.</p></li>
+<li><p>Connaître les principales étapes de <strong>pré-traitement</strong> des données IRMf, soit le <strong>recalage</strong>, le <strong>lissage spatial</strong> et le <strong>filtrage de facteurs de non-intérêt</strong>. Ces étapes sont nécessaires afin de réduire le bruit dans le signal IRMf, qui ne reflète pas l’activité neuronale.</p></li>
+<li><p>Connaître le principe de génération d’une <strong>carte d’activation</strong>, qui, à l’aide de modèles statistiques, permet de tester des hypothèses sur l’organisation fonctionnelle du cerveau.</p></li>
+</ul>
+</section>
+<section id="principes-physiques-et-physiologiques">
+<h2>Principes physiques et physiologiques<a class="headerlink" href="#principes-physiques-et-physiologiques" title="Link to this heading">#</a></h2>
+<section id="images-3d-t">
+<h3>Images 3D+t<a class="headerlink" href="#images-3d-t" title="Link to this heading">#</a></h3>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head text-center"><p><code class="docutils literal notranslate"><span class="pre">IRM</span> <span class="pre">structurelle</span></code></p></th>
+<th class="head text-right"><p><code class="docutils literal notranslate"><span class="pre">IRM</span> <span class="pre">fonctionnelle</span> <span class="pre">(T2*)</span></code></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">Objet</span> <span class="pre">d'étude</span></code></p></td>
+<td class="text-center"><p><strong>Anatomie, structures et propriétés des tissus</strong></p></td>
+<td class="text-right"><p><strong>Organisation fonctionnelle</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">Dimension</span></code></p></td>
+<td class="text-center"><p>1 volume - <strong>3D</strong></p></td>
+<td class="text-right"><p>Plusieurs volumes dans le temps - <strong>4D</strong></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">Durée</span> <span class="pre">de</span> <span class="pre">l'acquisition</span></code></p></td>
+<td class="text-center"><p>Plusieurs minutes</p></td>
+<td class="text-right"><p>Secondes</p></td>
+</tr>
+</tbody>
+</table>
+<p>Les images d’IRMf sont un peu comme un film du cerveau en action. Elles sont composées d’une <strong>série de volumes 3D</strong> qui se succèdent à une fréquence donnée, plutôt que d’un unique volume comme c’était le cas en IRM. Nous parlons alors d’images <strong>4D</strong>, ou bien <strong>3D+t</strong> puisqu’aux dimensions spatiales (<code class="docutils literal notranslate"><span class="pre">x</span></code>, <code class="docutils literal notranslate"><span class="pre">y</span></code>, <code class="docutils literal notranslate"><span class="pre">z</span></code>) s’ajoute la dimension du temps <code class="docutils literal notranslate"><span class="pre">t</span></code>. Nous pourrions, par exemple, acquérir 1 volume cérébral toutes les 2 secondes, pendant 6 minutes, ce qui résulterait en un jeu de données d’IRMf composé de 180 volumes 3D du cerveau.</p>
+<div class="cell tag_hide-input tag_remove-output docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#importe les librairies nécessaires</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">nilearn</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">nilearn</span> <span class="kn">import</span> <span class="n">datasets</span>
+<span class="kn">from</span> <span class="nn">mpl_toolkits.mplot3d</span> <span class="kn">import</span> <span class="n">Axes3D</span>
+<span class="kn">from</span> <span class="nn">nilearn.input_data</span> <span class="kn">import</span> <span class="n">NiftiLabelsMasker</span><span class="p">,</span> <span class="n">NiftiMasker</span>
+<span class="kn">from</span> <span class="nn">mpl_toolkits.mplot3d</span> <span class="kn">import</span> <span class="n">Axes3D</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1"># Extraire les séries temporelles pour un sujet d&#39;un jeu de données</span>
+<span class="n">haxby_dataset</span> <span class="o">=</span> <span class="n">datasets</span><span class="o">.</span><span class="n">fetch_haxby</span><span class="p">()</span>
+<span class="n">haxby_func_filename</span> <span class="o">=</span> <span class="n">haxby_dataset</span><span class="o">.</span><span class="n">func</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="c1"># initialiser le masque</span>
+<span class="n">brain_masker</span> <span class="o">=</span> <span class="n">NiftiMasker</span><span class="p">(</span>
+    <span class="n">smoothing_fwhm</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span>
+    <span class="n">detrend</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">standardize</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">low_pass</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">high_pass</span><span class="o">=</span><span class="mf">0.01</span><span class="p">,</span> <span class="n">t_r</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+    <span class="n">memory</span><span class="o">=</span><span class="s1">&#39;nilearn_cache&#39;</span><span class="p">,</span> <span class="n">memory_level</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="c1"># appliquer le masque</span>
+<span class="n">brain_time_series</span> <span class="o">=</span> <span class="n">brain_masker</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">haxby_func_filename</span><span class="p">,</span>
+                                               <span class="n">confounds</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="c1"># fonctions de visualisations pour le voxel 3D</span>
+<span class="k">def</span> <span class="nf">expand_coordinates</span><span class="p">(</span><span class="n">indices</span><span class="p">):</span>
+    <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span> <span class="o">=</span> <span class="n">indices</span>
+    <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">::</span><span class="mi">2</span><span class="p">,</span> <span class="p">:,</span> <span class="p">:]</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="n">y</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">::</span><span class="mi">2</span><span class="p">,</span> <span class="p">:]</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="n">z</span><span class="p">[:,</span> <span class="p">:,</span> <span class="mi">1</span><span class="p">::</span><span class="mi">2</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span>
+
+<span class="k">def</span> <span class="nf">explode</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+    <span class="n">shape_arr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+    <span class="n">size</span> <span class="o">=</span> <span class="n">shape_arr</span><span class="p">[:</span><span class="mi">3</span><span class="p">]</span><span class="o">*</span><span class="mi">2</span> <span class="o">-</span> <span class="mi">1</span>
+    <span class="n">exploded</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">concatenate</span><span class="p">([</span><span class="n">size</span><span class="p">,</span> <span class="n">shape_arr</span><span class="p">[</span><span class="mi">3</span><span class="p">:]]),</span> <span class="n">dtype</span><span class="o">=</span><span class="n">data</span><span class="o">.</span><span class="n">dtype</span><span class="p">)</span>
+    <span class="n">exploded</span><span class="p">[::</span><span class="mi">2</span><span class="p">,</span> <span class="p">::</span><span class="mi">2</span><span class="p">,</span> <span class="p">::</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span>
+    <span class="k">return</span> <span class="n">exploded</span>
+
+<span class="c1"># initialisation de la figure</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
+
+<span class="c1"># visualiser le voxel</span>
+<span class="n">ax1</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">projection</span><span class="o">=</span><span class="s1">&#39;3d&#39;</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;y&quot;</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_zlabel</span><span class="p">(</span><span class="s2">&quot;z&quot;</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">colors</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[[</span><span class="s1">&#39;#1f77b430&#39;</span><span class="p">]</span><span class="o">*</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">colors</span> <span class="o">=</span> <span class="n">explode</span><span class="p">(</span><span class="n">colors</span><span class="p">)</span>
+<span class="n">filled</span> <span class="o">=</span> <span class="n">explode</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)))</span>
+<span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span> <span class="o">=</span> <span class="n">expand_coordinates</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">indices</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">filled</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span>
+
+<span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">::</span><span class="mi">2</span><span class="p">,</span> <span class="p">:,</span> <span class="p">:]</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="n">y</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">::</span><span class="mi">2</span><span class="p">,</span> <span class="p">:]</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="n">z</span><span class="p">[:,</span> <span class="p">:,</span> <span class="mi">1</span><span class="p">::</span><span class="mi">2</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
+
+<span class="n">ax1</span><span class="o">.</span><span class="n">voxels</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">filled</span><span class="p">,</span> <span class="n">facecolors</span><span class="o">=</span><span class="n">colors</span><span class="p">,</span> <span class="n">edgecolors</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">,</span> <span class="n">shade</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Voxel (3D)&quot;</span><span class="p">)</span>
+
+
+<span class="c1"># ajouter séries temporelles</span>
+<span class="c1"># random voxel</span>
+<span class="n">voxel</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">brain_time_series</span><span class="p">[:,</span> <span class="n">voxel</span><span class="p">])</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Décours temporel d&#39;un voxel&quot;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Temps(s)&quot;</span><span class="p">,</span> <span class="n">fontsize</span> <span class="o">=</span> <span class="mi">10</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Signal BOLD&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span> <span class="mi">10</span><span class="p">)</span>
+
+<span class="kn">from</span> <span class="nn">myst_nb</span> <span class="kn">import</span> <span class="n">glue</span>
+<span class="n">glue</span><span class="p">(</span><span class="s2">&quot;voxel-timeseries-fig&quot;</span><span class="p">,</span> <span class="n">fig</span><span class="p">,</span> <span class="n">display</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<figure class="align-default" id="voxel-timeseries-fig" style="width: 800px">
+<img alt="_images/f128c8e30b188a683afcb2a72f31245990308edacfdb2b3c4d12cdace45c3da0.png" src="_images/f128c8e30b188a683afcb2a72f31245990308edacfdb2b3c4d12cdace45c3da0.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 42 </span><span class="caption-text">Illustration d’un élément de volume (voxel), de taille 3 mm x 3 mm x 3 mm, et le décours temporel IRMf associé.</span><a class="headerlink" href="#voxel-timeseries-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Le volume du cerveau (3D) est formé plusieurs milliers voxels, qui sont de petites unités de volumes (3D) ayant une coordonnée dans l’espace <strong>x, y, z</strong>. En IRMf, pour chaque voxel du cerveau, nous détenons plusieurs points de mesure de l’activité dans le temps, ce qui forme ce que l’on appelle une <strong>série temporelle</strong> ou <strong>décours temporel</strong>. Typiquement, quelques dizaines à centaines de points de mesures décrivent la série temporelle. Ces points de mesures sont séparés par un intervalle de temps, appelé <code class="docutils literal notranslate"><span class="pre">TR</span></code>, qui peut varier de millisecondes à secondes. Ces caractéristiques représentent un bon compromis entre résolution spatiale et temporelle. Comme nous le verrons plus loin, la série temporelle reflète de manière indirecte les changements d’activité neuronale dans le temps. Une grande partie du travail en IRM fonctionnelle consiste à analyser ces séries temporelles.</p>
+<div class="admonition warning" id="tr-irmf-warning">
+<p class="admonition-title">Warning</p>
+<p>Le paramètre <code class="docutils literal notranslate"><span class="pre">TR</span></code> en IRM fait référence au temps entre deux excitations radio-fréquences, qui est très court. En IRMf, le paramètre <code class="docutils literal notranslate"><span class="pre">TR</span></code> est la durée d’acquisition d’un volume entier, qui comprend de nombreuses excitations radio-fréquences.</p>
+</div>
+<div class="tip admonition" id="resolution">
+<p class="admonition-title">Compromis entre résolution spatiale et temporelle en IRMf</p>
+<p>Lorsque l’on choisit une séquence d’IRMf, on est souvent amené à privilégier la résolution temporelle versus spatiale. On peut par exemple faire des images du cerveau entier en 700 ms avec une résolution spatiale de 3 x 3 x 3 mm<span class="math notranslate nohighlight">\(^3\)</span>, ou bien acquérir la même image avec une résolution spatiale de 2 x 2 x 2 mm<span class="math notranslate nohighlight">\(^3\)</span>, mais cette fois-ci en 1500 ms. Il n’y a pas un choix de paramètre meilleur qu’un autre, mais la chercheuse doit décider si la résolution spatiale ou temporelle est plus importante pour ses questions de recherche.</p>
+</div>
+</section>
+<section id="couplage-neurovasculaire">
+<span id="couplage-neurovasculaire-irmf-section"></span><h3>Couplage neurovasculaire<a class="headerlink" href="#couplage-neurovasculaire" title="Link to this heading">#</a></h3>
+<figure class="align-default" id="neurovascular-fig">
+<a class="reference internal image-reference" href="_images/neurovascular-fig.jpg"><img alt="_images/neurovascular-fig.jpg" src="_images/neurovascular-fig.jpg" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 43 </span><span class="caption-text"><strong>Résumé de l’architecture neuro-gliale-vasculaire</strong>. (a) Les astrocytes s’enveloppent autour des synapses, et ont des projections jusqu’à la surface des micro-capillaires. (b) Les astrocytes établissent des domaines anatomiques exclusifs, qui chevauchent de manière minimale ceux de leurs voisins astrocytes. (c) Schéma représentant la morphologie d’une cellule gliale, avec un corps connecté à une structure en arbre. (d) Micro-circuit neuronal. (e) microvascularisation cérébrale. (f) illustration de la taille des micro-circuits neuronaux et de la vascularisation. (g) pourcentage d’occupation du volume dans l’espace du circuit. Figure tirée de l’article par Zisis et coll. (2021) <span id="id1">[<a class="reference internal" href="references.html#id17" title="E Zisis, D Keller, L Kanari, A Arnaudon, M Gevaert, T Delemontex, B Coste, A Foni, M Abdellah, C Calì, K Hess, P J Magistretti, F Schürmann, and H Markram. Architecture of the Neuro-Glia-Vascular system. bioRxiv, 2021.">16</a>]</span>, sous licence CC-BY-NC-ND.</span><a class="headerlink" href="#neurovascular-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Le lien entre activité neuronale et signal IRMf repose sur le phénomène du <strong>couplage neurovasculaire</strong>, et plus spécifiquement le couplage entre l’activité post-synaptique des neurones et les micro-capillaires sanguins. La production de neurotransmetteurs dans la fente synaptique entrainent une série de réactions chimiques dans les cellules gliales avoisinantes. Lorsque l’activité neuronale augmente, les réactions chimiques qui l’accompagnent entraînent une <strong>demande métabolique</strong> en nutriments et ultimement l’extraction d’oxygène dans les micro-capillaires de manière locale. Les événements suivants se produisent alors:</p>
+<ul class="simple">
+<li><p>augmentation du volume des capillaires;</p></li>
+<li><p>augmentation du flux sanguin;</p></li>
+<li><p>augmentation l’acheminement en oxygène (oxyhémoglobine) vers les populations de neurones activés.</p></li>
+</ul>
+<p>L’augmentation d’extraction d’oxygène entraîne donc de manière paradoxale une augmentation locale de la concentration d’<strong>oxyhémoglobine</strong> (sang oxygéné) par rapport à la concentration en <strong>désoxyhémoglobine</strong> (sang désoxygéné) localement, ce qui est détectable au moyen de l’IRMf. Le premier modèle quantitatif du couplage neurovasculaire (dit “modèle du ballon”) a été proposé par Buxton et coll. (1998) <span id="id2">[<a class="reference internal" href="references.html#id18" title="R B Buxton, E C Wong, and L R Frank. Dynamics of blood flow and oxygenation changes during brain activation: the balloon model. Magn. Reson. Med., 39(6):855–864, June 1998.">17</a>]</span>.</p>
+</section>
+<section id="le-signal-bold">
+<h3>Le signal BOLD<a class="headerlink" href="#le-signal-bold" title="Link to this heading">#</a></h3>
+<figure class="align-default" id="hemoglobine-fig">
+<a class="reference internal image-reference" href="_images/hemoglobine-fig.jpg"><img alt="_images/hemoglobine-fig.jpg" src="_images/hemoglobine-fig.jpg" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 44 </span><span class="caption-text">Illustration du transport de l’oxygène par l’hémoglobine dans le sang. Image par <a class="reference external" href="https://www.shutterstock.com/g/ShadeDesign">ShadeDesign</a> disponible sur <a class="reference external" href="https://www.shutterstock.com/image-illustration/vector-science-medical-icon-blood-hemoglobin-1472480087">shutterstock</a> ID <code class="docutils literal notranslate"><span class="pre">1472480087</span></code>, utilisée sous licence shutterstock standard.</span><a class="headerlink" href="#hemoglobine-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Quelle est l’origine du <strong>signal BOLD</strong>? L’hémoglobine existe sous deux états, soit l’état oxygéné (porteur de l’oxygène) et désoxygéné (non-porteur d’oxygène). La présence de l’oxygène modifie les propriétés électromagnétiques de cette molécule:</p>
+<ul class="simple">
+<li><p>L’<strong>oxyhémoglobine</strong> est <strong>diamagnétique</strong></p></li>
+<li><p>La <strong>désoxyhémoglobine</strong> est <strong>paramagnétique</strong></p></li>
+</ul>
+<p>Ce que cela veut dire, c’est que quand elles sont soumises à des impulsions électromagnétiques, ces deux molécules se comportent de manière très différente. La désoxyhémoglobine va créer des inhomogénéités du champ magnétique, alors que l’oxyhémoglobine n’a pas d’effet sur ce même champ. Les séquences IRM pondérées <span class="math notranslate nohighlight">\(T_2^*\)</span> sont très sensibles à de telles inhomogénéités. La désoxyhémoglobine déforme donc le champ magnétique <span class="math notranslate nohighlight">\(B_O\)</span> induit par l’aimant, ce qui fait en sorte que le temps de relaxation <span class="math notranslate nohighlight">\(T_2^*\)</span> est plus rapide. Les images acquises en IRMf utilisent donc un contraste en <span class="math notranslate nohighlight">\(T_2^*\)</span>, et cela a pour effet d’amplifier le signal quand le sang devient plus oxygéné en réponse à une augmentation de l’activité neuronale. Pour cette raison, le signal utilisé en IRMf est appelé signal BOLD, pour <em>Blood oxygenation level-dependent</em>, soit signal dépendant de l’oxygénation du sang.</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head text-center"><p>‘Désoxyhémoglobine’</p></th>
+<th class="head text-right"><p><code class="docutils literal notranslate"><span class="pre">Oxyhémoglobine</span></code></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Propriétés électromagnétiques</p></td>
+<td class="text-center"><p>Paramagnétique</p></td>
+<td class="text-right"><p>Diamagnétique</p></td>
+</tr>
+<tr class="row-odd"><td><p>Impact sur le signal BOLD</p></td>
+<td class="text-center"><p><strong>Réduit</strong> le signal BOLD</p></td>
+<td class="text-right"><p><strong>Augmente</strong> le signal BOLD</p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(T_2^*\)</span></p></td>
+<td class="text-center"><p>Décroît plus <strong>rapidement</strong></p></td>
+<td class="text-right"><p>Décroît plus <strong>lentement</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>Effet sur le champ</p></td>
+<td class="text-center"><p><strong>Ajout d’inhomogénéités/distorsions</strong></p></td>
+<td class="text-right"><p><strong>Pas d’inhomogénéités</strong></p></td>
+</tr>
+</tbody>
+</table>
+<figure class="align-default" id="t2star-fig">
+<a class="reference internal image-reference" href="_images/t2star.png"><img alt="_images/t2star.png" src="_images/t2star.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 45 </span><span class="caption-text">Lorsqu’une molécule comme la désoxyhémoglobine est présente, les spins se déphasent plus rapidement. Il est possible de modifier la séquence d’IRM pour éliminer ce phénomène, et c’est ce que l’on fait pour obtenir une image pondérée en <span class="math notranslate nohighlight">\(T_2\)</span> traditionnelle. Si l’on ne modifie pas la séquence, le paramètre de décroissance apparait plus court, et c’est ce que l’on appelle le <span class="math notranslate nohighlight">\(T_2^*\)</span>.</span><a class="headerlink" href="#t2star-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="fonction-de-reponse-hemodynamique">
+<h3>Fonction de réponse hémodynamique<a class="headerlink" href="#fonction-de-reponse-hemodynamique" title="Link to this heading">#</a></h3>
+<section id="reponse-a-une-impulsion-courte">
+<h4>Réponse à une impulsion courte<a class="headerlink" href="#reponse-a-une-impulsion-courte" title="Link to this heading">#</a></h4>
+<div class="cell tag_hide-input tag_remove-output docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># To get an impulse response, we simulate a single event</span>
+<span class="c1"># occurring at time t=0, with duration 1s.</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="n">frame_times</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">61</span><span class="p">)</span>
+<span class="n">onset</span><span class="p">,</span> <span class="n">amplitude</span><span class="p">,</span> <span class="n">duration</span> <span class="o">=</span> <span class="mf">0.</span><span class="p">,</span> <span class="mf">1.</span><span class="p">,</span> <span class="mf">1.</span>
+<span class="n">exp_condition</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">((</span><span class="n">onset</span><span class="p">,</span> <span class="n">duration</span><span class="p">,</span> <span class="n">amplitude</span><span class="p">))</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">stim</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros_like</span><span class="p">(</span><span class="n">frame_times</span><span class="p">)</span>
+<span class="n">stim</span><span class="p">[(</span><span class="n">frame_times</span> <span class="o">&gt;</span> <span class="n">onset</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">frame_times</span> <span class="o">&lt;=</span> <span class="n">onset</span> <span class="o">+</span> <span class="n">duration</span><span class="p">)]</span> <span class="o">=</span> <span class="n">amplitude</span>
+
+<span class="c1"># Now we plot the hrf</span>
+<span class="kn">from</span> <span class="nn">nilearn.glm.first_level</span> <span class="kn">import</span> <span class="n">compute_regressor</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+
+<span class="c1"># obtain the signal of interest by convolution</span>
+<span class="n">signal</span><span class="p">,</span> <span class="n">name</span> <span class="o">=</span> <span class="n">compute_regressor</span><span class="p">(</span>
+    <span class="n">exp_condition</span><span class="p">,</span> <span class="s1">&#39;glover&#39;</span><span class="p">,</span> <span class="n">frame_times</span><span class="p">,</span> <span class="n">con_id</span><span class="o">=</span><span class="s1">&#39;main&#39;</span><span class="p">,</span>
+    <span class="n">oversampling</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
+
+<span class="c1"># plot this</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="n">frame_times</span><span class="p">,</span> <span class="n">stim</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">.5</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;stimulus&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">frame_times</span><span class="p">,</span> <span class="n">signal</span><span class="o">.</span><span class="n">T</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="n">name</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+<span class="c1"># Glue the figure</span>
+<span class="kn">from</span> <span class="nn">myst_nb</span> <span class="kn">import</span> <span class="n">glue</span>
+<span class="n">glue</span><span class="p">(</span><span class="s2">&quot;hrf-fig&quot;</span><span class="p">,</span> <span class="n">fig</span><span class="p">,</span> <span class="n">display</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<figure class="align-default" id="hrf-fig" style="width: 800px">
+<img alt="_images/f6ec4a8cd69e67e694f9cb7279fb5d1f833989debb9e86cb2311e50238ae19c6.png" src="_images/f6ec4a8cd69e67e694f9cb7279fb5d1f833989debb9e86cb2311e50238ae19c6.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 46 </span><span class="caption-text">Réponse hémodynamique à une impulsion unitaire d’une durée de seconde, suivant le modèle proposé par Glover and coll. (1999) <span id="id3">[<a class="reference internal" href="references.html#id19" title="G H Glover. Deconvolution of impulse response in event-related BOLD fMRI. Neuroimage, 9(4):416–429, April 1999.">18</a>]</span>. Le code pour générer cette figure est adaptée d’un <a class="reference external" href="https://nilearn.github.io/auto_examples/04_glm_first_level/plot_hrf.html#sphx-glr-auto-examples-04-glm-first-level-plot-hrf-py">tutoriel</a> Nilearn, et la figure est sous licence CC-BY.</span><a class="headerlink" href="#hrf-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>La figure qui suit montre la réponse hémodynamique attendue suite à une impulsion finie d’activation au temps 0, et de durée de 1 seconde. La réponse à ce type de stimulus permet de visualiser la réponse hémodynamique la plus largement utilisée, décrivant la relation maintenue entre l’activité neuronale (bleu) et le signal BOLD (rouge), en fonction du temps. L’axe <code class="docutils literal notranslate"><span class="pre">x</span></code> représente le temps, en secondes, et l’axe <code class="docutils literal notranslate"><span class="pre">y</span></code> le signal cérébral, exprimé en pourcentage du changement par rapport à une ligne de base. Les caractéristiques importantes de la fonction de réponse hémodynamique sont:</p>
+<ul class="simple">
+<li><p><strong>la résolution temporelle</strong>: il s’agit d’une réponse lente, qui dure entre <strong>15 à 20 secondes</strong> suivant le stimulus</p></li>
+<li><p><strong>le temps avant l’atteinte de l’amplitude maximale</strong>: de <strong>4 à 6 secondes</strong></p></li>
+<li><p><strong>Creux post-stimulation (<em>Undershoot</em> en anglais)</strong>: décroît à partir de l’amplitude maximale jusqu’à se retrouver sous la ligne de base.</p></li>
+<li><p><strong>Retour à la ligne de base</strong>: La fonction retrouve le niveau précédant la stimulation après environ <strong>15 à 20</strong> secondes</p></li>
+<li><p><strong>Amplitude maximale</strong>: L’ordre du changement relatif du signal BOLD atteint environ <strong>5%</strong> pour des stimulations d’ordre sensorielle, alors qu’elle est plutôt de <strong>0,1 à 0,5%</strong> pour d’autres paradigmes cognitifs</p></li>
+</ul>
+<div class="tip admonition" id="adequation-du-modele-tip">
+<p class="admonition-title">Attention!</p>
+<p>Le modèle de réponse hémodynamique ci-dessus est très rigide et peut s’avérer être une hypothèse invalide pour certaines populations, notamment si le couplage neurovasculaire est différent de l’étude originale de Glover and coll. (1999) <span id="id4">[<a class="reference internal" href="references.html#id19" title="G H Glover. Deconvolution of impulse response in event-related BOLD fMRI. Neuroimage, 9(4):416–429, April 1999.">18</a>]</span>. C’est probablement le cas, par exemple, chez les personnes âgées ou chez les individus ayant des maladies cardiovasculaires. La fonction de réponse hémodynamique peut également varier d’une région du cerveau à l’autre. Il est possible d’utiliser des modèles de la réponse hémodynamique qui sont plus flexibles et permettent, par exemple, de modifier le temps du pic de la réponse.</p>
+</div>
+</section>
+<section id="le-cerveau-bold-comme-un-systeme">
+<h4>Le cerveau (BOLD) comme un système<a class="headerlink" href="#le-cerveau-bold-comme-un-systeme" title="Link to this heading">#</a></h4>
+<figure class="align-default" id="systeme-fig">
+<a class="reference internal image-reference" href="_images/systeme-fig.png"><img alt="_images/systeme-fig.png" src="_images/systeme-fig.png" style="width: 400px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 47 </span><span class="caption-text">Un système prend un décours temporel d’entrée et lui associe un décours temporel de sortie. Figure sous licence CC-BY.</span><a class="headerlink" href="#systeme-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Le processus qui transforme l’activité neuronale en un signal BOLD peut se formaliser dans le cadre général de la théorie des systèmes. Plus spécifiquement, la fonction de réponse hémodynamique de la <a class="reference internal" href="#hrf-fig"><span class="std std-numref">Fig. 46</span></a> est généralement approximée comme un système linéaire et invariant dans le temps. Cette approximation sous-tend les inférences que l’on fait sur l’organisation fonctionnelle du cerveau: nous l’employons dans le but d’estimer la réponse à une tâche ou condition donnée. La fonction de réponse hémodynamique de la <a class="reference internal" href="#hrf-fig"><span class="std std-numref">Fig. 46</span></a> se rapporte à un contexte expérimental simple: une stimulation courte et isolée. En réalité, les <strong>paradigmes expérimentaux sont beaucoup plus complexes</strong>: ils alternent à maintes reprises entre différentes conditions expérimentales/stimuli (par blocs, aléatoirement ou dans un ordre précis). De plus, ils comportent souvent plus d’une stimulation rapprochée dans le temps, ou/et des stimuli qui se prolongent sur plusieurs millisecondes ou secondes. Qu’advient-il alors de la fonction de réponse hémodynamique? Une propriété clé d’un système linéaire est d’être additif, c’est à dire que la réponse à une stimulation longue peut être décomposée comme la superposition de réponses à des stimulations plus courtes. Une autre hypothèse clé est l’<strong>invariance dans le temps</strong>, qui nous dit que la réponse du système ne va pas varier si on effectue la même stimulation courte à différents instants. Quand on <strong>combine</strong> l’hypothèse de linéarité avec l’invariance dans le temps, il est possible de prédire la réponse à n’importe quelle série de stimuli complexes à partir de la réponse à une unique stimulation courte, comme présentée en <a class="reference internal" href="#hrf-fig"><span class="std std-numref">Fig. 46</span></a>. L’étude de Logothetis et al. (2001) <span id="id5">[<a class="reference internal" href="references.html#id20" title="N K Logothetis, J Pauls, M Augath, T Trinath, and A Oeltermann. Neurophysiological investigation of the basis of the fMRI signal. Nature, 412(6843):150–157, July 2001.">19</a>]</span> a été la première à démontrer chez le singe que cette hypothèse de linéarité et d’invariance semble être assez bien respectée, au moins dans le cortex visuel pour des stimuli visuels simples (contexte de l’étude).</p>
+<div class="tip admonition" id="additivite-tip">
+<p class="admonition-title">Additivité</p>
+<p>Un système est dit <strong>additif</strong> si la réponse à plusieurs impulsions correspond à la somme des réponses à ces impulsions prises indépendamment. Ce comportement est illustré ci-dessous.</p>
+<figure class="align-default" id="systeme-additif-fig">
+<a class="reference internal image-reference" href="_images/systeme-additif-fig.png"><img alt="_images/systeme-additif-fig.png" src="_images/systeme-additif-fig.png" style="width: 400px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 48 </span><span class="caption-text">Figure sous licence CC-BY.</span><a class="headerlink" href="#systeme-additif-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+</section>
+</section>
+</section>
+<section id="pretraitement-des-donnees-d-irmf">
+<h2>Prétraitement des données d’IRMf<a class="headerlink" href="#pretraitement-des-donnees-d-irmf" title="Link to this heading">#</a></h2>
+<p>Nous avons abordé dans les sections précédentes divers aspects de la modélisation de la réponse hémodynamique. Un autre point important en IRMf est la modélisation du bruit et des sources de variations qui peuvent être présentes dans les séries temporelles. Différents <strong>facteurs confondants</strong> et <strong>artéfacts</strong> (provenant du scanner IRM ou du sujet scanné lui-même) peuvent induire des fluctuations substantielles dans le signal BOLD mesuré, et venir confondre les inférences faites sur l’activité neuronale en réponse à des tâches:</p>
+<ul class="simple">
+<li><p>bruit cardiaque,</p></li>
+<li><p>artéfact lié au mouvement du sujet lors de l’acquisition,</p></li>
+<li><p>défaut dans l’antenne,</p></li>
+<li><p>inhomogénéités dans le champ magnétique, notamment aux intersections air-tissu,</p></li>
+<li><p>différences entre l’anatomie des sujets.</p></li>
+</ul>
+<p>Différentes stratégies de modélisation peuvent être employées pour réduire l’influence des facteurs confondants et des artéfacts. Dans cette section, nous présentons un aperçu de trois grandes étapes de prétraitement en IRMf, qui, typiquement sont appliquées séquentiellement. On parle de <em>chaîne de traitements</em>, ou encore <em>pipeline</em> ou <em>worflow</em> en anglais.</p>
+<section id="recalage">
+<h3>Recalage<a class="headerlink" href="#recalage" title="Link to this heading">#</a></h3>
+<p>Le recalage consiste à aligner une image à une image de référence. C’est une étape de prétraitement complétée avant les analyses statistiques de groupe, comme celles-ci présupposent qu’il y a une correspondance entre les voxels des images provenant de différents sujets. Nous avons déjà discuté du <a class="reference internal" href="morphometrie.html#registration-tip"><span class="std std-ref">recalage</span></a> dans la section sur la <a class="reference internal" href="morphometrie.html"><span class="doc std std-doc">morphometrie</span></a>. Nous allons voir que trois types de recalage sont utilisés en IRM fonctionnelle.</p>
+<section id="recalage-du-mouvement">
+<h4>Recalage du mouvement<a class="headerlink" href="#recalage-du-mouvement" title="Link to this heading">#</a></h4>
+<figure class="align-default" id="mouvement-fig">
+<a class="reference internal image-reference" href="_images/mouvement-fig.png"><img alt="_images/mouvement-fig.png" src="_images/mouvement-fig.png" style="width: 500px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 49 </span><span class="caption-text">Illustration du processus de recalage du mouvement au cours d’un examen d’IRMf. Figure sous licence CC-BY.</span><a class="headerlink" href="#mouvement-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Souvent, le sujet ne maintient pas exactement la même position de la tête dans le scanner tout au long des acquisitions, qui peuvent parfois durer plus d’une heure et/ou exiger des arrêts (par exemple à cause de baillements, fatigue musculaire, clignement des yeux, etc.). Ces mouvements ont des impacts non négligeables sur le signal BOLD. Ils peuvent entraîner des distorsions de l’intensité du signal de l’image. Ils impliquent que, d’une image à l’autre, un même voxel ne correspond pas nécessairement à la même structure cérébrale. Comme le cerveau d’un même individu ne change pas de forme ou de taille à travers les acquisitions, cette étape utilise un cas particulier de transformation affine, appelée transformation rigide, ne comportant que trois translations (selon <code class="docutils literal notranslate"><span class="pre">x</span></code>, <code class="docutils literal notranslate"><span class="pre">y</span></code> et <code class="docutils literal notranslate"><span class="pre">z</span></code>) et trois rotations (selon <code class="docutils literal notranslate"><span class="pre">x</span></code>, <code class="docutils literal notranslate"><span class="pre">y</span></code> et <code class="docutils literal notranslate"><span class="pre">z</span></code>). On utilise un volume de référence comme cible pour le recalage, par exemple le premier volume de la série, le dernier, ou bien la moyenne de tous les volumes. Différents paramètres de mouvement sont estimés pour chaque volume, et peuvent être représentés au cours du temps comme sur le graphique ci-dessus.</p>
+<div class="tip admonition" id="motion-tip">
+<p class="admonition-title">Mouvements excessifs</p>
+<p>Le niveau de mouvement varie en fonction de la population étudiée. Les enfants et les personnes âgés ont tendance à bouger davantage que les jeunes adultes. Certains chercheurs choisissent d’exclure les sujets ayant bougé au-delà d’un certain seuil.</p>
+</div>
+</section>
+<section id="recalage-bold-avec-t-1">
+<h4>Recalage BOLD avec <span class="math notranslate nohighlight">\(T_1\)</span><a class="headerlink" href="#recalage-bold-avec-t-1" title="Link to this heading">#</a></h4>
+<p>Il est commun d’aligner l’image BOLD avec l’image anatomique <span class="math notranslate nohighlight">\(T_1\)</span> du sujet. Pourquoi? L’image fonctionnelle détient une moins bonne résolution spatiale que l’image structurelle <span class="math notranslate nohighlight">\(T_1\)</span>: nous avons de plus courtes durées d’acquisition pour acquérir un même volume. Le contraste entre structures anatomiques est aussi bien meilleur en <span class="math notranslate nohighlight">\(T_1\)</span>. Il est donc utile de superposer les deux images pour localiser les activations BOLD. Cette transformation est estimée de manière rigide, comme le mouvement. Notez qu’il existe aussi des déformations non-rigides causées par les non-uniformités du champ, et qui peuvent être corrigées de manière additionnelle.</p>
+</section>
+<section id="recalage-dans-l-espace-stereotaxique">
+<h4>Recalage dans l’espace stéréotaxique<a class="headerlink" href="#recalage-dans-l-espace-stereotaxique" title="Link to this heading">#</a></h4>
+<figure class="align-default" id="registration-macaque-fig">
+<a class="reference internal image-reference" href="_images/registration-macaque.gif"><img alt="_images/registration-macaque.gif" src="_images/registration-macaque.gif" style="width: 500px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 50 </span><span class="caption-text">Illustration du processus de recalage d’un IRM T1 sur un espace stéréotaxique (ici chez le macaque). On démarre par une transformation affine (pour corriger la position de la tête et sa taille), puis non-linéaire (pour ajuster la position des sillons et des structures sous corticales). Figure sous licence CC-BY 4.0 contribuée par <a class="reference external" href="https://github.com/danjgale">Dan J Gale</a>.</span><a class="headerlink" href="#registration-macaque-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Pour les comparaisons inter-individuelles ou les analyses statistiques de groupe, il doit y avoir une correspondance entre les voxels des images provenant de différents individus. Or, les cerveaux et les structures anatomiques peuvent avoir différentes tailles et formes d’individus en individus. Le recalage dans l’espace stéréotaxique, aussi parfois appelée <em>normalisation spatiale</em>, consiste à recaler l’image <span class="math notranslate nohighlight">\(T_1\)</span> dans un espace standard cible défini par l’atlas choisi, rendant ainsi comparables les cerveaux de différents individus. Cette technique est identique à ce qui est fait pour les études de morphométrie. Le template MNI152 (Montreal Neurological Institute) est largement employé comme espace standard dans la communauté. Cette transformation combine transformation affine et transformation non-linéaire.</p>
+</section>
+</section>
+<section id="lissage-spatiale">
+<h3>Lissage spatiale<a class="headerlink" href="#lissage-spatiale" title="Link to this heading">#</a></h3>
+<div class="cell tag_hide-input tag_remove-output docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Importe les librairies nécessaires</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">myst_nb</span> <span class="kn">import</span> <span class="n">glue</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+
+<span class="kn">import</span> <span class="nn">warnings</span>
+<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s2">&quot;ignore&quot;</span><span class="p">)</span>
+
+<span class="c1"># Télécharge un scan fonctionnel (Haxby)</span>
+<span class="kn">from</span> <span class="nn">nilearn</span> <span class="kn">import</span> <span class="n">datasets</span>
+<span class="n">haxby_dataset</span> <span class="o">=</span> <span class="n">datasets</span><span class="o">.</span><span class="n">fetch_haxby</span><span class="p">()</span>
+
+<span class="c1"># calcule le volume moyen</span>
+<span class="kn">from</span> <span class="nn">nilearn.image.image</span> <span class="kn">import</span> <span class="n">mean_img</span>
+<span class="n">func_filename</span> <span class="o">=</span> <span class="n">haxby_dataset</span><span class="o">.</span><span class="n">func</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">mean_haxby</span> <span class="o">=</span> <span class="n">mean_img</span><span class="p">(</span><span class="n">func_filename</span><span class="p">)</span>
+
+<span class="kn">from</span> <span class="nn">nilearn.plotting</span> <span class="kn">import</span> <span class="n">plot_epi</span><span class="p">,</span> <span class="n">show</span>
+
+<span class="c1"># Initialise la figure</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">15</span><span class="p">))</span>
+
+<span class="kn">from</span> <span class="nn">nilearn.plotting</span> <span class="kn">import</span> <span class="n">plot_anat</span>
+<span class="kn">from</span> <span class="nn">nilearn.image</span> <span class="kn">import</span> <span class="n">math_img</span>
+<span class="kn">from</span> <span class="nn">nilearn.input_data</span> <span class="kn">import</span> <span class="n">NiftiMasker</span>
+<span class="kn">from</span> <span class="nn">nilearn.image</span> <span class="kn">import</span> <span class="n">smooth_img</span>
+
+<span class="n">list_fwhm</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="n">n_fwhm</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">list_fwhm</span><span class="p">)</span>
+<span class="n">coords</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="o">-</span><span class="mi">25</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">num</span><span class="p">,</span> <span class="n">fwhm</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">list_fwhm</span><span class="p">):</span>
+    <span class="n">ax_plot</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot2grid</span><span class="p">((</span><span class="n">n_fwhm</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="n">num</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">colspan</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">vol</span> <span class="o">=</span> <span class="n">smooth_img</span><span class="p">(</span><span class="n">mean_haxby</span><span class="p">,</span> <span class="n">fwhm</span><span class="p">)</span>
+    <span class="n">plot_epi</span><span class="p">(</span><span class="n">vol</span><span class="p">,</span>
+              <span class="n">cut_coords</span><span class="o">=</span><span class="n">coords</span><span class="p">,</span>
+              <span class="n">axes</span><span class="o">=</span><span class="n">ax_plot</span><span class="p">,</span>
+              <span class="n">black_bg</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+              <span class="n">title</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;FWHM=</span><span class="si">{</span><span class="n">fwhm</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">,</span>
+              <span class="n">vmax</span><span class="o">=</span><span class="mi">1500</span><span class="p">)</span>
+
+<span class="kn">from</span> <span class="nn">myst_nb</span> <span class="kn">import</span> <span class="n">glue</span>
+<span class="n">glue</span><span class="p">(</span><span class="s2">&quot;smoothing-fmri-fig&quot;</span><span class="p">,</span> <span class="n">fig</span><span class="p">,</span> <span class="n">display</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<figure class="align-default" id="smoothing-fmri-fig" style="width: 600px">
+<img alt="_images/f55adf43527a341c7030cbea2b851b6f14ba2205de729e90ee971b0ce0e9cb7a.png" src="_images/f55adf43527a341c7030cbea2b851b6f14ba2205de729e90ee971b0ce0e9cb7a.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 51 </span><span class="caption-text">Illustration de l’impact du lissage sur un volume BOLD.
+À mesure que le paramètre <code class="docutils literal notranslate"><span class="pre">FWHM</span></code> augmente, la mesure en un voxel représente la moyenne dans un voisinage spatial de plus en plus grand.
+Cette figure est générée par du code python à l’aide de la librairie <a class="reference external" href="https://nilearn.github.io/">nilearn</a> à partir du jeu de données <code class="docutils literal notranslate"><span class="pre">haxby</span></code> (cliquer sur + pour voir le code). La figure est sous licence CC-BY.</span><a class="headerlink" href="#smoothing-fmri-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Nous revenons ici sur une étape de prétraitement que nous avons déjà abordé lors du cours sur la VBM: le lissage spatial. Le processus du lissage est semblable pour l’IRM fonctionnelle, mais l’objectif de cette étape est un peu différent. Le bruit thermique aléatoire joue un plus grand rôle dans le signal BOLD, et peut avoir un effet néfaste sur les analyses statistiques. Le lissage spatial permet de diminuer ce bruit aléatoire. Mis à part l’amélioration du rapport signal sur bruit, le lissage permet également d’atténuer les imperfections de recalage entre sujets, en diffusant l’activité dans l’espace. De manière plus opérationnelle, le lissage consiste à prendre les voxels de l’image et à les remplacer par une nouvelle valeur considérant les valeurs des voxels voisins. Chaque voxel voisin se voit attribuer une pondération qui quantifie sa contribution à la nouvelle valeur attribuée à un voxel cible. La valeur originale du voxel cible est celle qui aura la plus grande pondération, et les valeurs des voxels voisins seront pondérés en fonction de la proximité entretenue avec le voxel cible. Donc, le lissage remplace la valeur associée à chaque voxel par une moyenne pondérée de ses voisins. Comme c’est une moyenne pondérée, la valeur originale du voxel est celle qui aura la plus grande pondération, mais les valeurs des voxels situés directement autour vont aussi l’affecter grandement. Le paramètre <code class="docutils literal notranslate"><span class="pre">FWHM</span></code> (<em>full width at half maximum</em>) contrôle l’échelle de ce lissage (plus important ou moins important). Il détermine l’étalement des voxels voisins qui participent à la nouvelle valeur d’un voxel cible. D’un point de vue mathématique, le paramètre <code class="docutils literal notranslate"><span class="pre">FWHM</span></code> représente la moitié de la largeur de la courbe gaussienne, qui décrit du bruit distribuée aléatoirement. Une plus grande valeur <code class="docutils literal notranslate"><span class="pre">FWHM</span></code> sous-tend une participation plus étalée des voxels voisins à la nouvelle valeur  d’un voxel cible de l’image. Plusieurs études choisissent <code class="docutils literal notranslate"><span class="pre">6</span> <span class="pre">mm</span></code> comme valeur pour le paramètre <code class="docutils literal notranslate"><span class="pre">FWHM</span></code>.</p>
+</section>
+<section id="filtrage-des-facteurs-de-non-interet">
+<h3>Filtrage des facteurs de non-intérêt<a class="headerlink" href="#filtrage-des-facteurs-de-non-interet" title="Link to this heading">#</a></h3>
+<div class="cell tag_hide-input tag_remove-output docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Importe les librairies nécessaires</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">myst_nb</span> <span class="kn">import</span> <span class="n">glue</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+
+<span class="kn">import</span> <span class="nn">warnings</span>
+<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s2">&quot;ignore&quot;</span><span class="p">)</span>
+
+<span class="c1"># Importe un jeu de données fonctionnel (development_fmri)</span>
+<span class="kn">from</span> <span class="nn">nilearn</span> <span class="kn">import</span> <span class="n">datasets</span>
+<span class="n">dataset</span> <span class="o">=</span> <span class="n">datasets</span><span class="o">.</span><span class="n">fetch_development_fmri</span><span class="p">(</span><span class="n">n_subjects</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">func_filename</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">func</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="c1"># Importe un atlas (Harvard-Oxford)</span>
+<span class="n">atlas</span> <span class="o">=</span> <span class="n">datasets</span><span class="o">.</span><span class="n">fetch_atlas_harvard_oxford</span><span class="p">(</span><span class="s1">&#39;cort-maxprob-thr25-2mm&#39;</span><span class="p">)</span>
+
+<span class="c1"># Initialise la figure</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">15</span><span class="p">))</span>
+
+<span class="c1"># Génère les séries temporelles</span>
+<span class="n">masker</span> <span class="o">=</span> <span class="n">NiftiLabelsMasker</span><span class="p">(</span><span class="n">atlas</span><span class="o">.</span><span class="n">maps</span><span class="p">,</span>
+                           <span class="n">labels</span><span class="o">=</span><span class="n">atlas</span><span class="o">.</span><span class="n">labels</span><span class="p">,</span>
+                           <span class="n">standardize</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">masker</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">func_filename</span><span class="p">)</span>
+<span class="n">signals</span> <span class="o">=</span> <span class="n">masker</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">func_filename</span><span class="p">)</span>
+
+<span class="c1"># Plot the atlas</span>
+<span class="kn">from</span> <span class="nn">nilearn.plotting</span> <span class="kn">import</span> <span class="n">plot_roi</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot2grid</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">colspan</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">plot_roi</span><span class="p">(</span><span class="n">atlas</span><span class="o">.</span><span class="n">maps</span><span class="p">,</span>
+    <span class="n">axes</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span>
+    <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Atlas Harvard-Oxford&quot;</span><span class="p">,</span>
+    <span class="n">cut_coords</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="o">-</span><span class="mi">4</span><span class="p">,</span> <span class="mi">9</span><span class="p">),</span>
+    <span class="n">colorbar</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;Paired&#39;</span><span class="p">)</span>
+
+<span class="c1"># Plot les séries temporelles</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot2grid</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">colspan</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">label_idx</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">signals</span><span class="p">[:,</span> <span class="n">label_idx</span><span class="p">],</span>
+            <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+            <span class="n">label</span><span class="o">=</span><span class="n">atlas</span><span class="o">.</span><span class="n">labels</span><span class="p">[</span><span class="n">label_idx</span> <span class="o">+</span> <span class="mi">1</span><span class="p">])</span>  <span class="c1"># 0 is background</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Avant correction des dérives lentes&quot;</span><span class="p">)</span>
+
+<span class="c1"># Génère les séries temporelles après correction des dérives lentes</span>
+<span class="n">masker</span> <span class="o">=</span> <span class="n">NiftiLabelsMasker</span><span class="p">(</span><span class="n">atlas</span><span class="o">.</span><span class="n">maps</span><span class="p">,</span>
+                           <span class="n">high_pass</span><span class="o">=</span><span class="mf">0.01</span><span class="p">,</span>
+                           <span class="n">t_r</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span>
+                           <span class="n">labels</span><span class="o">=</span><span class="n">atlas</span><span class="o">.</span><span class="n">labels</span><span class="p">,</span>
+                           <span class="n">standardize</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">masker</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">func_filename</span><span class="p">)</span>
+<span class="n">signals</span> <span class="o">=</span> <span class="n">masker</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">func_filename</span><span class="p">)</span>
+
+<span class="c1"># Plot les séries temporelles</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot2grid</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="n">colspan</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">label_idx</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">signals</span><span class="p">[:,</span> <span class="n">label_idx</span><span class="p">],</span>
+            <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+            <span class="n">label</span><span class="o">=</span><span class="n">atlas</span><span class="o">.</span><span class="n">labels</span><span class="p">[</span><span class="n">label_idx</span> <span class="o">+</span> <span class="mi">1</span><span class="p">])</span>  <span class="c1"># 0 is background</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Après correction des dérives lentes&quot;</span><span class="p">)</span>
+
+<span class="kn">from</span> <span class="nn">myst_nb</span> <span class="kn">import</span> <span class="n">glue</span>
+<span class="n">glue</span><span class="p">(</span><span class="s2">&quot;detrending-fmri-fig&quot;</span><span class="p">,</span> <span class="n">fig</span><span class="p">,</span> <span class="n">display</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<figure class="align-default" id="detrending-fmri-fig" style="width: 600px">
+<img alt="_images/b5b2dbf1b869e63c6a462fecdc72d1aba51d08f064b637492018d9826c81a8f0.png" src="_images/b5b2dbf1b869e63c6a462fecdc72d1aba51d08f064b637492018d9826c81a8f0.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 52 </span><span class="caption-text">On extrait les séries temporelles associées à l’atlas Harvard-Oxford avant (à gauche) et après (à droite) régression des dérives lentes.
+Cette figure est adaptée d’un tutoriel de la librairie <a class="reference external" href="https://nilearn.github.io/auto_examples/06_manipulating_images/plot_nifti_labels_simple.html#sphx-glr-auto-examples-06-manipulating-images-plot-nifti-labels-simple-py">nilearn</a> à partir du jeu de données <code class="docutils literal notranslate"><span class="pre">development_fmri</span></code> (cliquer sur + pour voir le code). La figure est sous licence CC-BY.</span><a class="headerlink" href="#detrending-fmri-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>La dernière étape de prétraitement qui sera abordée est celle du filtrage de facteurs de non-intérêt, ou facteurs confondants. Ces facteurs confondants peuvent avoir différentes sources, comme le bruit cardiaque, le bruit de respiration, ou le mouvement. Ils se caractérisent notamment par différentes fréquences du spectre, soit plus lentes ou rapides. Les dérives lentes constituent un exemple commun de facteurs de non-intérêt, et elles sont assez facilement repérables dans le signal. Dans ce cas, pouvons appliquer un filtre passe-haut, qui conserve uniquement les fréquences plus hautes qu’un certain seuil (par exemple 0.01 Hz). De nombreux autres types de facteurs confondants sont couramment régressés en IRMf - par exemple les paramètres de mouvement.</p>
+</section>
+</section>
+<section id="analyses-statistiques">
+<h2>Analyses statistiques<a class="headerlink" href="#analyses-statistiques" title="Link to this heading">#</a></h2>
+<p>Les analyses statistiques comportent généralement des <strong>analyses individuelles</strong> dans lesquelles les séries temporelles sont analysées séparément pour chacun des sujets (on analyse l’effet des manipulations expérimentales), puis des <strong>analyses de groupe</strong> (on analyse l’effet de groupe), où ces données sont combinées pour plusieurs sujets pour être analysées. Dans cette section nous allons discuter brièvement de la génération de cartes statistiques individuelles. Nous reviendrons sur les analyses de groupe, et les modèles statistiques utilisées dans le chapitre sur les <a class="reference internal" href="cartes_statistiques.html"><span class="doc std std-doc">cartes statistiques cérébrales</span></a>.</p>
+<section id="irmf-experience-basee-sur-une-tache">
+<h3>IRMf - Expérience basée sur une tâche<a class="headerlink" href="#irmf-experience-basee-sur-une-tache" title="Link to this heading">#</a></h3>
+<div class="cell tag_hide-input tag_remove-output docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">nilearn.datasets</span> <span class="kn">import</span> <span class="n">fetch_spm_auditory</span>
+<span class="kn">from</span> <span class="nn">nilearn</span> <span class="kn">import</span> <span class="n">image</span>
+<span class="kn">from</span> <span class="nn">nilearn</span> <span class="kn">import</span> <span class="n">masking</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1"># load fMRI data</span>
+<span class="n">subject_data</span> <span class="o">=</span> <span class="n">fetch_spm_auditory</span><span class="p">()</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+
+<span class="c1"># load events</span>
+<span class="n">events</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_table</span><span class="p">(</span><span class="n">subject_data</span><span class="p">[</span><span class="s1">&#39;events&#39;</span><span class="p">])</span>
+<span class="n">events</span><span class="p">[</span><span class="s1">&#39;amplitude&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">events</span> <span class="o">=</span> <span class="n">events</span><span class="p">[</span><span class="n">events</span><span class="p">[</span><span class="s1">&#39;trial_type&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;active&#39;</span><span class="p">]</span>
+<span class="n">events</span> <span class="o">=</span> <span class="n">events</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,[</span><span class="s1">&#39;onset&#39;</span><span class="p">,</span> <span class="s1">&#39;duration&#39;</span><span class="p">,</span> <span class="s1">&#39;amplitude&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">to_numpy</span><span class="p">()</span><span class="o">.</span><span class="n">transpose</span><span class="p">()</span>
+
+<span class="n">frame_times</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">4</span><span class="o">*</span><span class="mi">7</span><span class="p">,</span> <span class="mi">100</span><span class="o">*</span><span class="mi">7</span><span class="p">,</span> <span class="mi">100</span><span class="o">-</span><span class="mi">4</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+<span class="kn">from</span> <span class="nn">nilearn.glm.first_level</span> <span class="kn">import</span> <span class="n">compute_regressor</span>
+
+<span class="n">block</span><span class="p">,</span> <span class="n">name</span> <span class="o">=</span> <span class="n">compute_regressor</span><span class="p">(</span>
+        <span class="n">events</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="n">frame_times</span><span class="p">,</span> <span class="n">con_id</span><span class="o">=</span><span class="s1">&#39;main&#39;</span><span class="p">,</span>
+        <span class="n">oversampling</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
+<span class="n">block</span> <span class="o">=</span> <span class="n">block</span> <span class="o">&gt;</span> <span class="mi">0</span>
+
+<span class="n">response</span><span class="p">,</span> <span class="n">name</span> <span class="o">=</span> <span class="n">compute_regressor</span><span class="p">(</span>
+        <span class="n">events</span><span class="p">,</span> <span class="s1">&#39;glover&#39;</span><span class="p">,</span> <span class="n">frame_times</span><span class="p">,</span> <span class="n">con_id</span><span class="o">=</span><span class="s1">&#39;main&#39;</span><span class="p">,</span>
+        <span class="n">oversampling</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="n">frame_times</span><span class="p">,</span> <span class="n">block</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">.5</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;stimulus&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">frame_times</span><span class="p">,</span> <span class="n">response</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="n">name</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;temps (s)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;BOLD signal (u.a.)&#39;</span><span class="p">)</span>
+
+<span class="c1"># Glue the figure</span>
+<span class="kn">from</span> <span class="nn">myst_nb</span> <span class="kn">import</span> <span class="n">glue</span>
+<span class="n">glue</span><span class="p">(</span><span class="s2">&quot;hrf-auditory-fig&quot;</span><span class="p">,</span> <span class="n">fig</span><span class="p">,</span> <span class="n">display</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<figure class="align-default" id="hrf-auditory-fig" style="width: 500px">
+<img alt="_images/3102a2aa4c7ff2cd93fa6aa9fbd1536df91c15cd6eb926f14854141c9b343f9a.png" src="_images/3102a2aa4c7ff2cd93fa6aa9fbd1536df91c15cd6eb926f14854141c9b343f9a.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 53 </span><span class="caption-text">Illustration d’un paradigme auditif en blocs. En bleu: périodes de stimulations audio. En rouge: réponse cérébrale prédite avec le modèle de réponse linéaire invariante dans le temps, et une réponse unitaire suivant le modèle de Glover et al. (1999) <span id="id6">[<a class="reference internal" href="references.html#id19" title="G H Glover. Deconvolution of impulse response in event-related BOLD fMRI. Neuroimage, 9(4):416–429, April 1999.">18</a>]</span>. Le code pour générer cette figure est adapté d’un <a class="reference external" href="https://nilearn.github.io/auto_examples/04_glm_first_level/plot_hrf.html#sphx-glr-auto-examples-04-glm-first-level-plot-hrf-py">tutoriel</a> Nilearn, et la figure est sous licence CC-BY.</span><a class="headerlink" href="#hrf-auditory-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Pour déterminer si l’activité des voxels du cerveau changent en réponse à des manipulations expérimentales, une approche expérimentale standard consiste à manipuler la tâche que réalise le sujet dans le scanneur, par exemple en alternant différentes conditions par blocs (stimulations audio, silence). Nous avons ensuite recours à des contrastes, aussi appelés analyses de soustraction qui procèdent en comparant les séries temporelles d’une condition à une autre condition, ou à un seuil de base. De manière simplifiée, l’analyse consiste à faire la différence de moyenne entre la période de silence et la période de stimulations auditives. Ces contrastes sont répétés pour chacun des voxels du cerveau, et génère une <strong>carte statistique cérébrale</strong>.</p>
+</section>
+<section id="regression-univariee-massive">
+<h3>Régression univariée massive<a class="headerlink" href="#regression-univariee-massive" title="Link to this heading">#</a></h3>
+<p>Il est possible de généraliser l’analyse de soustraction pour tenir compte de <strong>1) la forme de la réponse hémodynamique</strong>
+<strong>2) la présence de plusieurs conditions dans une même expérience</strong>. En pratique, en faisant une hypothèse de système linéaire et invariant dans le temps, on génère une prédiction de la forme de la réponse à une condition expérimentale, comme dans la <a class="reference internal" href="#hrf-auditory-fig"><span class="std std-numref">Fig. 53</span></a>. Un modèle de régression linéaire est alors utilisé pour estimer l’amplitude de cette réponse, afin d’ajuster le modèle au plus près des valeurs mesurées dans un voxel. Cette régression génère un paramètre d’amplitude (et un test de significativité) pour chaque voxel. On parle de régression univariée, car chaque voxel du cerveau est analysé indépendamment. Et on parle de régression univariée massive, car on répète cette procédure pour des dizaines (ou même des centaines) de milliers de voxels!</p>
+</section>
+<section id="irmf-cartes-d-activation">
+<span id="activation-section"></span><h3>IRMf - Cartes d’activation<a class="headerlink" href="#irmf-cartes-d-activation" title="Link to this heading">#</a></h3>
+<div class="cell tag_hide-input tag_remove-output docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Importe les librairies</span>
+<span class="kn">from</span> <span class="nn">nilearn.datasets</span> <span class="kn">import</span> <span class="n">fetch_spm_auditory</span>
+<span class="kn">from</span> <span class="nn">nilearn</span> <span class="kn">import</span> <span class="n">image</span>
+<span class="kn">from</span> <span class="nn">nilearn</span> <span class="kn">import</span> <span class="n">masking</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="c1"># initialisation de la figure</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+
+<span class="c1"># load fMRI data</span>
+<span class="n">subject_data</span> <span class="o">=</span> <span class="n">fetch_spm_auditory</span><span class="p">()</span>
+<span class="n">fmri_img</span> <span class="o">=</span> <span class="n">image</span><span class="o">.</span><span class="n">concat_imgs</span><span class="p">(</span><span class="n">subject_data</span><span class="o">.</span><span class="n">func</span><span class="p">)</span>
+
+<span class="c1"># Make an average</span>
+<span class="n">mean_img</span> <span class="o">=</span> <span class="n">image</span><span class="o">.</span><span class="n">mean_img</span><span class="p">(</span><span class="n">fmri_img</span><span class="p">)</span>
+<span class="n">mask</span> <span class="o">=</span> <span class="n">masking</span><span class="o">.</span><span class="n">compute_epi_mask</span><span class="p">(</span><span class="n">mean_img</span><span class="p">)</span>
+
+<span class="c1"># Clean and smooth data</span>
+<span class="n">fmri_img</span> <span class="o">=</span> <span class="n">image</span><span class="o">.</span><span class="n">clean_img</span><span class="p">(</span><span class="n">fmri_img</span><span class="p">,</span> <span class="n">high_pass</span><span class="o">=</span><span class="mf">0.01</span><span class="p">,</span> <span class="n">t_r</span><span class="o">=</span><span class="mi">7</span><span class="p">,</span> <span class="n">standardize</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">fmri_img</span> <span class="o">=</span> <span class="n">image</span><span class="o">.</span><span class="n">smooth_img</span><span class="p">(</span><span class="n">fmri_img</span><span class="p">,</span> <span class="mf">5.</span><span class="p">)</span>
+
+<span class="c1"># load events</span>
+<span class="n">events</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_table</span><span class="p">(</span><span class="n">subject_data</span><span class="p">[</span><span class="s1">&#39;events&#39;</span><span class="p">])</span>
+
+<span class="c1"># Fit model</span>
+<span class="kn">from</span> <span class="nn">nilearn.glm.first_level</span> <span class="kn">import</span> <span class="n">FirstLevelModel</span>
+<span class="n">fmri_glm</span> <span class="o">=</span> <span class="n">FirstLevelModel</span><span class="p">(</span><span class="n">t_r</span><span class="o">=</span><span class="mi">7</span><span class="p">,</span>
+                           <span class="n">drift_model</span><span class="o">=</span><span class="s1">&#39;cosine&#39;</span><span class="p">,</span>
+                           <span class="n">signal_scaling</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+                           <span class="n">mask_img</span><span class="o">=</span><span class="n">mask</span><span class="p">,</span>                           
+                           <span class="n">minimize_memory</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="n">fmri_glm</span> <span class="o">=</span> <span class="n">fmri_glm</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">fmri_img</span><span class="p">,</span> <span class="n">events</span><span class="p">)</span>
+
+<span class="c1"># Extract activation clusters</span>
+<span class="kn">from</span> <span class="nn">nilearn.reporting</span> <span class="kn">import</span> <span class="n">get_clusters_table</span>
+<span class="kn">from</span> <span class="nn">nilearn</span> <span class="kn">import</span> <span class="n">input_data</span>
+<span class="n">z_map</span> <span class="o">=</span> <span class="n">fmri_glm</span><span class="o">.</span><span class="n">compute_contrast</span><span class="p">(</span><span class="s1">&#39;active - rest&#39;</span><span class="p">)</span>
+<span class="n">table</span> <span class="o">=</span> <span class="n">get_clusters_table</span><span class="p">(</span><span class="n">z_map</span><span class="p">,</span> <span class="n">stat_threshold</span><span class="o">=</span><span class="mf">3.1</span><span class="p">,</span>
+                           <span class="n">cluster_threshold</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;Cluster ID&#39;</span><span class="p">,</span> <span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># get the 3 largest clusters&#39; max x, y, and z coordinates</span>
+<span class="n">coords</span> <span class="o">=</span> <span class="n">table</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="p">[</span><span class="s1">&#39;X&#39;</span><span class="p">,</span> <span class="s1">&#39;Y&#39;</span><span class="p">,</span> <span class="s1">&#39;Z&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">values</span>
+
+<span class="c1"># extract time series from each coordinate</span>
+<span class="n">masker</span> <span class="o">=</span> <span class="n">input_data</span><span class="o">.</span><span class="n">NiftiSpheresMasker</span><span class="p">(</span><span class="n">coords</span><span class="p">)</span>
+<span class="n">real_timeseries</span> <span class="o">=</span> <span class="n">masker</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">fmri_img</span><span class="p">)</span>
+<span class="n">predicted_timeseries</span> <span class="o">=</span> <span class="n">masker</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">fmri_glm</span><span class="o">.</span><span class="n">predicted</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+<span class="c1"># Plot figure</span>
+<span class="c1"># colors for each of the clusters</span>
+<span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="s1">&#39;navy&#39;</span><span class="p">,</span> <span class="s1">&#39;purple&#39;</span><span class="p">,</span> <span class="s1">&#39;magenta&#39;</span><span class="p">,</span> <span class="s1">&#39;olive&#39;</span><span class="p">,</span> <span class="s1">&#39;teal&#39;</span><span class="p">]</span>
+<span class="c1"># plot the time series and corresponding locations</span>
+<span class="kn">from</span> <span class="nn">nilearn</span> <span class="kn">import</span> <span class="n">plotting</span>
+<span class="n">fig1</span><span class="p">,</span> <span class="n">axs1</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">):</span>
+    <span class="c1"># plotting time series</span>
+    <span class="n">axs1</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Cluster peak </span><span class="si">{}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">coords</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span>
+    <span class="n">axs1</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">real_timeseries</span><span class="p">[:,</span> <span class="n">i</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="n">colors</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">axs1</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">predicted_timeseries</span><span class="p">[:,</span> <span class="n">i</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">axs1</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Time&#39;</span><span class="p">)</span>
+    <span class="n">axs1</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Signal intensity&#39;</span><span class="p">,</span> <span class="n">labelpad</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+    <span class="c1"># plotting image below the time series</span>
+    <span class="n">roi_img</span> <span class="o">=</span> <span class="n">plotting</span><span class="o">.</span><span class="n">plot_stat_map</span><span class="p">(</span>
+        <span class="n">z_map</span><span class="p">,</span> <span class="n">cut_coords</span><span class="o">=</span><span class="p">[</span><span class="n">coords</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">2</span><span class="p">]],</span> <span class="n">threshold</span><span class="o">=</span><span class="mf">3.1</span><span class="p">,</span> <span class="n">figure</span><span class="o">=</span><span class="n">fig1</span><span class="p">,</span>
+        <span class="n">axes</span><span class="o">=</span><span class="n">axs1</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="n">i</span><span class="p">],</span> <span class="n">display_mode</span><span class="o">=</span><span class="s1">&#39;z&#39;</span><span class="p">,</span> <span class="n">colorbar</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">bg_img</span><span class="o">=</span><span class="n">mean_img</span><span class="p">)</span>
+    <span class="n">roi_img</span><span class="o">.</span><span class="n">add_markers</span><span class="p">([</span><span class="n">coords</span><span class="p">[</span><span class="n">i</span><span class="p">]],</span> <span class="n">colors</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="mi">300</span><span class="p">)</span>
+
+<span class="n">fig1</span><span class="o">.</span><span class="n">set_size_inches</span><span class="p">(</span><span class="mi">24</span><span class="p">,</span> <span class="mi">14</span><span class="p">)</span>
+
+<span class="c1"># Glue the figure</span>
+<span class="kn">from</span> <span class="nn">myst_nb</span> <span class="kn">import</span> <span class="n">glue</span>
+<span class="n">glue</span><span class="p">(</span><span class="s2">&quot;auditory-fig&quot;</span><span class="p">,</span> <span class="n">fig1</span><span class="p">,</span> <span class="n">display</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<figure class="align-default" id="auditory-fig" style="width: 800px">
+<img alt="_images/ccfd211f9153eb10f372f414f5108124a1ab7ca8fa394ea3c8150065203ae0cd.png" src="_images/ccfd211f9153eb10f372f414f5108124a1ab7ca8fa394ea3c8150065203ae0cd.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 54 </span><span class="caption-text">Carte d’activation pour un paradigme en blocs auditifs. Les trois principaux pics d’activation ont été identifiés, et le signal est présenté pour chaque pic, superposé avec l’activité prédite par le modèle basé sur les stimuli auditifs. Notez comme la forme de la réponse est identique pour les trois voxels sélectionnés, mais que l’amplitude du modèle varie (elle est estimée par la régression). Le code pour générer cette figure est adapté d’un <a class="reference external" href="https://nilearn.github.io/auto_examples/04_glm_first_level/plot_hrf.html#sphx-glr-auto-examples-04-glm-first-level-plot-hrf-py">tutoriel</a> Nilearn, et la figure est sous licence CC-BY.</span><a class="headerlink" href="#auditory-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Les cartes d’activation sont souvent ce que l’on retrouve dans des articles scientifiques dans la section des résultats. Ce sont des cartes du cerveau sur lesquelles se superposent les statistiques obtenues (par exemple niveau d’activation, test-t, valeur p). Elles sont superposées vis-à-vis des voxels ou régions correspondant(e)s. Elles sont souvent présentées suite à l’application de seuils ou de masques, venant isoler les régions les plus actives, avec les différences moyennes entre conditions les plus importantes et/ou les plus statistiquement significatives. Via de telles cartes, nous pouvons étudier l’organisation de systèmes d’intérêt (visuel, moteur, auditif, mémoire de travail, etc), mais aussi comparer des groupes ou bien associer le niveau d’activation à des traits d’intérêt comme le QI.</p>
+</section>
+</section>
+<section id="conclusions">
+<h2>Conclusions<a class="headerlink" href="#conclusions" title="Link to this heading">#</a></h2>
+<p>La réalisation d’une expérience d’IRMf nécessite de bien penser les conditions d’intérêt et de contrôles pour isoler des processus cognitifs pertinents, mais cela requiert aussi de réfléchir aux hypothèses sous-jacentes:</p>
+<ul class="simple">
+<li><p><strong>hypothèses neuronales</strong>: les populations de neurones vont s’activer en réponse à nos conditions.</p></li>
+<li><p><strong>hypothèses neurovasculaires</strong>: Nous supposons que la réponse neuronale sera couplée à une réponse vasculaire caractéristique qu’il est possible de modéliser avec la fonction hémodynamique, laquelle est linéaire et invariante dans le temps.</p></li>
+<li><p><strong>hypothèses statistiques</strong>: Nous supposons que notre modèle de régression capture adéquatement l’activité cérébrale, et que nous tenons compte correctement des facteurs confondants et des artéfacts.</p></li>
+</ul>
+<p>Pour toutes ces raisons, il existe toujours des limitations importantes à l’interprétation que l’on peut faire de résultats en IRMf. Mais c’est aussi la technique cerveau entier non-invasive qui dispose de la meilleure résolution spatiale à ce jour.</p>
+</section>
+<section id="exercices">
+<h2>Exercices<a class="headerlink" href="#exercices" title="Link to this heading">#</a></h2>
+<div class="note admonition">
+<p class="admonition-title">Exercice 1</p>
+<p>Vrai / faux?</p>
+<ol class="arabic simple">
+<li><p>La réponse hémodynamique est faible une seconde après l’excitation neuronale.</p></li>
+<li><p>La réponse hémodynamique est maximale 2 secondes après l’excitation neuronale.</p></li>
+<li><p>La réponse hémodynamique est toujours visible 7 secondes après l’excitation neuronale.</p></li>
+<li><p>La réponse hémodynamique est toujours visible 30 secondes après l’excitation neuronale.</p></li>
+</ol>
+</div>
+<div class="note admonition">
+<p class="admonition-title">Exercice 2</p>
+<p>Vrai / faux?</p>
+<ol class="arabic simple">
+<li><p>Les données en IRM fonctionnelle et structurelle doivent être alignées pour générer une carte d’activation.</p></li>
+<li><p>Le filtrage des facteurs de non-intérêt est important pour générer une carte d’activation.</p></li>
+<li><p>Le lissage spatial est utile, même pour une analyse individuelle.</p></li>
+</ol>
+</div>
+<div class="note admonition">
+<p class="admonition-title">Exercice 3</p>
+<p>Qu’est ce que le signal BOLD? (vrai / faux).</p>
+<ol class="arabic simple">
+<li><p>Une séquence d’IRM pondérée en T2*.</p></li>
+<li><p>Un type de séquence d’IRM qui mesure directement l’activité des neurones.</p></li>
+<li><p>Un type de séquence d’IRM qui mesure l’oxygénation du sang.</p></li>
+</ol>
+</div>
+<div class="note admonition">
+<p class="admonition-title">Exercice 4</p>
+<p>Vrai / faux. Le principe d’additivité de la réponse hémodynamique est…</p>
+<ol class="arabic simple">
+<li><p>Un modèle mathématique.</p></li>
+<li><p>Une propriété de base du couplage neurovasculaire, toujours vérifiée.</p></li>
+<li><p>Une hypothèse courante, en partie confirmée expérimentalement.</p></li>
+</ol>
+</div>
+<div class="note admonition">
+<p class="admonition-title">Exercice 5</p>
+<p>Choisissez la bonne réponse. Des données d’IRMf sont en général…</p>
+<ol class="arabic simple">
+<li><p>Une image du cerveau.</p></li>
+<li><p>Une dizaine d’images du cerveau.</p></li>
+<li><p>Des dizaines d’images du cerveau, ou plus.</p></li>
+</ol>
+</div>
+<div class="note admonition">
+<p class="admonition-title">Exercice 6</p>
+<p>Quelle molécule dans le sang provoque un changement de signal mesuré par le BOLD? Pourquoi est-ce que l’IRM y est sensible?</p>
+</div>
+<div class="note admonition">
+<p class="admonition-title">Exercice 7</p>
+<p>Dans quelle portion de l’arbre vasculaire observe-t-on les changements principaux liés à l’activité neuronale locale?</p>
+</div>
+<div class="note admonition">
+<p class="admonition-title">Exercice 8</p>
+<p>On compare l’activation pour une tâche de mémoire dans le cerveau entre deux groupes de participants: des sujets sains et des sujets âgés (N=200 par groupe). Notre hypothèse est que la différence d’activité sera la plus forte dans le cortex frontal. En réalité, on trouve des différences en périphérie du cerveau, ce qui suggère des artefacts de mouvement.Suggérer deux modifications au protocole (recueil des données ou technique d’analyse) qui permettrait d’éviter ce phénomène.</p>
+</div>
+<div class="note admonition">
+<p class="admonition-title">Exercice 9</p>
+<p>Pour répondre aux questions de cet exercice, lisez d’abord l’article <em>High-resolution functional MRI of the human amygdala at 7 T</em> de Mensen et collaborateurs (publié en 2013 dans la revue <em>European Journal of radiology</em>, volume 82, pages 728 à 733).
+Celui-ci est disponible en libre accès à cette <a class="reference external" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3629563/">adresse</a>.
+Les questions suivantes requièrent des réponses à développement court.</p>
+<ol class="arabic simple">
+<li><p>Quelle technique de neuroimagerie est utilisée? S’agit-il d’une technique structurelle ou fonctionnelle?</p></li>
+<li><p>Quelle est la force de l’IRM?</p></li>
+<li><p>Quel type de séquence d’acquisition d’image est utilisé? Listez les paramètres: TE et taille du champ de vue (en mm), durée de l’acquisition.</p></li>
+<li><p>Quel type de tâche est utilisé?</p></li>
+<li><p>Quelles étapes de prétraitements ont été appliquées?</p></li>
+</ol>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="morphometrie.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Analyses morphométriques</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="connectivite.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Connectivité fonctionnelle</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objectifs-du-cours">Objectifs du cours</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#principes-physiques-et-physiologiques">Principes physiques et physiologiques</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#images-3d-t">Images 3D+t</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#couplage-neurovasculaire">Couplage neurovasculaire</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#le-signal-bold">Le signal BOLD</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fonction-de-reponse-hemodynamique">Fonction de réponse hémodynamique</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#reponse-a-une-impulsion-courte">Réponse à une impulsion courte</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#le-cerveau-bold-comme-un-systeme">Le cerveau (BOLD) comme un système</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pretraitement-des-donnees-d-irmf">Prétraitement des données d’IRMf</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recalage">Recalage</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#recalage-du-mouvement">Recalage du mouvement</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#recalage-bold-avec-t-1">Recalage BOLD avec <span class="math notranslate nohighlight">\(T_1\)</span></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#recalage-dans-l-espace-stereotaxique">Recalage dans l’espace stéréotaxique</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lissage-spatiale">Lissage spatiale</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#filtrage-des-facteurs-de-non-interet">Filtrage des facteurs de non-intérêt</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analyses-statistiques">Analyses statistiques</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#irmf-experience-basee-sur-une-tache">IRMf - Expérience basée sur une tâche</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#regression-univariee-massive">Régression univariée massive</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#irmf-cartes-d-activation">IRMf - Cartes d’activation</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusions">Conclusions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercices">Exercices</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Pierre Bellec et l'équipe PSY3018
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

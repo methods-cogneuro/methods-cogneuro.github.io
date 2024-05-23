@@ -1,0 +1,1228 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Cartes statistiques &#8212; Méthodes en neurosciences cognitives</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=87e54e7c" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'cartes_statistiques';</script>
+    <link rel="icon" href="_static/favicon.png"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Reproductibilité et controverses" href="reproductibilite.html" />
+    <link rel="prev" title="Tomographie par émission de positrons" href="tep.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Méthodes en neurosciences cognitives - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Méthodes en neurosciences cognitives - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Introduction
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="cartes_cerebrales.html">Cartes cérébrales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="irm.html">Imagerie par résonance magnétique</a></li>
+<li class="toctree-l1"><a class="reference internal" href="morphometrie.html">Analyses morphométriques</a></li>
+<li class="toctree-l1"><a class="reference internal" href="irm_fonctionnelle.html">IRM fonctionnelle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="connectivite.html">Connectivité fonctionnelle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="irm_diffusion.html">IRM de diffusion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="imagerie_optique.html">Imagerie optique</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tep.html">Tomographie par émission de positrons</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Cartes statistiques</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reproductibilite.html">Reproductibilité et controverses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/psy3018/notes_cours_psy3018" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/psy3018/notes_cours_psy3018/edit/main/methodes_neurocog/cartes_statistiques.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/psy3018/notes_cours_psy3018/issues/new?title=Issue%20on%20page%20%2Fcartes_statistiques.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/cartes_statistiques.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Cartes statistiques</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objectifs-du-cours">Objectifs du cours</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#regression-lineaire">Régression linéaire</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variables">Variables</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modele-lineaire">Modèle linéaire</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analyse-massivement-univariee">Analyse massivement univariée</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modele-lineaire-general">Modèle linéaire général</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Variables</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#regression-multiple">Régression multiple</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Cartes statistiques</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tests-statistiques">Tests statistiques</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tests-t-et-valeur-p">Tests t et valeur p</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hypothese-nulle">Hypothèse nulle</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comparaisons-multiples">Comparaisons multiples</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercices">Exercices</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="cartes-statistiques">
+<span id="cartes-statistiques-chapitre"></span><h1>Cartes statistiques<a class="headerlink" href="#cartes-statistiques" title="Link to this heading">#</a></h1>
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/elisabethloranger">
+        <img src="https://avatars.githubusercontent.com/u/90270981?v=4?s=100" width="100px;" alt=""/>
+        <br /><sub><b>Élisabeth Loranger</b></sub>
+      </a>
+      <br />
+        <a title="Contenu">🤔</a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/pbellec">
+        <img src="https://avatars.githubusercontent.com/u/1670887?v=4?s=100" width="100px;" alt=""/>
+        <br /><sub><b>Pierre bellec</b></sub>
+      </a>
+      <br />
+        <a title="Contenu">🤔</a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/eddyfortier">
+        <img src="https://avatars.githubusercontent.com/u/72314243?v=4?s=100" width="100px;" alt=""/>
+        <br /><sub><b>Eddy Fortier</b></sub>
+      </a>
+      <br />
+        <a title="Révision du texte">👀</a>
+    </td>
+  </tr>
+</table>
+<section id="objectifs-du-cours">
+<h2>Objectifs du cours<a class="headerlink" href="#objectifs-du-cours" title="Link to this heading">#</a></h2>
+<p>Dans ce chapitre, il sera question de l’utilisation du modèle de régression pour générer des cartes statistiques cérébrales de groupe. Les statistiques de groupe permettent de combiner les mesures du cerveau de plusieurs individus et ainsi de contraster des groupes (ex. groupe de personnes jeunes et groupe de personnes âgées) ou bien de tester l’association avec une variable continue (ex. l’âge).</p>
+<p>Les objectifs spécifiques du cours portent sur les concepts suivants :</p>
+<ul class="simple">
+<li><p>la régression linéaire,</p></li>
+<li><p>le modèle linéaire général,</p></li>
+<li><p>tests statistiques.</p></li>
+</ul>
+</section>
+<section id="regression-lineaire">
+<h2>Régression linéaire<a class="headerlink" href="#regression-lineaire" title="Link to this heading">#</a></h2>
+<section id="variables">
+<h3>Variables<a class="headerlink" href="#variables" title="Link to this heading">#</a></h3>
+<div class="cell tag_hide-input tag_remove-output docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Importer les librairies</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">nilearn</span> <span class="kn">import</span> <span class="n">datasets</span>
+<span class="kn">from</span> <span class="nn">nilearn.input_data</span> <span class="kn">import</span> <span class="n">NiftiMasker</span>
+<span class="kn">from</span> <span class="nn">nilearn.image</span> <span class="kn">import</span> <span class="n">get_data</span>
+
+<span class="c1"># Charger les données</span>
+<span class="n">n_subjects</span> <span class="o">=</span> <span class="mi">100</span>  
+<span class="n">oasis_dataset</span> <span class="o">=</span> <span class="n">datasets</span><span class="o">.</span><span class="n">fetch_oasis_vbm</span><span class="p">(</span><span class="n">n_subjects</span><span class="o">=</span><span class="n">n_subjects</span><span class="p">)</span>
+<span class="n">gray_matter_map_filenames</span> <span class="o">=</span> <span class="n">oasis_dataset</span><span class="o">.</span><span class="n">gray_matter_maps</span>
+<span class="n">age</span> <span class="o">=</span> <span class="n">oasis_dataset</span><span class="o">.</span><span class="n">ext_vars</span><span class="p">[</span><span class="s1">&#39;age&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
+<span class="n">sex</span> <span class="o">=</span> <span class="n">oasis_dataset</span><span class="o">.</span><span class="n">ext_vars</span><span class="p">[</span><span class="s1">&#39;mf&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="sa">b</span><span class="s1">&#39;F&#39;</span>
+
+<span class="c1"># Conversion des données en pandas dataframe</span>
+<span class="c1"># Deux voxels intéressants ont été sélectionnés</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="n">coords</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span> <span class="mf">29.</span><span class="p">,</span>  <span class="mf">10.</span><span class="p">,</span>   <span class="mf">4.</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">19.</span><span class="p">,</span>   <span class="mf">8.</span><span class="p">,</span> <span class="o">-</span><span class="mf">11.</span><span class="p">]])</span>
+<span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="s1">&#39;olive&#39;</span><span class="p">]</span>
+
+<span class="kn">from</span> <span class="nn">nilearn</span> <span class="kn">import</span> <span class="n">input_data</span>
+<span class="n">masker</span> <span class="o">=</span> <span class="n">input_data</span><span class="o">.</span><span class="n">NiftiSpheresMasker</span><span class="p">(</span><span class="n">coords</span><span class="p">)</span>
+<span class="n">gm</span> <span class="o">=</span> <span class="n">masker</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">gray_matter_map_filenames</span><span class="p">)</span>
+<span class="n">subject_label</span> <span class="o">=</span> <span class="p">[</span><span class="sa">f</span><span class="s1">&#39;sub-</span><span class="si">{</span><span class="n">num</span><span class="si">}</span><span class="s1">&#39;</span> <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n_subjects</span><span class="p">)]</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+    <span class="s2">&quot;subject_label&quot;</span><span class="p">:</span> <span class="n">subject_label</span><span class="p">,</span>
+    <span class="s2">&quot;age&quot;</span><span class="p">:</span> <span class="n">age</span><span class="p">,</span>
+    <span class="s2">&quot;sexe&quot;</span><span class="p">:</span> <span class="n">oasis_dataset</span><span class="o">.</span><span class="n">ext_vars</span><span class="p">[</span><span class="s1">&#39;mf&#39;</span><span class="p">],</span>
+    <span class="s2">&quot;MG1&quot;</span><span class="p">:</span> <span class="n">gm</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span>
+    <span class="s2">&quot;MG2&quot;</span><span class="p">:</span> <span class="n">gm</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">]</span>
+    <span class="p">})</span>
+
+<span class="n">df</span><span class="p">[</span><span class="s2">&quot;sexe&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;sexe&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">([</span><span class="sa">b</span><span class="s1">&#39;F&#39;</span><span class="p">,</span> <span class="sa">b</span><span class="s1">&#39;M&#39;</span><span class="p">],</span> <span class="n">value</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;femelle&#39;</span><span class="p">,</span> <span class="s1">&#39;male&#39;</span><span class="p">])</span>
+
+<span class="c1"># On génère la Figure</span>
+<span class="kn">from</span> <span class="nn">nilearn</span> <span class="kn">import</span> <span class="n">plotting</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">24</span><span class="p">,</span> <span class="mi">14</span><span class="p">))</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">6</span><span class="p">):</span>        
+    <span class="n">nx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">floor_divide</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+    <span class="n">ny</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">remainder</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+    <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot2grid</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span> <span class="p">(</span><span class="n">nx</span><span class="p">,</span> <span class="n">ny</span><span class="p">),</span> <span class="n">colspan</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">roi_img</span> <span class="o">=</span> <span class="n">plotting</span><span class="o">.</span><span class="n">plot_anat</span><span class="p">(</span>
+        <span class="n">gray_matter_map_filenames</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">cut_coords</span><span class="o">=</span><span class="p">[</span><span class="n">coords</span><span class="p">[</span><span class="n">nx</span><span class="p">][</span><span class="mi">2</span><span class="p">]],</span> <span class="n">figure</span><span class="o">=</span><span class="n">fig</span><span class="p">,</span>
+        <span class="n">axes</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">display_mode</span><span class="o">=</span><span class="s1">&#39;z&#39;</span><span class="p">,</span> <span class="n">colorbar</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">roi_img</span><span class="o">.</span><span class="n">add_markers</span><span class="p">([</span><span class="n">coords</span><span class="p">[</span><span class="n">nx</span><span class="p">]],</span> <span class="n">colors</span><span class="p">[</span><span class="n">nx</span><span class="p">],</span> <span class="mi">100</span><span class="p">)</span>
+
+<span class="n">sns</span><span class="o">.</span><span class="n">set_theme</span><span class="p">(</span><span class="n">style</span><span class="o">=</span><span class="s2">&quot;darkgrid&quot;</span><span class="p">)</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot2grid</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">colspan</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">histplot</span><span class="p">(</span>
+    <span class="n">df</span><span class="p">[</span><span class="s2">&quot;MG1&quot;</span><span class="p">],</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">binwidth</span><span class="o">=</span><span class="mf">0.05</span><span class="p">,</span> <span class="n">binrange</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">stat</span><span class="o">=</span><span class="s1">&#39;frequency&#39;</span><span class="p">)</span>
+
+<span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot2grid</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">colspan</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">histplot</span><span class="p">(</span>
+    <span class="n">df</span><span class="p">[</span><span class="s2">&quot;MG2&quot;</span><span class="p">],</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">binwidth</span><span class="o">=</span><span class="mf">0.05</span><span class="p">,</span> <span class="n">binrange</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">stat</span><span class="o">=</span><span class="s1">&#39;frequency&#39;</span><span class="p">)</span>
+
+<span class="kn">from</span> <span class="nn">myst_nb</span> <span class="kn">import</span> <span class="n">glue</span>
+<span class="n">glue</span><span class="p">(</span><span class="s2">&quot;vbm-distribution-fig&quot;</span><span class="p">,</span> <span class="n">fig</span><span class="p">,</span> <span class="n">display</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<figure class="align-default" id="vbm-distribution-fig" style="width: 800px">
+<img alt="_images/dbaf0df29bc2eb8dbbf69df5bf94ebdcb6b41092a531b1f659f1ca2a80290bf9.png" src="_images/dbaf0df29bc2eb8dbbf69df5bf94ebdcb6b41092a531b1f659f1ca2a80290bf9.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 99 </span><span class="caption-text">La position de deux voxels (illustrée à l’aide d’un cercle bleu (haut) et d’un cercle olive (bas)) est ici superposée sur des cartes de densité de matière grise pour différents sujets du jeu de données OASIS (<a class="reference external" href="https://dx.doi.org/10.1162%2Fjocn.2009.21407">Marcus et al., 2010</a>). À droite, un histogramme représente la distribution de la densité de matière grise pour le voxel correspondant, à travers un échantillon de 100 sujets. Cette figure est adaptée d’un tutoriel de la librairie <a class="reference external" href="https://nilearn.github.io/auto_examples/05_glm_second_level/plot_oasis.html#sphx-glr-auto-examples-05-glm-second-level-plot-oasis-py">nilearn</a> (cliquer sur + pour voir le code). Cette figure est distribuée sous licence <a class="reference external" href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>.</span><a class="headerlink" href="#vbm-distribution-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Les concepts présentés dans ce chapitre s’appliquent à la plupart des modalités d’imagerie vues dans le cours de façon plus ou moins identique. Afin de rendre les choses un peu plus concrètes, nous allons ici nous intéresser à une analyse morphométrique de type VBM (IRM structurelle). Cette analyse utilise le jeu de données OASIS (<a class="reference external" href="https://dx.doi.org/10.1162%2Fjocn.2009.21407">Marcus et al., 2010</a>). Des cartes de densité de matière grise pour les données OASIS sont disponibles via la librairie <a class="reference external" href="https://nilearn.github.io/modules/generated/nilearn.datasets.fetch_oasis_vbm.html">nilearn</a>. Pour chaque voxel, on dispose d’une mesure locale de densité de matière grise qui varie entre 0 et 1. Comme toutes les images des 100 participants OASIS utilisés dans cet exemple ont été recalées dans un même espace stéréotaxique, chaque voxel est associé à une série de 100 mesures. Il s’agit de notre <strong>variable dépendante</strong>. On va par la suite chercher à expliquer les variations de cette mesure à travers les sujets à l’aide d’autres variables, appelées les <strong>prédicteurs</strong>. Pour notre exemple, nous allons démarrer avec l’âge des participants qui varie ici de 20 ans à 90 ans.</p>
+</section>
+<section id="modele-lineaire">
+<h3>Modèle linéaire<a class="headerlink" href="#modele-lineaire" title="Link to this heading">#</a></h3>
+<div class="cell tag_hide-input tag_remove-output docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># On réorganise le DataFrame pour utiliser seaborn</span>
+<span class="n">df2</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">id_vars</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;age&quot;</span><span class="p">,</span> <span class="s2">&quot;sexe&quot;</span><span class="p">],</span> <span class="n">value_vars</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;MG1&quot;</span><span class="p">,</span> <span class="s2">&quot;MG2&quot;</span><span class="p">],</span> <span class="n">value_name</span><span class="o">=</span><span class="s2">&quot;MG&quot;</span><span class="p">)</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">lmplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">&quot;age&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;MG&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">df2</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="s1">&#39;variable&#39;</span><span class="p">,</span>
+           <span class="n">ci</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">scatter_kws</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;s&quot;</span><span class="p">:</span> <span class="mi">50</span><span class="p">,</span> <span class="s2">&quot;alpha&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">})</span>
+
+<span class="c1"># On colle la figure dans le jupyter book</span>
+<span class="kn">from</span> <span class="nn">myst_nb</span> <span class="kn">import</span> <span class="n">glue</span>
+<span class="n">glue</span><span class="p">(</span><span class="s2">&quot;regression-vbm-fig&quot;</span><span class="p">,</span> <span class="n">fig</span><span class="o">.</span><span class="n">fig</span><span class="p">,</span> <span class="n">display</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>           
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<figure class="align-default" id="regression-vbm-fig" style="width: 800px">
+<img alt="_images/3bd013a818749193c9e7773c5bec77d8c3675c285786bf469ea640ff209dc9ce.png" src="_images/3bd013a818749193c9e7773c5bec77d8c3675c285786bf469ea640ff209dc9ce.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 100 </span><span class="caption-text">Exemple de régression linéaire où la variable dépendante est la densité de matière grise pour un voxel et le prédicteur est l’âge. Les valeurs de densité de matière grise proviennent de 100 sujets de la base de données OASIS (<a class="reference external" href="https://dx.doi.org/10.1162%2Fjocn.2009.21407">Marcus et al., 2010</a>). Les deux voxels utilisés ici sont les mêmes que ceux représentés dans la <a class="reference internal" href="#vbm-distribution-fig"><span class="std std-numref">Fig. 99</span></a> (voxel bleu à gauche, voxel olive à droite). La régression linéaire est réalisée à l’aide de la libraire <a class="reference external" href="https://seaborn.pydata.org">seaborn</a> (cliquer sur + pour voir le code). Cette figure est distribuée sous licence <a class="reference external" href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>.</span><a class="headerlink" href="#regression-vbm-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Le concept soutenant le modèle de régression est une équation, ou une sorte de loi, qui va tenter de prédire la variable dépendante (ici, la densité de matière grise) à partir de prédicteurs (par exemple, l’âge). Mais contrairement à une loi physique qui tente de représenter une dépendance exacte (jusqu’à un certain degré), la présente loi ne capture qu’une fraction de la variance de notre mesure. La loi va donc incorporer un certain bruit représentant toutes les sources de variabilité que l’on ne peut pas capturer avec notre relation. La relation mathématique va prendre la forme suivante:</p>
+<p><code class="docutils literal notranslate"><span class="pre">densite_matiere_grise</span> <span class="pre">=</span> <span class="pre">b0</span> <span class="pre">+</span> <span class="pre">b1</span> <span class="pre">*</span> <span class="pre">age</span> <span class="pre">+</span> <span class="pre">e</span></code></p>
+<p>Où</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">densite_matiere_grise</span></code> est la densité de matière grise mesurée pour un voxel</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">age</span></code> est l’âge du participant de recherche</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">b0</span></code> est une valeur constante, appelée en anglais “intercept” (l’ordonnée à l’origine). Cette valeur est identique pour tous les sujets. Dans ce cas-ci, elle représenterait la densité de matière grise observée à la naissance (<code class="docutils literal notranslate"><span class="pre">age=0</span></code>), en moyenne sur la population.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">b1</span></code> est une autre constante qui dans cet exemple mesure la réduction de matière grise par année de vie (en moyenne sur la population).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">e</span></code> est un bruit de mesure qui capture toutes les variations de <code class="docutils literal notranslate"><span class="pre">densite_matiere_grise</span></code> que l’on ne peut pas expliquer avec <code class="docutils literal notranslate"><span class="pre">age</span></code>. Typiquement, on suppose que la moyenne de <code class="docutils literal notranslate"><span class="pre">e</span></code> dans la population est <code class="docutils literal notranslate"><span class="pre">0</span></code> et que la variance de <code class="docutils literal notranslate"><span class="pre">e</span></code> est identique pour tous les sujets, égale à <span class="math notranslate nohighlight">\(\sigma^2\)</span>.</p></li>
+</ul>
+<p>On ne connaît évidemment pas les coefficients <code class="docutils literal notranslate"><span class="pre">b0</span></code> et <code class="docutils literal notranslate"><span class="pre">b1</span></code>. Il sera nécessaire d’utiliser une procédure statistique pour les <code class="docutils literal notranslate"><span class="pre">estimer</span></code>, c’est-à-dire deviner (au mieux) leurs valeurs à partir des données dont nous disposons. Par exemple, pour la région de couleur <code class="docutils literal notranslate"><span class="pre">olive</span></code> (graphe de droite dans <a class="reference internal" href="#regression-vbm-fig"><span class="std std-numref">Fig. 100</span></a>), on voit que l’on perd environ 25% de densité entre 20 ans et 90 ans (voir <a class="reference internal" href="#regression-vbm-fig"><span class="std std-numref">Fig. 100</span></a>). On perd donc environ 0.35% de densité de matière grise par an, soit <code class="docutils literal notranslate"><span class="pre">b1</span> <span class="pre">~</span> <span class="pre">-0.0035</span></code>. En utilisant cette valeur et en remarquant que la densité de matière grise est d’à peu près <code class="docutils literal notranslate"><span class="pre">0.85</span></code> à <code class="docutils literal notranslate"><span class="pre">20</span></code> ans, on en déduit que la densité à la naissance devrait être <code class="docutils literal notranslate"><span class="pre">b0=0.92</span></code>. En pratique, la procédure statistique va choisir les valeurs <code class="docutils literal notranslate"><span class="pre">b0</span></code> et <code class="docutils literal notranslate"><span class="pre">b1</span></code> pour minimiser l’amplitude des résidus de la régression:</p>
+<p><code class="docutils literal notranslate"><span class="pre">residus</span> <span class="pre">=</span> <span class="pre">densite_matiere_grise</span> <span class="pre">-</span> <span class="pre">b0</span> <span class="pre">-</span> <span class="pre">b1</span> <span class="pre">*</span> <span class="pre">age</span></code></p>
+<p>Une fois les coefficients <code class="docutils literal notranslate"><span class="pre">b0</span></code> et <code class="docutils literal notranslate"><span class="pre">b1</span></code> estimés, on peut tracer une droite qui représente les valeurs de densité de matière grise prédites à partir de l’âge des sujets (voir <a class="reference internal" href="#regression-vbm-fig"><span class="std std-numref">Fig. 100</span></a>). Si le modèle permet d’expliquer une partie importante de la variabilité de la variable dépendante, les points mesurés seront proches de la droite de prédiction.</p>
+</section>
+<section id="analyse-massivement-univariee">
+<h3>Analyse massivement univariée<a class="headerlink" href="#analyse-massivement-univariee" title="Link to this heading">#</a></h3>
+<div class="cell tag_hide-input tag_remove-output docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">nilearn.glm.second_level</span> <span class="kn">import</span> <span class="n">make_second_level_design_matrix</span>
+<span class="n">design_df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s2">&quot;subject_label&quot;</span><span class="p">,</span> <span class="s2">&quot;age&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">replace</span><span class="p">([</span><span class="s1">&#39;femelle&#39;</span><span class="p">,</span> <span class="s1">&#39;male&#39;</span><span class="p">],</span> <span class="n">value</span><span class="o">=</span><span class="p">[</span><span class="mf">0.</span><span class="p">,</span> <span class="mf">1.</span><span class="p">])</span>
+<span class="n">design_matrix</span> <span class="o">=</span> <span class="n">make_second_level_design_matrix</span><span class="p">(</span>
+    <span class="n">subject_label</span><span class="p">,</span>
+    <span class="n">design_df</span>
+    <span class="p">)</span>
+<span class="kn">from</span> <span class="nn">nilearn.glm.second_level</span> <span class="kn">import</span> <span class="n">SecondLevelModel</span>
+<span class="n">second_level_model</span> <span class="o">=</span> <span class="n">SecondLevelModel</span><span class="p">(</span><span class="n">smoothing_fwhm</span><span class="o">=</span><span class="mf">5.0</span><span class="p">)</span>
+<span class="n">second_level_model</span> <span class="o">=</span> <span class="n">second_level_model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">gray_matter_map_filenames</span><span class="p">,</span>
+                                            <span class="n">design_matrix</span><span class="o">=</span><span class="n">design_matrix</span><span class="p">)</span>
+<span class="n">beta0</span> <span class="o">=</span> <span class="n">second_level_model</span><span class="o">.</span><span class="n">compute_contrast</span><span class="p">(</span><span class="n">second_level_contrast</span><span class="o">=</span><span class="s2">&quot;intercept&quot;</span><span class="p">,</span> <span class="n">output_type</span><span class="o">=</span><span class="s2">&quot;effect_size&quot;</span><span class="p">)</span>
+<span class="n">beta1</span> <span class="o">=</span> <span class="n">second_level_model</span><span class="o">.</span><span class="n">compute_contrast</span><span class="p">(</span><span class="n">second_level_contrast</span><span class="o">=</span><span class="s2">&quot;age&quot;</span><span class="p">,</span> <span class="n">output_type</span><span class="o">=</span><span class="s2">&quot;effect_size&quot;</span><span class="p">)</span>
+
+<span class="c1"># On génère la Figure</span>
+<span class="kn">from</span> <span class="nn">nilearn</span> <span class="kn">import</span> <span class="n">plotting</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">24</span><span class="p">,</span> <span class="mi">14</span><span class="p">))</span>
+
+<span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot2grid</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">colspan</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">roi_img</span> <span class="o">=</span> <span class="n">plotting</span><span class="o">.</span><span class="n">plot_stat_map</span><span class="p">(</span>
+    <span class="n">beta0</span><span class="p">,</span> <span class="n">bg_img</span><span class="o">=</span><span class="n">gray_matter_map_filenames</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">cut_coords</span><span class="o">=</span><span class="n">coords</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">figure</span><span class="o">=</span><span class="n">fig</span><span class="p">,</span>
+    <span class="n">axes</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">display_mode</span><span class="o">=</span><span class="s1">&#39;ortho&#39;</span><span class="p">,</span> <span class="n">colorbar</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;intercept (b0)&#39;</span><span class="p">)</span>
+<span class="n">roi_img</span><span class="o">.</span><span class="n">add_markers</span><span class="p">([</span><span class="n">coords</span><span class="p">[</span><span class="mi">1</span><span class="p">]],</span> <span class="n">colors</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mi">100</span><span class="p">)</span>
+
+<span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot2grid</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">colspan</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">roi_img</span> <span class="o">=</span> <span class="n">plotting</span><span class="o">.</span><span class="n">plot_stat_map</span><span class="p">(</span>
+    <span class="n">beta1</span><span class="p">,</span> <span class="n">bg_img</span><span class="o">=</span><span class="n">gray_matter_map_filenames</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">cut_coords</span><span class="o">=</span><span class="n">coords</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">figure</span><span class="o">=</span><span class="n">fig</span><span class="p">,</span>
+    <span class="n">axes</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">display_mode</span><span class="o">=</span><span class="s1">&#39;ortho&#39;</span><span class="p">,</span> <span class="n">colorbar</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;effet de l</span><span class="se">\&#39;</span><span class="s1">age (b1)&#39;</span><span class="p">)</span>
+<span class="n">roi_img</span><span class="o">.</span><span class="n">add_markers</span><span class="p">([</span><span class="n">coords</span><span class="p">[</span><span class="mi">1</span><span class="p">]],</span> <span class="n">colors</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mi">100</span><span class="p">)</span>
+
+<span class="c1"># On colle la figure dans le jupyter book</span>
+<span class="kn">from</span> <span class="nn">myst_nb</span> <span class="kn">import</span> <span class="n">glue</span>
+<span class="n">glue</span><span class="p">(</span><span class="s2">&quot;b0-b1-fig&quot;</span><span class="p">,</span> <span class="n">fig</span><span class="p">,</span> <span class="n">display</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>           
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<figure class="align-default" id="b0-b1-fig" style="width: 600px">
+<img alt="_images/1675b40e13425f6c85cf2e8b3854433d02a52e61864b5b8efb7960949ccd5459.png" src="_images/1675b40e13425f6c85cf2e8b3854433d02a52e61864b5b8efb7960949ccd5459.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 101 </span><span class="caption-text">Cartes de paramètres statistiques dans une régression linéaire massivement univariée. Première ligne: intercept <code class="docutils literal notranslate"><span class="pre">b0</span></code>, deuxième ligne: effet linéaire de l’âge <code class="docutils literal notranslate"><span class="pre">b1</span></code>. Cette figure est adaptée d’un tutoriel de la librairie <a class="reference external" href="https://nilearn.github.io/auto_examples/05_glm_second_level/plot_oasis.html#sphx-glr-auto-examples-05-glm-second-level-plot-oasis-py">nilearn</a> (cliquer sur + pour voir le code). Cette figure est distribuée sous licence <a class="reference external" href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>.</span><a class="headerlink" href="#b0-b1-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Pour l’instant, nous avons utilisé un modèle de régression pour deux voxels seulement. Mais une carte VBM peut inclure des centaines de milliers de voxels. Les logiciels de neuroimagerie permettent d’effectuer systématiquement une régression linéaire pour l’ensemble des voxels, simultanément. Dans ce cas, on estime deux paramètres pour chaque voxel: <code class="docutils literal notranslate"><span class="pre">b0</span></code> (l’intercept) et <code class="docutils literal notranslate"><span class="pre">b1</span></code> (l’effet de l’âge). On va donc générer deux cartes statistiques séparées (voir <a class="reference internal" href="#b0-b1-fig"><span class="std std-numref">Fig. 101</span></a>). Ces deux cartes récapitulent donc des milliers de modèles de régression différents. Comme les régressions effectuées à chaque voxel sont indépendantes les unes des autres, on parle de modèle univarié. L’autre option, le modèle multivarié, chercherait plutôt à combiner les valeurs obtenues à différents voxels. De plus, comme on fait un très grand nombre de régressions en même temps, on parle de régression <strong>massivement univariée</strong>.</p>
+<div class="tip admonition" id="stats-multimodales">
+<p class="admonition-title">Statistiques et multimodalité</p>
+<p>Le modèle de régression est appliqué à plusieurs modalités de neuroimagerie. Dans ce chapitre, il est question d’un exemple utilisant la VBM. Mais le même modèle fonctionne dès lors qu’on a une série de cartes pour différents sujets. Il pourrait par exemple être utilisé en <a class="reference external" href="https://nilearn.github.io/auto_examples/05_glm_second_level/plot_second_level_one_sample_test.html#sphx-glr-auto-examples-05-glm-second-level-plot-second-level-one-sample-test-py">IRMf</a> ou bien en TEP. Le même type de modèle peut aussi s’appliquer à des mesures prises sur des récepteurs en imagerie optique ou des mesures moyennes sur un faisceau de fibres en IRMd. Le modèle de régression est partout!</p>
+</div>
+</section>
+</section>
+<section id="modele-lineaire-general">
+<h2>Modèle linéaire général<a class="headerlink" href="#modele-lineaire-general" title="Link to this heading">#</a></h2>
+<section id="id1">
+<h3>Variables<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<div class="cell tag_hide-input tag_remove-output docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sns</span><span class="o">.</span><span class="n">set_theme</span><span class="p">(</span><span class="n">style</span><span class="o">=</span><span class="s2">&quot;ticks&quot;</span><span class="p">)</span>
+
+<span class="c1"># Show the joint distribution using kernel density estimation</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">jointplot</span><span class="p">(</span>
+    <span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span>
+    <span class="n">x</span><span class="o">=</span><span class="s2">&quot;age&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;MG1&quot;</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s2">&quot;sexe&quot;</span><span class="p">,</span>
+    <span class="n">kind</span><span class="o">=</span><span class="s2">&quot;scatter&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="c1"># On colle la figure dans le jupyter book</span>
+<span class="kn">from</span> <span class="nn">myst_nb</span> <span class="kn">import</span> <span class="n">glue</span>
+<span class="n">glue</span><span class="p">(</span><span class="s2">&quot;age-sexe-fig&quot;</span><span class="p">,</span> <span class="n">fig</span><span class="o">.</span><span class="n">fig</span><span class="p">,</span> <span class="n">display</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>           
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<figure class="align-default" id="age-sexe-fig" style="width: 600px">
+<img alt="_images/066646da3bfe1a83ff3561f5e67a628b415b96296b117ef89532cb10b0934f25.png" src="_images/066646da3bfe1a83ff3561f5e67a628b415b96296b117ef89532cb10b0934f25.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 102 </span><span class="caption-text">Relation entre âge, sexe et densité de matière grise pour un voxel (le voxel de couleur bleu dans <a class="reference internal" href="#vbm-distribution-fig"><span class="std std-numref">Fig. 99</span></a>). Le graphique est réalisé à l’aide de la libraire <a class="reference external" href="https://seaborn.pydata.org">seaborn</a> (cliquer sur + pour voir le code). Cette figure est distribuée sous licence <a class="reference external" href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>.</span><a class="headerlink" href="#age-sexe-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>L’approche de régression linéaire que l’on vient de voir est simple et puissante, mais elle est limitée à deux variables. En neurosciences humaines, on ne se trouvera généralement pas dans ce cas. On va très souvent vouloir étudier des facteurs multiples de manière conjointe. Même si la représentation du sexe des participants par une variable binaire est <a class="reference external" href="https://blogs.scientificamerican.com/sa-visual/visualizing-sex-as-a-spectrum/">très (très) simplificatrice</a> - sans compter la diversité de l’identité de genre - nous allons quand même essayer d’intégrer le sexe (mâle vs femelle) dans notre analyse. La figure ci-dessus montre les distributions d’âge et de matière grise (pour le voxel bleu), séparées par sexe. Ce graphique suggère que la distribution de matière grise est peut-être différente entre mâle et femelle, mais cette différence pourrait également être liée à l’âge. Le modèle linéaire général nous permet d’intégrer toutes ces variables dans une seule analyse.</p>
+</section>
+<section id="regression-multiple">
+<h3>Régression multiple<a class="headerlink" href="#regression-multiple" title="Link to this heading">#</a></h3>
+<div class="cell tag_hide-input tag_remove-output docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">nilearn.plotting</span> <span class="kn">import</span> <span class="n">plot_design_matrix</span>
+<span class="n">design_df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s2">&quot;subject_label&quot;</span><span class="p">,</span> <span class="s2">&quot;age&quot;</span><span class="p">,</span> <span class="s2">&quot;sexe&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">replace</span><span class="p">([</span><span class="s1">&#39;F&#39;</span><span class="p">,</span> <span class="s1">&#39;M&#39;</span><span class="p">],</span> <span class="n">value</span><span class="o">=</span><span class="p">[</span><span class="mf">0.</span><span class="p">,</span> <span class="mf">1.</span><span class="p">])</span>
+<span class="n">design_matrix</span> <span class="o">=</span> <span class="n">make_second_level_design_matrix</span><span class="p">(</span>
+    <span class="n">subject_label</span><span class="p">,</span>
+    <span class="n">design_df</span>
+    <span class="p">)</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">ncols</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">12</span><span class="p">),</span> <span class="n">sharey</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">Y</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;MG1&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">to_numpy</span><span class="p">()</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">design_matrix</span><span class="o">.</span><span class="n">to_numpy</span><span class="p">()</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">expand_dims</span><span class="p">(</span><span class="n">Y</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">Y</span><span class="p">)))</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">X</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">Y</span><span class="p">)))</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">X</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">Y</span><span class="p">)))</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">X</span><span class="p">[:,</span><span class="mi">2</span><span class="p">],</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">Y</span><span class="p">)))</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;# sujet&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">18</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;MG&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39; ge&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Sexe&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Intercept&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+<span class="n">plot_design_matrix</span><span class="p">(</span><span class="n">design_matrix</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Matrice de dessein&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;# sujet&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">invert_yaxis</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+
+<span class="c1"># On colle la figure dans le jupyter book</span>
+<span class="kn">from</span> <span class="nn">myst_nb</span> <span class="kn">import</span> <span class="n">glue</span>
+<span class="n">glue</span><span class="p">(</span><span class="s2">&quot;design-matrix-fig&quot;</span><span class="p">,</span> <span class="n">fig</span><span class="p">,</span> <span class="n">display</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>           
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<figure class="align-default" id="design-matrix-fig" style="width: 600px">
+<img alt="_images/92604a2988576a34207bff2299e7032e7452316ae96423db34bf024850832099.png" src="_images/92604a2988576a34207bff2299e7032e7452316ae96423db34bf024850832099.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 103 </span><span class="caption-text">Variables pour une régression multiple. La variable dépendante est la densité de matière grise pour un voxel (MG, le voxel de couleur bleu dans <a class="reference internal" href="#vbm-distribution-fig"><span class="std std-numref">Fig. 99</span></a>). Les autres colonnes représentent les variations de l’âge, du sexe et de l’intercept à travers les sujets (variables prédictives). Les variables prédictives sont généralement représentées de manière plus compacte, sous la forme d’une image où la couleur de chaque pixel représente l’intensité du régresseur. Le graphique est adapté d’un <a class="reference external" href="https://dartbrains.org/content/GLM.html">code python</a> produit par l’équipe Dartbrains, ainsi que d’un <a class="reference external" href="https://nilearn.github.io/glm/first_level_model.html">tutoriel nilearn</a> (cliquer sur + pour voir le code). Cette figure est distribuée sous licence <a class="reference external" href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>.</span><a class="headerlink" href="#design-matrix-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>D’un point de vue mathématique, le modèle de régression multiple, parfois appelé modèle linéaire général, consiste simplement à incorporer plus de variables dans la “loi” qui tente de prédire la variable dépendante à partir des régresseurs:
+<code class="docutils literal notranslate"><span class="pre">densite_matiere_grise</span> <span class="pre">=</span> <span class="pre">b0</span> <span class="pre">+</span> <span class="pre">b1</span> <span class="pre">*</span> <span class="pre">age</span> <span class="pre">+</span> <span class="pre">b2</span> <span class="pre">*</span> <span class="pre">sexe</span> <span class="pre">+</span> <span class="pre">e</span></code></p>
+<p>Le seul nouveau coefficient est <code class="docutils literal notranslate"><span class="pre">b2</span></code>, qui dans ce cas mesure la différence entre la moyenne de matière grise entre les femelles (codées avec un 0 dans le modèle) et les mâles (codés avec un 1 dans le modèle), <strong>après un ajustement pour l’âge des sujets</strong>. Ce type de codage est utilisé avec les données catégorielles et est appelé “dummy variable” en anglais. Il permet d’intégrer des tests de différence de moyenne entre les groupes dans un modèle de régression.</p>
+<div class="tip admonition" id="stats-regression">
+<p class="admonition-title">Régression multiple et statistiques classiques</p>
+<p>Le modèle de régression multiple est très flexible. Il est possible de formuler la plupart des tests statistiques classiques tels que l’analyse de variance (ANOVA) ou bien le test d’égalité des moyennes de Student (t-test) à l’aide du modèle de régression linéaire. Voir ce <a class="reference external" href="https://lindeloev.github.io/tests-as-linear/">guide</a> pour plus de détails.</p>
+</div>
+</section>
+<section id="id2">
+<h3>Cartes statistiques<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<div class="cell tag_hide-input tag_remove-output docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">second_level_model</span> <span class="o">=</span> <span class="n">SecondLevelModel</span><span class="p">(</span><span class="n">smoothing_fwhm</span><span class="o">=</span><span class="mf">5.0</span><span class="p">)</span>
+<span class="n">second_level_model</span> <span class="o">=</span> <span class="n">second_level_model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">gray_matter_map_filenames</span><span class="p">,</span>
+                                            <span class="n">design_matrix</span><span class="o">=</span><span class="n">design_matrix</span><span class="p">)</span>
+<span class="n">beta0</span> <span class="o">=</span> <span class="n">second_level_model</span><span class="o">.</span><span class="n">compute_contrast</span><span class="p">(</span><span class="n">second_level_contrast</span><span class="o">=</span><span class="s2">&quot;intercept&quot;</span><span class="p">,</span> <span class="n">output_type</span><span class="o">=</span><span class="s2">&quot;effect_size&quot;</span><span class="p">)</span>
+<span class="n">beta1</span> <span class="o">=</span> <span class="n">second_level_model</span><span class="o">.</span><span class="n">compute_contrast</span><span class="p">(</span><span class="n">second_level_contrast</span><span class="o">=</span><span class="s2">&quot;age&quot;</span><span class="p">,</span> <span class="n">output_type</span><span class="o">=</span><span class="s2">&quot;effect_size&quot;</span><span class="p">)</span>
+<span class="n">beta2</span> <span class="o">=</span> <span class="n">second_level_model</span><span class="o">.</span><span class="n">compute_contrast</span><span class="p">(</span><span class="n">second_level_contrast</span><span class="o">=</span><span class="s2">&quot;sexe&quot;</span><span class="p">,</span> <span class="n">output_type</span><span class="o">=</span><span class="s2">&quot;effect_size&quot;</span><span class="p">)</span>
+
+<span class="c1"># On génère la Figure</span>
+<span class="kn">from</span> <span class="nn">nilearn</span> <span class="kn">import</span> <span class="n">plotting</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">24</span><span class="p">,</span> <span class="mi">14</span><span class="p">))</span>
+
+<span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot2grid</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">colspan</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">roi_img</span> <span class="o">=</span> <span class="n">plotting</span><span class="o">.</span><span class="n">plot_stat_map</span><span class="p">(</span>
+    <span class="n">beta0</span><span class="p">,</span> <span class="n">bg_img</span><span class="o">=</span><span class="n">gray_matter_map_filenames</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">cut_coords</span><span class="o">=</span><span class="n">coords</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">figure</span><span class="o">=</span><span class="n">fig</span><span class="p">,</span>
+    <span class="n">axes</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">display_mode</span><span class="o">=</span><span class="s1">&#39;ortho&#39;</span><span class="p">,</span> <span class="n">colorbar</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;intercept (b0)&#39;</span><span class="p">)</span>
+<span class="n">roi_img</span><span class="o">.</span><span class="n">add_markers</span><span class="p">([</span><span class="n">coords</span><span class="p">[</span><span class="mi">1</span><span class="p">]],</span> <span class="n">colors</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mi">100</span><span class="p">)</span>
+
+<span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot2grid</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="n">colspan</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">roi_img</span> <span class="o">=</span> <span class="n">plotting</span><span class="o">.</span><span class="n">plot_stat_map</span><span class="p">(</span>
+    <span class="n">beta1</span><span class="p">,</span> <span class="n">bg_img</span><span class="o">=</span><span class="n">gray_matter_map_filenames</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">cut_coords</span><span class="o">=</span><span class="n">coords</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">figure</span><span class="o">=</span><span class="n">fig</span><span class="p">,</span>
+    <span class="n">axes</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">display_mode</span><span class="o">=</span><span class="s1">&#39;ortho&#39;</span><span class="p">,</span> <span class="n">colorbar</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;effet de l</span><span class="se">\&#39;</span><span class="s1">age (b1)&#39;</span><span class="p">)</span>
+<span class="n">roi_img</span><span class="o">.</span><span class="n">add_markers</span><span class="p">([</span><span class="n">coords</span><span class="p">[</span><span class="mi">1</span><span class="p">]],</span> <span class="n">colors</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mi">100</span><span class="p">)</span>
+
+<span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot2grid</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">colspan</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">roi_img</span> <span class="o">=</span> <span class="n">plotting</span><span class="o">.</span><span class="n">plot_stat_map</span><span class="p">(</span>
+    <span class="n">beta2</span><span class="p">,</span> <span class="n">bg_img</span><span class="o">=</span><span class="n">gray_matter_map_filenames</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">cut_coords</span><span class="o">=</span><span class="n">coords</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">figure</span><span class="o">=</span><span class="n">fig</span><span class="p">,</span>
+    <span class="n">axes</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">display_mode</span><span class="o">=</span><span class="s1">&#39;ortho&#39;</span><span class="p">,</span> <span class="n">colorbar</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;effet du sexe (b2)&#39;</span><span class="p">)</span>
+<span class="n">roi_img</span><span class="o">.</span><span class="n">add_markers</span><span class="p">([</span><span class="n">coords</span><span class="p">[</span><span class="mi">1</span><span class="p">]],</span> <span class="n">colors</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mi">100</span><span class="p">)</span>
+
+<span class="c1"># On colle la figure dans le jupyter book</span>
+<span class="kn">from</span> <span class="nn">myst_nb</span> <span class="kn">import</span> <span class="n">glue</span>
+<span class="n">glue</span><span class="p">(</span><span class="s2">&quot;multi-regression-fig&quot;</span><span class="p">,</span> <span class="n">fig</span><span class="p">,</span> <span class="n">display</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>           
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<figure class="align-default" id="multi-regression-fig" style="width: 800px">
+<img alt="_images/88c3dace5c2436a5109dce96f5306538d934996f69d7715825b8802c72f7a763.png" src="_images/88c3dace5c2436a5109dce96f5306538d934996f69d7715825b8802c72f7a763.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 104 </span><span class="caption-text">Cartes de paramètres statistiques dans une régression linéaire multiple massivement univariée. Haut gauche: intercept <code class="docutils literal notranslate"><span class="pre">b0</span></code>, haut droite: effet linéaire de l’âge <code class="docutils literal notranslate"><span class="pre">b1</span></code>, bas gauche: effet linéaire du sexe <code class="docutils literal notranslate"><span class="pre">b2</span></code>. Cette figure est adaptée d’un tutoriel de la librairie <a class="reference external" href="https://nilearn.github.io/auto_examples/05_glm_second_level/plot_oasis.html#sphx-glr-auto-examples-05-glm-second-level-plot-oasis-py">nilearn</a> (cliquer sur + pour voir le code). Cette figure est distribuée sous licence <a class="reference external" href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>.</span><a class="headerlink" href="#multi-regression-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Une caractéristique qui peut être légèrement contre-intuitive avec la régression multiple est que la carte présentant l’effet de l’âge ici est différente de celle présentée dans la section portant sur la régression simple. En effet, l’effet de l’âge est maintenant évalué <em>après avoir pris en compte des différences de sexe</em>. Malgré cela, le résultat de la régression n’a pas changé de manière frappante: le cortex s’atrophie avec l’âge (en bleu), alors que le liquide céphalo-rachidien s’étend (en rouge). Ce qui apparaît comme une expansion de la matière grise reflète probablement des effets de volume partiel et des tissus classifiés incorrectement comme de la matière grise. L’analyse sur la variable <code class="docutils literal notranslate"><span class="pre">sexe</span></code> montre que la densité de matière grise est plus élevée (en moyenne) dans le cortex chez les hommes, alors que la tendance est inversée au niveau du cervelet.</p>
+</section>
+</section>
+<section id="tests-statistiques">
+<h2>Tests statistiques<a class="headerlink" href="#tests-statistiques" title="Link to this heading">#</a></h2>
+<section id="tests-t-et-valeur-p">
+<h3>Tests t et valeur p<a class="headerlink" href="#tests-t-et-valeur-p" title="Link to this heading">#</a></h3>
+<div class="cell tag_hide-input tag_remove-output docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">nilearn.image</span> <span class="kn">import</span> <span class="n">math_img</span>
+<span class="n">z_score</span> <span class="o">=</span> <span class="n">second_level_model</span><span class="o">.</span><span class="n">compute_contrast</span><span class="p">(</span><span class="n">second_level_contrast</span><span class="o">=</span><span class="s2">&quot;age&quot;</span><span class="p">,</span> <span class="n">output_type</span><span class="o">=</span><span class="s2">&quot;z_score&quot;</span><span class="p">)</span>
+<span class="n">p_value</span> <span class="o">=</span> <span class="n">second_level_model</span><span class="o">.</span><span class="n">compute_contrast</span><span class="p">(</span><span class="n">second_level_contrast</span><span class="o">=</span><span class="s2">&quot;age&quot;</span><span class="p">,</span> <span class="n">output_type</span><span class="o">=</span><span class="s2">&quot;p_value&quot;</span><span class="p">)</span>
+<span class="n">neg_log_pval</span> <span class="o">=</span> <span class="n">math_img</span><span class="p">(</span><span class="s2">&quot;-np.log10(np.minimum(1, img))&quot;</span><span class="p">,</span> <span class="n">img</span><span class="o">=</span><span class="n">p_value</span><span class="p">)</span>
+
+<span class="c1"># On génère la Figure</span>
+<span class="kn">from</span> <span class="nn">nilearn</span> <span class="kn">import</span> <span class="n">plotting</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">24</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+
+<span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot2grid</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">colspan</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">roi_img</span> <span class="o">=</span> <span class="n">plotting</span><span class="o">.</span><span class="n">plot_stat_map</span><span class="p">(</span>
+    <span class="n">z_score</span><span class="p">,</span> <span class="n">bg_img</span><span class="o">=</span><span class="n">gray_matter_map_filenames</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">cut_coords</span><span class="o">=</span><span class="n">coords</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">figure</span><span class="o">=</span><span class="n">fig</span><span class="p">,</span>
+    <span class="n">axes</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">display_mode</span><span class="o">=</span><span class="s1">&#39;ortho&#39;</span><span class="p">,</span> <span class="n">colorbar</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;t-test (âge)&#39;</span><span class="p">)</span>
+<span class="n">roi_img</span><span class="o">.</span><span class="n">add_markers</span><span class="p">([</span><span class="n">coords</span><span class="p">[</span><span class="mi">1</span><span class="p">]],</span> <span class="n">colors</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mi">100</span><span class="p">)</span>
+
+<span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot2grid</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="n">colspan</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">roi_img</span> <span class="o">=</span> <span class="n">plotting</span><span class="o">.</span><span class="n">plot_stat_map</span><span class="p">(</span>
+    <span class="n">neg_log_pval</span><span class="p">,</span> <span class="n">bg_img</span><span class="o">=</span><span class="n">gray_matter_map_filenames</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">cut_coords</span><span class="o">=</span><span class="n">coords</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">figure</span><span class="o">=</span><span class="n">fig</span><span class="p">,</span>
+    <span class="n">axes</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">display_mode</span><span class="o">=</span><span class="s1">&#39;ortho&#39;</span><span class="p">,</span> <span class="n">colorbar</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;significativité (-log10(p))&#39;</span><span class="p">)</span>
+<span class="n">roi_img</span><span class="o">.</span><span class="n">add_markers</span><span class="p">([</span><span class="n">coords</span><span class="p">[</span><span class="mi">1</span><span class="p">]],</span> <span class="n">colors</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mi">100</span><span class="p">)</span>
+
+<span class="c1"># On colle la figure dans le jupyter book</span>
+<span class="kn">from</span> <span class="nn">myst_nb</span> <span class="kn">import</span> <span class="n">glue</span>
+<span class="n">glue</span><span class="p">(</span><span class="s2">&quot;tmap-pval-fig&quot;</span><span class="p">,</span> <span class="n">fig</span><span class="p">,</span> <span class="n">display</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>           
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<figure class="align-default" id="tmap-pval-fig" style="width: 800px">
+<img alt="_images/8ebc4302f4849a5a7433ddad66f800774f7119d9775283f6f2348f89fc53f296.png" src="_images/8ebc4302f4849a5a7433ddad66f800774f7119d9775283f6f2348f89fc53f296.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 105 </span><span class="caption-text">Tests statistiques sur la significativité de l’association entre densité de matière grise et âge. Test t de Student (haut) et log10(p) (bas). Cette figure est adaptée d’un tutoriel de la librairie <a class="reference external" href="https://nilearn.github.io/auto_examples/05_glm_second_level/plot_second_level_one_sample_test.html#sphx-glr-auto-examples-05-glm-second-level-plot-second-level-one-sample-test-py">nilearn</a> (cliquer sur + pour voir le code). Cette figure est distribuée sous licence <a class="reference external" href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>.</span><a class="headerlink" href="#tmap-pval-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Une fois que l’on a estimé l’effet de certaines variables explicatives (par exemple, l’âge) sur notre variable dépendante (par exemple, la densité de matière grise), il est nécessaire de tester la <strong>significativité</strong> de cet effet. À cette fin, on utilise l’amplitude des résidus pour estimer la taille d’effet que l’on pourrait observer par chance, si uniquement ces résidus étaient présents. On en déduit un test <code class="docutils literal notranslate"><span class="pre">t</span></code> de Student, qui se comporte comme une <a class="reference external" href="https://fr.wikipedia.org/wiki/Loi_normale">loi normale</a> quand le nombre de sujets est grand. Pour chaque voxel, on a donc une statistique <code class="docutils literal notranslate"><span class="pre">t</span></code> différente, et on peut calculer la probabilité <code class="docutils literal notranslate"><span class="pre">p</span></code> d’observer cette statistique sous l’<strong>hypothèse nulle</strong>, où l’effet de la variable explicative est exactement zéro.</p>
+</section>
+<section id="hypothese-nulle">
+<h3>Hypothèse nulle<a class="headerlink" href="#hypothese-nulle" title="Link to this heading">#</a></h3>
+<div class="cell tag_hide-input tag_remove-output docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">numpy.random</span> <span class="kn">import</span> <span class="n">seed</span>
+<span class="kn">from</span> <span class="nn">numpy.random</span> <span class="kn">import</span> <span class="n">shuffle</span>
+<span class="c1"># seed random number generator</span>
+<span class="n">seed</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">design_rand_df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s2">&quot;subject_label&quot;</span><span class="p">,</span> <span class="s2">&quot;age&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">replace</span><span class="p">([</span><span class="s1">&#39;femelle&#39;</span><span class="p">,</span> <span class="s1">&#39;male&#39;</span><span class="p">],</span> <span class="n">value</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+<span class="n">design_rand_matrix</span> <span class="o">=</span> <span class="n">make_second_level_design_matrix</span><span class="p">(</span>
+    <span class="n">subject_label</span><span class="p">,</span>
+    <span class="n">design_df</span>
+    <span class="p">)</span>
+<span class="n">shuffle</span><span class="p">(</span><span class="n">design_rand_matrix</span><span class="p">[</span><span class="s2">&quot;age&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">to_numpy</span><span class="p">())</span>
+
+<span class="n">second_level_model_rand</span> <span class="o">=</span> <span class="n">SecondLevelModel</span><span class="p">(</span><span class="n">smoothing_fwhm</span><span class="o">=</span><span class="mf">5.0</span><span class="p">)</span>
+<span class="n">second_level_model_rand</span> <span class="o">=</span> <span class="n">second_level_model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">gray_matter_map_filenames</span><span class="p">,</span>
+                                            <span class="n">design_matrix</span><span class="o">=</span><span class="n">design_rand_matrix</span><span class="p">)</span>
+
+<span class="n">z_score_rand</span> <span class="o">=</span> <span class="n">second_level_model_rand</span><span class="o">.</span><span class="n">compute_contrast</span><span class="p">(</span><span class="n">second_level_contrast</span><span class="o">=</span><span class="s2">&quot;age&quot;</span><span class="p">,</span> <span class="n">output_type</span><span class="o">=</span><span class="s2">&quot;z_score&quot;</span><span class="p">)</span>
+<span class="n">p_value_rand</span> <span class="o">=</span> <span class="n">second_level_model_rand</span><span class="o">.</span><span class="n">compute_contrast</span><span class="p">(</span><span class="n">second_level_contrast</span><span class="o">=</span><span class="s2">&quot;age&quot;</span><span class="p">,</span> <span class="n">output_type</span><span class="o">=</span><span class="s2">&quot;p_value&quot;</span><span class="p">)</span>
+<span class="n">neg_log_pval_rand</span> <span class="o">=</span> <span class="n">math_img</span><span class="p">(</span><span class="s2">&quot;-np.log10(np.minimum(1, img))&quot;</span><span class="p">,</span> <span class="n">img</span><span class="o">=</span><span class="n">p_value_rand</span><span class="p">)</span>
+
+<span class="c1"># On génère la Figure</span>
+<span class="kn">from</span> <span class="nn">nilearn</span> <span class="kn">import</span> <span class="n">plotting</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">24</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+
+<span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot2grid</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">colspan</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">roi_img</span> <span class="o">=</span> <span class="n">plotting</span><span class="o">.</span><span class="n">plot_stat_map</span><span class="p">(</span>
+    <span class="n">z_score_rand</span><span class="p">,</span> <span class="n">bg_img</span><span class="o">=</span><span class="n">gray_matter_map_filenames</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">cut_coords</span><span class="o">=</span><span class="n">coords</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">figure</span><span class="o">=</span><span class="n">fig</span><span class="p">,</span>
+    <span class="n">axes</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">display_mode</span><span class="o">=</span><span class="s1">&#39;ortho&#39;</span><span class="p">,</span> <span class="n">colorbar</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;t-test (H0)&#39;</span><span class="p">)</span>
+<span class="n">roi_img</span><span class="o">.</span><span class="n">add_markers</span><span class="p">([</span><span class="n">coords</span><span class="p">[</span><span class="mi">1</span><span class="p">]],</span> <span class="n">colors</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mi">100</span><span class="p">)</span>
+
+<span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot2grid</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="n">colspan</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">roi_img</span> <span class="o">=</span> <span class="n">plotting</span><span class="o">.</span><span class="n">plot_stat_map</span><span class="p">(</span>
+    <span class="n">neg_log_pval_rand</span><span class="p">,</span> <span class="n">bg_img</span><span class="o">=</span><span class="n">gray_matter_map_filenames</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">cut_coords</span><span class="o">=</span><span class="n">coords</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">figure</span><span class="o">=</span><span class="n">fig</span><span class="p">,</span>
+    <span class="n">axes</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">display_mode</span><span class="o">=</span><span class="s1">&#39;ortho&#39;</span><span class="p">,</span> <span class="n">colorbar</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;significativité H0 (-log10(p))&#39;</span><span class="p">)</span>
+<span class="n">roi_img</span><span class="o">.</span><span class="n">add_markers</span><span class="p">([</span><span class="n">coords</span><span class="p">[</span><span class="mi">1</span><span class="p">]],</span> <span class="n">colors</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mi">100</span><span class="p">)</span>
+
+<span class="c1"># On colle la figure dans le jupyter book</span>
+<span class="kn">from</span> <span class="nn">myst_nb</span> <span class="kn">import</span> <span class="n">glue</span>
+<span class="n">glue</span><span class="p">(</span><span class="s2">&quot;null-fig&quot;</span><span class="p">,</span> <span class="n">fig</span><span class="p">,</span> <span class="n">display</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>           
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<figure class="align-default" id="null-fig" style="width: 800px">
+<img alt="_images/a1fde922a9a52aee0762df5799b241bab850ec978fc19e957442bcd6210d9fe5.png" src="_images/a1fde922a9a52aee0762df5799b241bab850ec978fc19e957442bcd6210d9fe5.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 106 </span><span class="caption-text">Tests statistiques sur la significativité de l’association entre densité de matière grise et âge, sous l’hypothèse nulle où il n’existe aucune association. Les données d’âge ont été permutées aléatoirement entre les sujets. Test t de Student (haut) et log10(p) (bas). Cette figure est adaptée d’un tutoriel de la librairie <a class="reference external" href="https://nilearn.github.io/auto_examples/05_glm_second_level/plot_second_level_one_sample_test.html#sphx-glr-auto-examples-05-glm-second-level-plot-second-level-one-sample-test-py">nilearn</a> (cliquer sur + pour voir le code). Cette figure est distribuée sous licence <a class="reference external" href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>.</span><a class="headerlink" href="#null-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Au coeur de l’interprétation de la valeur <code class="docutils literal notranslate"><span class="pre">p</span></code>, il y a ce qu’on appelle l’<strong>hypothèse nulle</strong>. Pour essayer de comprendre ce que cela veut dire, faisons une expérience. Nous allons recommencer toute la procédure d’estimation de l’effet de l’âge sur la densité de matière grise. Mais cette fois ci, au lieu d’utiliser l’âge réel des sujets, nous allons mélanger ces valeurs aléatoirement (on parle de <a class="reference external" href="https://fr.wikipedia.org/wiki/Permutation">permutations</a>). La distribution des tests <code class="docutils literal notranslate"><span class="pre">t</span></code> et des valeurs <code class="docutils literal notranslate"><span class="pre">p</span></code> est présentée dans la <a class="reference internal" href="#null-fig"><span class="std std-numref">Fig. 106</span></a>. De manière frappante, les valeurs <code class="docutils literal notranslate"><span class="pre">t</span></code> sont beaucoup plus petites avec les valeurs d’âge aléatoires que lorsqu’on a fait l’analyse avec les vraies valeurs, mais certaines valeurs restent élevées. On a réalisé une expérience sous l’hypothèse nulle, où il n’existe aucune association avec l’âge. La valeur <code class="docutils literal notranslate"><span class="pre">p</span></code> nous indique la <strong>fréquence</strong> avec laquelle on trouvera des valeurs d’effet de l’âge plus élevées sous l’hypothèse nulle que dans l’échantillon original. Pour estimer cela directement, il faudrait recommencer l’expérience que l’on vient de faire avec des milliers de permutations! Mais il existe aussi des méthodes approximées plus rapides.</p>
+</section>
+<section id="comparaisons-multiples">
+<h3>Comparaisons multiples<a class="headerlink" href="#comparaisons-multiples" title="Link to this heading">#</a></h3>
+<div class="cell tag_hide-input tag_remove-output docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">nilearn.glm</span> <span class="kn">import</span> <span class="n">threshold_stats_img</span>
+<span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">norm</span>
+<span class="n">p_val</span> <span class="o">=</span> <span class="mf">0.001</span>
+<span class="n">p001_uncorrected</span> <span class="o">=</span> <span class="n">norm</span><span class="o">.</span><span class="n">isf</span><span class="p">(</span><span class="n">p_val</span><span class="p">)</span>
+<span class="n">p_val</span> <span class="o">=</span> <span class="mf">0.05</span>
+<span class="n">p05_uncorrected</span> <span class="o">=</span> <span class="n">norm</span><span class="o">.</span><span class="n">isf</span><span class="p">(</span><span class="n">p_val</span><span class="p">)</span>
+
+<span class="c1"># On génère la Figure</span>
+<span class="kn">from</span> <span class="nn">nilearn</span> <span class="kn">import</span> <span class="n">plotting</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">24</span><span class="p">,</span> <span class="mi">18</span><span class="p">))</span>
+
+<span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot2grid</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="n">colspan</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">roi_img</span> <span class="o">=</span> <span class="n">plotting</span><span class="o">.</span><span class="n">plot_stat_map</span><span class="p">(</span>
+    <span class="n">z_score</span><span class="p">,</span> <span class="n">threshold</span><span class="o">=</span><span class="n">p05_uncorrected</span><span class="p">,</span> <span class="n">bg_img</span><span class="o">=</span><span class="n">gray_matter_map_filenames</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">cut_coords</span><span class="o">=</span><span class="n">coords</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">figure</span><span class="o">=</span><span class="n">fig</span><span class="p">,</span>
+    <span class="n">axes</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">display_mode</span><span class="o">=</span><span class="s1">&#39;ortho&#39;</span><span class="p">,</span> <span class="n">colorbar</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;t-test, p&lt;0.05&#39;</span><span class="p">)</span>
+<span class="n">roi_img</span><span class="o">.</span><span class="n">add_markers</span><span class="p">([</span><span class="n">coords</span><span class="p">[</span><span class="mi">1</span><span class="p">]],</span> <span class="n">colors</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mi">100</span><span class="p">)</span>
+
+<span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot2grid</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="n">colspan</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">roi_img</span> <span class="o">=</span> <span class="n">plotting</span><span class="o">.</span><span class="n">plot_stat_map</span><span class="p">(</span>
+    <span class="n">z_score</span><span class="p">,</span> <span class="n">threshold</span><span class="o">=</span><span class="n">p001_uncorrected</span><span class="p">,</span> <span class="n">bg_img</span><span class="o">=</span><span class="n">gray_matter_map_filenames</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">cut_coords</span><span class="o">=</span><span class="n">coords</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">figure</span><span class="o">=</span><span class="n">fig</span><span class="p">,</span>
+    <span class="n">axes</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">display_mode</span><span class="o">=</span><span class="s1">&#39;ortho&#39;</span><span class="p">,</span> <span class="n">colorbar</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;t-test, p&lt;0.001&#39;</span><span class="p">)</span>
+<span class="n">roi_img</span><span class="o">.</span><span class="n">add_markers</span><span class="p">([</span><span class="n">coords</span><span class="p">[</span><span class="mi">1</span><span class="p">]],</span> <span class="n">colors</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mi">100</span><span class="p">)</span>
+
+<span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot2grid</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="n">colspan</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">thresholded_map</span><span class="p">,</span> <span class="n">threshold</span> <span class="o">=</span> <span class="n">threshold_stats_img</span><span class="p">(</span>
+    <span class="n">z_score</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">.05</span><span class="p">,</span> <span class="n">height_control</span><span class="o">=</span><span class="s1">&#39;bonferroni&#39;</span><span class="p">)</span>
+<span class="n">roi_img</span> <span class="o">=</span> <span class="n">plotting</span><span class="o">.</span><span class="n">plot_stat_map</span><span class="p">(</span>
+    <span class="n">z_score</span><span class="p">,</span> <span class="n">threshold</span><span class="o">=</span><span class="n">threshold</span><span class="p">,</span> <span class="n">bg_img</span><span class="o">=</span><span class="n">gray_matter_map_filenames</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">cut_coords</span><span class="o">=</span><span class="n">coords</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">figure</span><span class="o">=</span><span class="n">fig</span><span class="p">,</span>
+    <span class="n">axes</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">display_mode</span><span class="o">=</span><span class="s1">&#39;ortho&#39;</span><span class="p">,</span> <span class="n">colorbar</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;t-test, p&lt;0.05 corrigé&#39;</span><span class="p">)</span>
+<span class="n">roi_img</span><span class="o">.</span><span class="n">add_markers</span><span class="p">([</span><span class="n">coords</span><span class="p">[</span><span class="mi">1</span><span class="p">]],</span> <span class="n">colors</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mi">100</span><span class="p">)</span>
+
+<span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot2grid</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">colspan</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">roi_img</span> <span class="o">=</span> <span class="n">plotting</span><span class="o">.</span><span class="n">plot_stat_map</span><span class="p">(</span>
+    <span class="n">z_score_rand</span><span class="p">,</span> <span class="n">threshold</span><span class="o">=</span><span class="n">p05_uncorrected</span><span class="p">,</span> <span class="n">bg_img</span><span class="o">=</span><span class="n">gray_matter_map_filenames</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">cut_coords</span><span class="o">=</span><span class="n">coords</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">figure</span><span class="o">=</span><span class="n">fig</span><span class="p">,</span>
+    <span class="n">axes</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">display_mode</span><span class="o">=</span><span class="s1">&#39;ortho&#39;</span><span class="p">,</span> <span class="n">colorbar</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;t-test (H0), p&lt;0.05&#39;</span><span class="p">)</span>
+<span class="n">roi_img</span><span class="o">.</span><span class="n">add_markers</span><span class="p">([</span><span class="n">coords</span><span class="p">[</span><span class="mi">1</span><span class="p">]],</span> <span class="n">colors</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mi">100</span><span class="p">)</span>
+
+<span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot2grid</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">colspan</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">roi_img</span> <span class="o">=</span> <span class="n">plotting</span><span class="o">.</span><span class="n">plot_stat_map</span><span class="p">(</span>
+    <span class="n">z_score_rand</span><span class="p">,</span> <span class="n">threshold</span><span class="o">=</span><span class="n">p001_uncorrected</span><span class="p">,</span> <span class="n">bg_img</span><span class="o">=</span><span class="n">gray_matter_map_filenames</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">cut_coords</span><span class="o">=</span><span class="n">coords</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">figure</span><span class="o">=</span><span class="n">fig</span><span class="p">,</span>
+    <span class="n">axes</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">display_mode</span><span class="o">=</span><span class="s1">&#39;ortho&#39;</span><span class="p">,</span> <span class="n">colorbar</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;t-test (H0), p&lt;0.001&#39;</span><span class="p">)</span>
+<span class="n">roi_img</span><span class="o">.</span><span class="n">add_markers</span><span class="p">([</span><span class="n">coords</span><span class="p">[</span><span class="mi">1</span><span class="p">]],</span> <span class="n">colors</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mi">100</span><span class="p">)</span>
+
+<span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot2grid</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">colspan</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">thresholded_map_rand</span><span class="p">,</span> <span class="n">threshold_rand</span> <span class="o">=</span> <span class="n">threshold_stats_img</span><span class="p">(</span>
+    <span class="n">z_score_rand</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">.05</span><span class="p">,</span> <span class="n">height_control</span><span class="o">=</span><span class="s1">&#39;bonferroni&#39;</span><span class="p">)</span>
+<span class="n">roi_img</span> <span class="o">=</span> <span class="n">plotting</span><span class="o">.</span><span class="n">plot_stat_map</span><span class="p">(</span>
+    <span class="n">z_score_rand</span><span class="p">,</span> <span class="n">threshold</span><span class="o">=</span><span class="n">threshold_rand</span><span class="p">,</span> <span class="n">bg_img</span><span class="o">=</span><span class="n">gray_matter_map_filenames</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">cut_coords</span><span class="o">=</span><span class="n">coords</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">figure</span><span class="o">=</span><span class="n">fig</span><span class="p">,</span>
+    <span class="n">axes</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">display_mode</span><span class="o">=</span><span class="s1">&#39;ortho&#39;</span><span class="p">,</span> <span class="n">colorbar</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;t-test (H0), p&lt;0.05 corrigé&#39;</span><span class="p">)</span>
+<span class="n">roi_img</span><span class="o">.</span><span class="n">add_markers</span><span class="p">([</span><span class="n">coords</span><span class="p">[</span><span class="mi">1</span><span class="p">]],</span> <span class="n">colors</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mi">100</span><span class="p">)</span>
+
+<span class="c1"># On colle la figure dans le jupyter book</span>
+<span class="kn">from</span> <span class="nn">myst_nb</span> <span class="kn">import</span> <span class="n">glue</span>
+<span class="n">glue</span><span class="p">(</span><span class="s2">&quot;threshold-fig&quot;</span><span class="p">,</span> <span class="n">fig</span><span class="p">,</span> <span class="n">display</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>           
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<figure class="align-default" id="threshold-fig" style="width: 800px">
+<img alt="_images/95c4ab9fa4057cad14ef6c81f60786d449d4d2f45deb269cf22cfbf9d638a31f.png" src="_images/95c4ab9fa4057cad14ef6c81f60786d449d4d2f45deb269cf22cfbf9d638a31f.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 107 </span><span class="caption-text">Effet de différentes stratégies de seuillage sur l’association entre l’âge et la densité de matière grise. À gauche: données sous l’hypothèse nulle (valeurs d’âge permutées au travers des sujets). À droite: données originales. Ligne 1: seuil <code class="docutils literal notranslate"><span class="pre">p&lt;0.05</span></code> non corrigé pour les comparaisons multiples; ligne 2: seuil <code class="docutils literal notranslate"><span class="pre">p&lt;0.001</span></code> non corrigé pour les comparaisons multiples; seuil <code class="docutils literal notranslate"><span class="pre">p&lt;0.05</span></code> corrigé pour les comparaisons multiples par l’approche de Bonferroni. Cette figure est adaptée d’un tutoriel de la librairie <a class="reference external" href="https://nilearn.github.io/auto_examples/05_glm_second_level/plot_thresholding.html#sphx-glr-auto-examples-05-glm-second-level-plot-thresholding-py">nilearn</a> (cliquer sur + pour voir le code). Cette figure est distribuée sous licence <a class="reference external" href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>.</span><a class="headerlink" href="#threshold-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Maintenant que l’on a discuté de l’interprétation de la valeur <code class="docutils literal notranslate"><span class="pre">p</span></code>, on doit maintenant décider d’un seuil à appliquer sur les valeurs <code class="docutils literal notranslate"><span class="pre">p</span></code>. Si l’on utilise le seuil habituel <code class="docutils literal notranslate"><span class="pre">p&lt;0.05</span></code>, cela signifie que pour 20 permutations, on détectera une association 1 fois (en moyenne) pour un voxel donné. Mais comme on a des milliers de voxels dans le cerveau, cela veut dire que l’on va détecter 5% du cerveau (en moyenne) pour chaque permutation! C’est ce que l’on observe (et même plus) dans la figure en haut à gauche <a class="reference internal" href="#threshold-fig"><span class="std std-numref">Fig. 107</span></a>. Il s’agit du <strong>problème de comparaisons multiples</strong>, et plus on fait de tests, plus ce problème est important.</p>
+<p>Si l’on abaisse le seuil à <code class="docutils literal notranslate"><span class="pre">p&lt;0.001</span></code>, on ne détecte plus que 0.1% du cerveau (en moyenne) sous l’hypothèse nulle, et on observe en effet une réduction du nombre de voxels dans la figure de gauche, 2ième ligne <a class="reference internal" href="#threshold-fig"><span class="std std-numref">Fig. 107</span></a>.</p>
+<p>La méthode la plus simple pour corriger du problème de comparaisons multiples est d’utiliser un seuil corrigé <code class="docutils literal notranslate"><span class="pre">p&lt;0.05/N</span></code>, où N est le nombre de comparaisons (c’est-à-dire de tests). Dans notre cas, on a approximativement 100,000 voxels, donc on va utiliser <code class="docutils literal notranslate"><span class="pre">p&lt;0.0000001</span></code>! Avec cette stratégie, aucun voxel ne passe le seuil dans notre expérience sous l’hypothèse nulle, voir figure en bas à gauche <a class="reference internal" href="#threshold-fig"><span class="std std-numref">Fig. 107</span></a>. En général, c’est ce qui se passe (en moyenne) pour 19/20 permutations.</p>
+<p>Si l’on observe maintenant l’effet de ces différentes stratégies sur les données originales, on observe que plus le seuil <code class="docutils literal notranslate"><span class="pre">p</span></code> est petit, moins on détecte d’effets significatifs. Malgré tout, même avec <code class="docutils literal notranslate"><span class="pre">p&lt;0.05</span></code> corrigé par l’approche de Bonferroni, on détecte toujours les effets principaux de l’âge.</p>
+<div class="tip admonition" id="resolution-power">
+<p class="admonition-title">Compromis résolution / puissance</p>
+<p>En règle générale, on doit faire un compromis entre la résolution (notre capacité à détecter des effets dans de petites régions du cerveau) et la puissance statistique (notre capacité à détecter des effets de petite taille). Si l’on veut une excellente résolution, on fait des tests à tous les voxels, mais on doit corriger pour un très grand nombre de comparaisons multiples. En revanche, si l’on ne teste qu’une valeur moyenne sur une région, on n’a qu’un seul test et aucune correction à appliquer, mais on ne sait pas ce qui se passe dans le reste du cerveau, ou à l’intérieur de cette région.</p>
+</div>
+</section>
+</section>
+<section id="conclusion">
+<h2>Conclusion<a class="headerlink" href="#conclusion" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Le modèle de régression simple permet de prédire les observations d’une variable dépendante à partir d’une variable explicative.</p></li>
+<li><p>Ce modèle est appliqué indépendamment à chaque voxel (approche massivement multivariée).</p></li>
+<li><p>Il est possible d’utiliser le modèle linéaire général pour tester simultanément l’effet de plusieurs variables explicatives sur la variable dépendante.</p></li>
+<li><p>Quand on effectue un grand nombre de tests statistiques à chaque voxel, il faut modifier le seuil de significativité du test (problème de comparaisons multiples).</p></li>
+</ul>
+</section>
+<section id="exercices">
+<h2>Exercices<a class="headerlink" href="#exercices" title="Link to this heading">#</a></h2>
+<div class="note admonition">
+<p class="admonition-title">Exercice 1</p>
+<p>Vrai/faux. Le modèle de régression général peut être utilisé pour effectuer des statistiques de groupe pour les types de mesures suivantes…</p>
+<ol class="arabic simple">
+<li><p>IRMf</p></li>
+<li><p>IRM T1 (VBM)</p></li>
+<li><p>IRM T1 (volumétrie)</p></li>
+<li><p>IRM T1 (épaisseur corticale)</p></li>
+<li><p>Tomographie par émission de positrons</p></li>
+<li><p>Imagerie optique</p></li>
+<li><p>Imagerie de diffusion</p></li>
+</ol>
+</div>
+<div class="note admonition">
+<p class="admonition-title">Exercice 2</p>
+<p>Vrai/faux. La situation suivante inclut un problème de comparaisons multiples en statistique:</p>
+<ol class="arabic simple">
+<li><p>On effectue de manière répétée des mesures du volume cérébral chez N=100 sujets jeunes et N=100 sujets âgés, puis on compare statistiquement la moyenne des deux groupes.</p></li>
+<li><p>On répète un test statistique à chaque voxel dans une image du cerveau, par exemple.</p></li>
+<li><p>On acquiert 300 volumes cérébraux chez un individu en IRMf.</p></li>
+<li><p>On a quatre sous-groupes, et on compare statistiquement chacune des trois paires possibles de sous-groupes, par exemple.</p></li>
+</ol>
+</div>
+<div class="note admonition">
+<p class="admonition-title">Exercice 3</p>
+<p>Choisissez la bonne réponse. On observe une différence de moyenne entre deux groupes, et l’on effectue un test statistique qui nous donne une valeur p.</p>
+<ol class="arabic simple">
+<li><p>La valeur p est la probabilité de l’hypothèse nulle où il n’existe pas de vraie différence.</p></li>
+<li><p>Une faible valeur p indique une forte probabilité qu’il y ait une vraie différence.</p></li>
+<li><p>La valeur p indique la probabilité d’observer cette différence, au moins, s’il n’existait vraiment aucune différence entre les deux groupes.</p></li>
+</ol>
+</div>
+<div class="note admonition">
+<p class="admonition-title">Exercice 4</p>
+<p>On considère les analyses suivantes:
+(hippocampe) On compare le volume de l’hippocampe entre deux groupes de sujets.</p>
+<ul class="simple">
+<li><p>(VBM) On compare la densité de matière grise entre deux groupes de sujets à chaque voxel du cerveau.</p></li>
+<li><p>(atlas) On compare le volume de régions cérébrales entre deux groupes de sujets, à partir d’un atlas qui comprend 90 régions.</p></li>
+<li><p>(FDG) On compare le métabolisme du glucose entre deux groupes de sujets à chaque voxel du cerveau, à l’aide du FDG-TEP.</p></li>
+</ul>
+<p>On classe les analyses en fonction du nombre de comparaisons multiples impliquées. Choisissez la bonne réponse:</p>
+<ol class="arabic simple">
+<li><p>VBM &gt; atlas</p></li>
+<li><p>atlas &gt; hippocampe</p></li>
+<li><p>atlas &gt; FDG</p></li>
+<li><p>Réponses 1 et 2.</p></li>
+<li><p>Réponses 1, 2 et 3.</p></li>
+</ol>
+</div>
+<div class="note admonition">
+<p class="admonition-title">Exercice 5</p>
+<p>On souhaite comparer la connectivité au repos en IRMf à partir d’une région cible dans le cortex cingulaire postérieur entre deux groupes de sujets, jeunes vs âgés. On applique un modèle linéaire général à chaque voxel.</p>
+<ul class="simple">
+<li><p>Décrivez les variables prédictives indispensables à inclure dans ce modèle.</p></li>
+<li><p>Quelles autres variables vous semblent-elles importantes à inclure dans le modèle?</p></li>
+<li><p>Est-ce que ces variables peuvent modifier la différence observée entre personnes jeunes et âgées?</p></li>
+</ul>
+</div>
+<div class="note admonition">
+<p class="admonition-title">Exercice 6</p>
+<p>Pour répondre aux questions de cet exercice, lisez d’abord l’article <em>Tau pathology in cognitively normal older adults</em> de Ziontz et collaborateurs (disponible comme <a class="reference external" href="https://doi.org/10.1101/611186">preprint</a> sur Biorxiv sous licence CC0). Les questions suivantes requièrent des réponses à développement court.</p>
+<ul class="simple">
+<li><p>Quelle est la variable dépendante du modèle linéaire?</p></li>
+<li><p>Quelles variables explicatives sont incluses dans le modèle linéaire?</p></li>
+<li><p>Sait on combien de comparaisons multiples sont faites?</p></li>
+<li><p>Comment est-ce que les comparaisons multiples sont corrigées?</p></li>
+</ul>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="tep.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Tomographie par émission de positrons</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="reproductibilite.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Reproductibilité et controverses</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objectifs-du-cours">Objectifs du cours</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#regression-lineaire">Régression linéaire</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variables">Variables</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modele-lineaire">Modèle linéaire</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analyse-massivement-univariee">Analyse massivement univariée</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modele-lineaire-general">Modèle linéaire général</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Variables</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#regression-multiple">Régression multiple</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Cartes statistiques</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tests-statistiques">Tests statistiques</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tests-t-et-valeur-p">Tests t et valeur p</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hypothese-nulle">Hypothèse nulle</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comparaisons-multiples">Comparaisons multiples</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercices">Exercices</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Pierre Bellec et l'équipe PSY3018
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
