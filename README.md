@@ -1,6 +1,5 @@
-# A primer book on neuroimaging methods for cognitive neuroscience
-[![CC BY 4.0][cc-by-shield]][cc-by]. This work is licensed under a
-[Creative Commons Attribution 4.0 International License][cc-by]. See the content of the book for a detailed list of contributions for each chapter.
+# A primer book on neuroimaging methods for cognitive neuroscience. This work is licensed under a
+Creative Commons Attribution 4.0 International License, except for specific images (license for each image is detailed in the corresponding image caption). See the content of the book for a detailed list of contributions for each chapter.
 
 ## Usage
 
