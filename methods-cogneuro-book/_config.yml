@@ -1,9 +1,9 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: Méthodes en neurosciences cognitives
-author: Pierre Bellec et l'équipe PSY3018
-copyright: "2023"  # Copyright year to be placed in the footer
+title: A primer on neuroimaging methods for cognitive neuroscience
+author: The methods-cogneuro-book team
+copyright: "2024"  # Copyright year to be placed in the footer
 logo: logo.png
 
 # Force re-execution of notebooks on each build.
@@ -23,8 +23,8 @@ bibtex_bibfiles:
 
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/psy3018/notes_cours_psy3018  # Online location of your book
-  path_to_book: methodes_neurocog  # Optional path to your book, relative to the repository root
+  url: https://github.com/methods-cogneuro-book  # Online location of your book
+  path_to_book: methods-cogneuro-book # Optional path to your book, relative to the repository root
   branch: main  # Which branch of the repository should be used when creating links (optional)
 
 # Add GitHub buttons to your book
