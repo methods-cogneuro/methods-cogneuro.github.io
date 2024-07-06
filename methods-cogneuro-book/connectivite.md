@@ -23,8 +23,8 @@ kernelspec:
         <br /><sub><b>François Lespinasse</b></sub>
       </a>
       <br />
-        <a title="Contenu">🤔</a>
-        <a title="Révision du texte">👀</a>
+        <a title="Content">🤔</a>
+        <a title="Text revision">👀</a>
     </td>
     <td align="center">
       <a href="https://github.com/pbellec">
@@ -32,10 +32,10 @@ kernelspec:
         <br /><sub><b>Pierre bellec</b></sub>
       </a>
       <br />
-        <a title="Contenu">🤔</a>
+        <a title="Content">🤔</a>
         <a title="Code">💻</a>
-        <a title="Exercices">⚠️</a>
-        <a title="Révision du texte">👀</a>
+        <a title="Exercises">⚠️</a>
+        <a title="Text revision">👀</a>
     </td>
   </tr>
 </table>
@@ -60,7 +60,7 @@ The specific objectives of this chapter are:
 ## Functional connectivity
 ```{code-cell} ipython 3
 :tags: ["hide-input", "remove-output"]
-# Importer les librairies
+# Import the libraries
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -73,21 +73,21 @@ from nilearn.input_data import NiftiMasker
 import warnings
 warnings.filterwarnings("ignore")
 
-# Initialise la figure
+# Initialize the figure
 fig = plt.figure(figsize=(10, 9), dpi=300)
 
-# Importe les données
+# Import data
 basc = datasets.fetch_atlas_basc_multiscale_2015() # the BASC multiscale atlas
 adhd = datasets.fetch_adhd(n_subjects=10)          # ADHD200 preprocessed data (Athena pipeline)\
 
-# Paramètres du pré-traitement
+# Preprocessing parameters
 num_data = 6
 fwhm = 8
 high_pass = 0.01
 high_variance_confounds = False
 time_samp = range(0, 100)
 
-# Extrait le signal par parcelle pour un atlas fonctionnel (BASC)
+# Extract signal by parcel for a functional atlas (BASC)
 masker = input_data.NiftiLabelsMasker(
                                       basc['scale122'],
                                       resampling_target="data",
@@ -101,7 +101,7 @@ masker = input_data.NiftiLabelsMasker(
 tseries = masker.transform(adhd.func[num_data])
 print(f"Time series with shape {tseries.shape} (# time points, # parcels))")
 
-# Fonction pour montrer une parcelle
+# Function to show the parcels
 def _montre_roi(num_parcel, title, ax_plot, cmap):
     plotting.plot_roi(math_img(f'img == {num_parcel}', img=basc['scale122']),
               threshold=0.5,
@@ -110,41 +110,41 @@ def _montre_roi(num_parcel, title, ax_plot, cmap):
               cmap=cmap,
               title=title)
 
-# Montre les parcelles
+# Showing the parcels
 ax_plot = plt.subplot2grid((3, 3), (0, 0), colspan=2)
 num_parcel1 = 73
-_montre_roi(num_parcel1, "M1 droit", ax_plot, cmap='winter')
+_montre_roi(num_parcel1, "M1 right", ax_plot, cmap='winter')
 
 ax_plot = plt.subplot2grid((3, 3), (1, 0), colspan=2)
 num_parcel2 = 8
-_montre_roi(num_parcel2, "M1 gauche", ax_plot, cmap='autumn')
+_montre_roi(num_parcel2, "M1 left", ax_plot, cmap='autumn')
 
 ax_plot = plt.subplot2grid((3, 3), (2, 0), colspan=2)
 num_parcel3 = 17
-_montre_roi(num_parcel3, "Cingulaire Posterieur", ax_plot, cmap='summer')
+_montre_roi(num_parcel3, "Posterior Cingulate", ax_plot, cmap='summer')
 
-# Extrait les séries temporelles
+# Extract temporal series
 time = np.linspace(0, 3 * (tseries.shape[0]-1), tseries.shape[0])
-tseries1 = tseries[time_samp, :][:, num_parcel1 - 1] # -1 car python utilise le zero-index
-tseries2 = tseries[time_samp, :][:, num_parcel2 - 1] # -1 car python utilise le zero-index
-tseries3 = tseries[time_samp, :][:, num_parcel3 - 1] # -1 car python utilise le zero-index
+tseries1 = tseries[time_samp, :][:, num_parcel1 - 1] # -1 car python uses zero-index
+tseries2 = tseries[time_samp, :][:, num_parcel2 - 1] # -1 car python uses zero-index
+tseries3 = tseries[time_samp, :][:, num_parcel3 - 1] # -1 car python uses zero-index
 
-# Fonction pour montrer les séries temporelles
-def _montre_serie(y1, y2, ax_plot, color1, color2):
+# Function to show the temporal series
+def _show_serie(y1, y2, ax_plot, color1, color2):
     ax_plot.set_aspect('40')
     plt.plot(time[time_samp], y1, color1)
     plt.plot(time[time_samp], y2, color2)
-    plt.xlabel('Temps (s.)')
+    plt.xlabel('Time (s.)')
     plt.ylabel('BOLD (u.a.)')
-    plt.title(f'Séries temporelles (r={np.corrcoef(y1, y2)[1, 0]:.2f})')
+    plt.title(f'Temporal series (r={np.corrcoef(y1, y2)[1, 0]:.2f})')
 
-# plot les séries temporelles
+# Plot temporal series
 ax_plot = plt.subplot2grid((3, 3), (0, 2), colspan=1)
-_montre_serie(tseries1, tseries2, ax_plot, 'b-', 'r-')
+_show_serie(tseries1, tseries2, ax_plot, 'b-', 'r-')
 ax_plot = plt.subplot2grid((3, 3), (1, 2), colspan=1)
-_montre_serie(tseries1, tseries3, ax_plot, 'b-', 'g-')
+_show_serie(tseries1, tseries3, ax_plot, 'b-', 'g-')
 ax_plot = plt.subplot2grid((3, 3), (2, 2), colspan=1)
-_montre_serie(tseries2, tseries3, ax_plot, 'r-', 'g-')
+_show_serie(tseries2, tseries3, ax_plot, 'r-', 'g-')
 
 from myst_nb import glue
 glue("connectivity-fig", fig, display=False)
@@ -173,7 +173,7 @@ In the example presented in {numref}`connectivity-fig`, the regions `M1 right` a
 ## Functional connectivity map
 ```{code-cell} ipython 3
 :tags: ["hide-input", "remove-output"]
-# Importer les librairies
+# Import the libraries
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -187,21 +187,21 @@ from nilearn.input_data import NiftiMasker
 import warnings
 warnings.filterwarnings("ignore")
 
-# Initialise la figure
+# Initialize the figure
 fig = plt.figure(figsize=(10, 8), dpi=300)
 
-# Importe les données
+# Import data
 basc = datasets.fetch_atlas_basc_multiscale_2015() # the BASC multiscale atlas
 adhd = datasets.fetch_adhd(n_subjects=10)          # ADHD200 preprocessed data (Athena pipeline)\
 
-# Paramètres du pré-traitement
+# Preprocessing parameters
 num_data = 6
 fwhm = 8
 high_pass = 0.01
 high_variance_confounds = False
 time_samp = range(0, 100)
 
-# Extrait le signal par parcelle pour un atlas fonctionnel (BASC)
+# Extract signal by parcel for a functional atlas (BASC)
 masker = input_data.NiftiLabelsMasker(
                                       basc['scale122'],
                                       resampling_target="data",
@@ -215,7 +215,7 @@ masker = input_data.NiftiLabelsMasker(
 tseries = masker.transform(adhd.func[num_data])
 print(f"Time series with shape {tseries.shape} (# time points, # parcels))")
 
-# Charge les données par voxel
+# Load data per voxel
 masker_voxel = input_data.NiftiMasker(high_pass=high_pass,
                                       t_r=3,
                                       high_variance_confounds=high_variance_confounds,
@@ -225,25 +225,25 @@ masker_voxel = input_data.NiftiMasker(high_pass=high_pass,
 tseries_voxel = masker_voxel.transform(adhd.func[num_data])
 print(f"Time series with shape {tseries_voxel.shape} (# time points, # voxels))")
 
-# Montre une parcelle
+# Show a parcel
 ax_plot = plt.subplot2grid((2, 3), (0, 0), colspan=2)
 num_parcel = 73
 plotting.plot_roi(math_img(f'img == {num_parcel}', img=basc['scale122']),
                   threshold=0.5,
                   axes=ax_plot,
                   vmax=1,
-                  title="région cible (M1 droit)")
+                  title="Target region (M1 right)")
 
-# plot la série temporelle d'une région
+# Plot temporal series for one region
 ax_plot = plt.subplot2grid((2, 3), (0, 2), colspan=1)
 ax_plot.set_aspect('40')
 time = np.linspace(0, 3 * (tseries.shape[0]-1), tseries.shape[0])
 plt.plot(time[time_samp], tseries[time_samp, :][:, num_parcel - 1], '-'),
-plt.xlabel('Temps (s.)'),
+plt.xlabel('Time (s.)'),
 plt.ylabel('BOLD (u.a.)')
-plt.title('Série temporelle')
+plt.title('Temporal serie')
 
-# carte de connectivité
+# Connectivity map
 ax_plot = plt.subplot2grid((2, 3), (1, 0), colspan=2)
 seed_to_voxel_correlations = (np.dot(tseries_voxel.T, tseries[:, num_parcel-1]) / tseries.shape[0])# Show the connectivity map
 conn_map = masker_voxel.inverse_transform(seed_to_voxel_correlations.T)
@@ -252,7 +252,7 @@ plotting.plot_stat_map(conn_map,
                        vmax=1,
                        axes=ax_plot,
                        cut_coords=(37, -20, 59),
-                       title="carte de connectivité (M1 droit)")
+                       title="Connectivity map (M1 right)")
 
 from myst_nb import glue
 glue("fcmri-map-fig", fig, display=False)
@@ -265,7 +265,7 @@ glue("fcmri-map-fig", fig, display=False)
   Resting-state connectivity maps generated from fMRI data of a participant from the ADHD-200 dataset {cite:p}`HD-200_Consortium2012-uv` (bottom, right). The target region used is in the right sensorimotor cortex (top, left) identifying the sensorimotor network. The first five minutes of BOLD activity associated with the target region are shown (top, right). This figure is generated by python code using the [nilearn](https://nilearn.github.io/) library (click on + to see the code), and is distributed under the CC-BY license.
 ```
 
-The concept of resting-state functional mapping was introduced by Biswal and colleagues (1995) {cite:p}`Biswal1995-lw`. Instead of examining the functionnal connectivity between two regions, they compared the activity of a target region with all voxels in the brain. {cite:p}`Biswal1995-lw` used a region in the right primary sensorimotor cortex. This target region was identified using an activation map and a motor task. Biswal and colleagues then had the idea of observing the BOLD fluctuations in a **resting** condition, in the absence of an experimental task. This map revealed a distributed set of regions (see {numref}`fcmri-map-fig`, right M1 target), including the left sensorimotor cortex, as well as the supplementary motor area, premotor cortex, and other brain regions known for their involvement in the **motor network**. Initially, this study sparked considerable skepticism, as these patterns of correlated functional activity could have been perceived as reflecting cardiac or respiratory noise.
+The concept of resting-state functional mapping was introduced by Biswal and colleagues (1995) {cite:p}`Biswal1995-lw`. Instead of examining the functional connectivity between two regions, they compared the activity of a target region with all voxels in the brain. {cite:p}`Biswal1995-lw` used a region in the right primary sensorimotor cortex. This target region was identified using an activation map and a motor task. Biswal and colleagues then had the idea of observing the BOLD fluctuations in a **resting** condition, in the absence of an experimental task. This map revealed a distributed set of regions (see {numref}`fcmri-map-fig`, right M1 target), including the left sensorimotor cortex, as well as the supplementary motor area, premotor cortex, and other brain regions known for their involvement in the **motor network**. Initially, this study sparked considerable skepticism, as these patterns of correlated functional activity could have been perceived as reflecting cardiac or respiratory noise.
 
 ```{admonition} Slow fluctuations
 :class: tip
@@ -281,7 +281,7 @@ The work of Shmuel and colleagues (2008) {cite:p}`Shmuel2008-pa` demonstrated th
 ## Default mode network
 ```{code-cell} ipython 3
 :tags: ["hide-input", "remove-output"]
-# Importe les librairies
+# Import the libraries
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -295,21 +295,21 @@ from nilearn.input_data import NiftiMasker
 import warnings
 warnings.filterwarnings("ignore")
 
-# Initialise la figure
+# Initialize the figure
 fig = plt.figure(figsize=(10, 11), dpi=300)
 
-# Importe les données
+# Import data
 basc = datasets.fetch_atlas_basc_multiscale_2015() # the BASC multiscale atlas
 adhd = datasets.fetch_adhd(n_subjects=10)          # ADHD200 preprocessed data (Athena pipeline)\
 
-# Paramètres du pré-traitement
+# Preprocessing parameters
 num_data = 6
 fwhm = 8
 high_pass = 0.01
 high_variance_confounds = False
 time_samp = range(0, 100)
 
-# Extrait le signal par parcelle pour un atlas fonctionnel (BASC)
+# Extract signal by parcel for a functional atlas (BASC)
 masker = input_data.NiftiLabelsMasker(
                                       basc['scale122'],
                                       resampling_target="data",
@@ -323,7 +323,7 @@ masker = input_data.NiftiLabelsMasker(
 tseries = masker.transform(adhd.func[num_data])
 print(f"Time series with shape {tseries.shape} (# time points, # parcels))")
 
-# Charge les données par voxel
+# Load data per voxel
 masker_voxel = input_data.NiftiMasker(high_pass=high_pass,
                                       t_r=3,
                                       high_variance_confounds=high_variance_confounds,
@@ -333,25 +333,25 @@ masker_voxel = input_data.NiftiMasker(high_pass=high_pass,
 tseries_voxel = masker_voxel.transform(adhd.func[num_data])
 print(f"Time series with shape {tseries_voxel.shape} (# time points, # voxels))")
 
-# Montre une parcelle
+# Show one parcel
 ax_plot = plt.subplot2grid((4, 3), (0, 0), colspan=2)
 num_parcel = 17
 plotting.plot_roi(math_img(f'img == {num_parcel}', img=basc['scale122']),
                   threshold=0.5,
                   axes=ax_plot,
                   vmax=1,
-                  title="région cible (PCC)")
+                  title="Target region (PCC)")
 
-# plot la série temporelle d'une région
+# Plot temporal series for one region
 ax_plot = plt.subplot2grid((4, 3), (0, 2), colspan=1)
 ax_plot.set_aspect('40')
 time = np.linspace(0, 3 * (tseries.shape[0]-1), tseries.shape[0])
 plt.plot(time[time_samp], tseries[time_samp, :][:, num_parcel - 1]),
-plt.xlabel('Temps (s.)'),
+plt.xlabel('Time (s.)'),
 plt.ylabel('BOLD (u.a.)')
-plt.title('Série temporelle')
+plt.title('Temporal serie')
 
-# carte de connectivité
+# Connectivity map
 ax_plot = plt.subplot2grid((4, 3), (1, 0), colspan=2)
 seed_to_voxel_correlations = (np.dot(tseries_voxel.T, tseries[:, num_parcel-1]) / tseries.shape[0])# Show the connectivity map
 conn_map = masker_voxel.inverse_transform(seed_to_voxel_correlations.T)
@@ -360,7 +360,7 @@ plotting.plot_stat_map(conn_map,
                        vmax=1,
                        axes=ax_plot,
                        cut_coords=(0, -52, 26),
-                       title="carte de connectivité (PCC)")
+                       title="Connectivity map (PCC)")
 
 from myst_nb import glue
 glue("fcmri-dmn-fig", fig, display=False)
@@ -373,18 +373,18 @@ glue("fcmri-dmn-fig", fig, display=False)
   Resting-state connectivity maps generated from fMRI data of a participant from the ADHD-200 dataset {cite:p}`HD-200_Consortium2012-uv` (bottom, right). The target region used is in the posterior cingulate cortex (top, left) identifying the default mode network. The first five minutes of BOLD activity associated with the target region are shown (top, right). This figure is generated by python code using the [nilearn](https://nilearn.github.io/) library (click on + to see the code), and is distributed under the CC-BY license.
 ```
 
-The credibility of resting-state connectivity maps was strengthened when different research groups were able to identify other networks using different target regions, including the visual and auditory networks. However, it was the study of Greicius et colleagues, in 2003 {cite:p}`Greicius2003-hi` that sparked enourmous interest in resting-state connectivity maps using a target region in the posterior cingulate cortext (PCC) to identify a functional network that had not yet been identified: the **default mode network** (see {numref}`fcmri-dmn-fig`, PCC target). We will discuss the origins of this network in the next section.
+The credibility of resting-state connectivity maps was strengthened when different research groups were able to identify other networks using different target regions, including the visual and auditory networks. However, it was the study of Greicius et colleagues, in 2003 {cite:p}`Greicius2003-hi` that sparked enormous interest in resting-state connectivity maps using a target region in the posterior cingulate cortext (PCC) to identify a functional network that had not yet been identified: the **default mode network** (see {numref}`fcmri-dmn-fig`, PCC target). We will discuss the origins of this network in the next section.
 
 ```{admonition} Intra- and inter-individual variability
 :class: caution attention
 :name: fcmri-map-warning
-{numref}`fcmri-dmn-fig` may give the impression that connectivity networks are extremely stable. In reality, connectivity maps vary significantly over time, meaning when looking at different windows of activity for the same individual, and also between individuals. Indeed, the coordinates of a target region may be partially inacurrate even with image registration. Characterizing the intra- and inter-individual variability of connectivity maps is an active area of research.
+{numref}`fcmri-dmn-fig` may give the impression that connectivity networks are extremely stable. In reality, connectivity maps vary significantly over time, meaning when looking at different windows of activity for the same individual, and also between individuals. Indeed, the coordinates of a target region may be partially inaccurate even with image registration. Characterizing the intra- and inter-individual variability of connectivity maps is an active area of research.
 ```
 ## Deactivations
 
 ```{code-cell} ipython 3
 :tags: ["hide-input", "remove-output"]
-# Importer les librairies
+# Import the libraries
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -398,7 +398,7 @@ from nilearn.input_data import NiftiLabelsMasker
 from nilearn.input_data import NiftiMasker
 from nilearn import plotting
 
-# initialisation de la figure
+# initialize the figure
 fig = plt.figure(figsize=(8, 4))
 
 # load fMRI data
@@ -428,11 +428,11 @@ fmri_glm = fmri_glm.fit(fmri_img, events)
 # Extract activation clusters
 z_map = fmri_glm.compute_contrast('active - rest')
 
-# plot activation map
+# Plot activation map
 ax_plot = plt.gca()
 plotting.plot_stat_map(
         z_map, threshold=2, vmax=5, figure=fig,
-        axes=ax_plot, colorbar=True, cut_coords=(3., -21, 45), bg_img=mean_img, title='carte d\'activation (auditif)')
+        axes=ax_plot, colorbar=True, cut_coords=(3., -21, 45), bg_img=mean_img, title='Activation map (auditory)')
 
 # Glue the figure
 from myst_nb import glue
@@ -445,12 +445,12 @@ glue("deactivation-fig", fig, display=False)
 :align: center
   Individual activation map in an auditory paradigm ([spm_auditory](https://www.fil.ion.ucl.ac.uk/spm/data/auditory/) dataset). The significance threshold is selected liberally (`|z|>2`). A moderate deactivation is identified in different regions of the brain, including the posterior cingulate cortex (PCC) and the medial prefrontal cortex (mPFC). The PCC and the mPFC are key regions of the default mode network, This figure is generated by python code using the [nilearn](https://nilearn.github.io/) library(click on + to see the code), and is distributed under the CC-BY license.
 ```
-The default mode network (DMN) was initially discoverd through activation studies {cite:p}`Shulman1997-fy`, which combined 9 PET studies using the same control condition od "rest" (consisting of passively viewing visual stimuli). The authors demonstrated that a set of regions are consistently more engaged at rest than during various cognitively demanding tasks. These regions include notably the posterior cingulate cortex (PCC). The "_default mode hypothesis_" posits that there are certain introspective cognitive processes that are systematically present in a resting state, and there exists a functional network that supports this "default" activity {cite:p}`Raichle2001-en`. Resting-state fMRI connectivity maps with a target region in the PCC also identify the default mode network, as seen in {numref}`fcmri-dmn-fig`.
+The default mode network (DMN) was initially discovered through activation studies {cite:p}`Shulman1997-fy`, which combined 9 PET studies using the same control condition od "rest" (consisting of passively viewing visual stimuli). The authors demonstrated that a set of regions are consistently more engaged at rest than during various cognitively demanding tasks. These regions include notably the posterior cingulate cortex (PCC). The "_default mode hypothesis_" posits that there are certain introspective cognitive processes that are systematically present in a resting state, and there exists a functional network that supports this "default" activity {cite:p}`Raichle2001-en`. Resting-state fMRI connectivity maps with a target region in the PCC also identify the default mode network, as seen in {numref}`fcmri-dmn-fig`.
 
 ## DAN and negative correlations
 ```{code-cell} ipython 3
 :tags: ["hide-input", "remove-output"]
-# Importer les librairies
+# Import the libraries
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -464,21 +464,21 @@ from nilearn.input_data import NiftiLabelsMasker
 from nilearn.input_data import NiftiMasker
 from nilearn import plotting
 
-# initialisation de la figure
+# initialize the figure
 fig = plt.figure(figsize=(12,8))
 
-# Importe les données
+# Import data
 basc = datasets.fetch_atlas_basc_multiscale_2015() # the BASC multiscale atlas
 adhd = datasets.fetch_adhd(n_subjects=10)          # ADHD200 preprocessed data (Athena pipeline)\
 
-# Paramètres du pré-traitement
+# Preprocessing parameters
 num_data = 1
 fwhm = 8
 high_pass = 0.01
 high_variance_confounds = False
 time_samp = range(0, 100)
 
-# Extrait le signal par parcelle pour un atlas fonctionnel (BASC)
+# Extract the signal by parcel for a functional atlas (BASC)
 masker = input_data.NiftiLabelsMasker(
                                       basc['scale122'],
                                       resampling_target="data",
@@ -492,7 +492,7 @@ masker = input_data.NiftiLabelsMasker(
 tseries = masker.transform(adhd.func[num_data])
 print(f"Time series with shape {tseries.shape} (# time points, # parcels))")
 
-# Charge les données par voxel
+# Load data per voxel
 masker_voxel = input_data.NiftiMasker(high_pass=high_pass,
                                       t_r=3,
                                       high_variance_confounds=high_variance_confounds,
@@ -502,7 +502,7 @@ masker_voxel = input_data.NiftiMasker(high_pass=high_pass,
 tseries_voxel = masker_voxel.transform(adhd.func[num_data])
 print(f"Time series with shape {tseries_voxel.shape} (# time points, # voxels))")
 
-# Applique une correction du signal global
+# Apply global signal correction
 from nilearn.signal import clean as signal_clean
 gb_signal = signal_clean(
                         tseries.mean(axis=1).reshape([tseries.shape[0], 1]),
@@ -512,25 +512,25 @@ gb_signal = signal_clean(
 tseries = masker.transform(adhd.func[num_data], confounds=gb_signal)
 tseries_voxel = masker_voxel.transform(adhd.func[num_data], confounds=gb_signal)
 
-# Montre une parcelle
+# Show a parcel
 ax_plot = plt.subplot2grid((2, 3), (0, 0), colspan=2)
 num_parcel = 113
 plotting.plot_roi(math_img(f'img == {num_parcel}', img=basc['scale122']),
                   threshold=0.5,
                   axes=ax_plot,
                   vmax=1,
-                  title="région cible (FEF)")
+                  title="Target region (FEF)")
 
-# plot la série temporelle d'une région
+# Plot temporal series for one region
 ax_plot = plt.subplot2grid((2, 3), (0, 2), colspan=1)
 ax_plot.set_aspect('40')
 time = np.linspace(0, 3 * (tseries.shape[0]-1), tseries.shape[0])
 plt.plot(time[time_samp], tseries[time_samp, :][:, num_parcel - 1]),
-plt.xlabel('Temps (s.)'),
+plt.xlabel('Time (s.)'),
 plt.ylabel('BOLD (u.a.)')
-plt.title('Série temporelle')
+plt.title('Temporal serie')
 
-# carte de connectivité
+# Connectivity map
 ax_plot = plt.subplot2grid((2, 3), (1, 0), colspan=2)
 seed_to_voxel_correlations = (np.dot(tseries_voxel.T, tseries[:, num_parcel - 1]) / tseries.shape[0])# Show the connectivity map
 conn_map = masker_voxel.inverse_transform(seed_to_voxel_correlations.T)
@@ -540,7 +540,7 @@ plotting.plot_stat_map(conn_map,
                        axes=ax_plot,
                        cut_coords=(-28, 2, 28),
                        display_mode = 'x',
-                       title="carte de connectivité (FEF)")
+                       title="Connectivity map (FEF)")
 
 # Glue the figure
 from myst_nb import glue
@@ -552,7 +552,7 @@ glue("negative-DMN-fig", fig, display=False)
 :align: center
   A target region is selected at the level of the frontal eye field (FEF) to generate a connectivity map for a participant from the ADHD-200 dataset {cite:p}`HD-200_Consortium2012-uv`. The significance threshold is selected liberally (`|r|>0.2`). In addition to the dorsal attention network (DAN) associated with the FEF, the connectivity map highlights a negative correlation with the PCC and the anterior cingulate cortex (ACC). The ACC and the PCC are key regions of the default mode network. This figure is generated by python code using the [nilearn](https://nilearn.github.io/) library (click on + to see the code), and is distributed under the CC-BY license.
 ```
-The default mode network is not the only one that can be identified during rest. We have already seen the sensorimotor network, which was first identified by Biswal and colleagues. Another network commonly examined in the litterature is the dorsal attention network (DAN), which includes the superior intraparietal sulcus and the frontal eye field. The DAN is often identified as activated in experiments using cognitively demanding fMRI tasks and is sometimes referred to as the "task positive network" - even though it is not positively engaged by all tasks. In 2005, Fox et al. {cite:p}`Fox2005-ge` observed a negative correlation between the DAN and the default mode network. This analysis reinforces the notion of spontaneous transitions between a state directed towards external stimuli and an introspective state, reflecting the competition between two distributed networks.
+The default mode network is not the only one that can be identified during rest. We have already seen the sensorimotor network, which was first identified by Biswal and colleagues. Another network commonly examined in the literature is the dorsal attention network (DAN), which includes the superior intraparietal sulcus and the frontal eye field. The DAN is often identified as activated in experiments using cognitively demanding fMRI tasks and is sometimes referred to as the "task positive network" - even though it is not positively engaged by all tasks. In 2005, Fox et al. {cite:p}`Fox2005-ge` observed a negative correlation between the DAN and the default mode network. This analysis reinforces the notion of spontaneous transitions between a state directed towards external stimuli and an introspective state, reflecting the competition between two distributed networks.
 ```{admonition} Controversies on global signal regression
 :class: caution attention
 :name: negative-r-warning
@@ -568,7 +568,7 @@ Resting-state networks can be observed even in the presence of a task. Rather th
 ## Connectomes et networks
 ```{code-cell} ipython 3
 :tags: ["hide-input", "remove-output"]
-# Importe les librairies
+# Import the libraries
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -582,21 +582,21 @@ from nilearn.input_data import NiftiLabelsMasker
 from nilearn.input_data import NiftiMasker
 from nilearn import plotting
 
-# initialisation de la figure
+# initialize the figure
 fig = plt.figure(figsize=(12, 5), dpi=300)
 
-# Importe les données
+# Import data
 basc = datasets.fetch_atlas_basc_multiscale_2015() # the BASC multiscale atlas
 adhd = datasets.fetch_adhd(n_subjects=10)          # ADHD200 preprocessed data (Athena pipeline)\
 
-# Paramètres du pré-traitement
+# Preprocessing parameters
 num_data = 1
 fwhm = 8
 high_pass = 0.01
 high_variance_confounds = False
 time_samp = range(0, 100)
 
-# Extrait le signal par parcelle pour un atlas fonctionnel (BASC)
+# Extract the signal by parcel for a functional atlas (BASC)
 masker = input_data.NiftiLabelsMasker(
                                       basc['scale122'],
                                       resampling_target="data",
@@ -611,7 +611,7 @@ tseries = masker.transform(adhd.func[num_data])
 print(f"Time series with shape {tseries.shape} (# time points, # parcels))")
 
 
-# Applique une correction du signal global
+# Apply global signal correction
 from nilearn.signal import clean as signal_clean
 gb_signal = signal_clean(
                         tseries.mean(axis=1).reshape([tseries.shape[0], 1]),
@@ -620,7 +620,7 @@ gb_signal = signal_clean(
                         standardize=True)
 tseries = masker.transform(adhd.func[num_data], confounds=gb_signal)
 
-# Affiche le template
+# Show the template
 ax_plot = plt.subplot2grid((2, 4), (0, 0), colspan=2)
 plotting.plot_roi(basc['scale122'], title="parcellisation", axes=ax_plot, colorbar=True, cmap="turbo")
 
@@ -637,18 +637,18 @@ res = dendrogram(hier, get_leaves=True, no_plot=True) # Generate a dendrogram fr
 order = res.get('leaves') # Extract the order on parcels from the dendrogram
 part = np.squeeze(cut_tree(hier, n_clusters=10))
 
-# Montre le connectome
+# Show the connectome
 ax_plot = plt.subplot2grid((2, 4), (0, 2), rowspan=2, colspan=2)
 ax_plot.set_xlabel('régions')
 ax_plot.set_title('connectome')
 pos = ax_plot.imshow(conn[order, :][:, order], cmap='turbo', interpolation='nearest')
 fig.colorbar(pos, ax=ax_plot)
 
-# Montre les réseaux
+# Show the networks
 ax_plot = plt.subplot2grid((2, 4), (1, 0), colspan=2)
 part_img = masker.inverse_transform(part.reshape([1, 122]) + 1) # note the sneaky shift to 1-indexing
 plotting.plot_roi(part_img,
-                  title="réseaux",
+                  title="Networks",
                   colorbar=True,
                   cmap="turbo",
                   axes=ax_plot,
@@ -664,7 +664,7 @@ glue("network-fig", fig, display=False)
 :align: center
   A functional brain parcellation with 122 parcels is presented on the left (BASC). In the center, a matrix is shown where each element represents the correlation between the activity of two parcels. The parcels have been ordered to highlight diagonal squares: these are groups or regions whose activity strongly correlates with each other and less so with the rest of the brain. Clustering algorithms automatically detect these groups of parcels, called functional networks. An example of functional networks generated with hierarchical clustering is presented on the right, which identifies, among others, the default mode network. This figure is generated by python code using the [nilearn](https://nilearn.github.io/) library (click on + to see the code), and is distributed under the CC-BY license.
 ```
-We have repeatedly mentioned  ***functional network***, but without really defining what it is. When using a connectivity map, the functionnal network is the set of regions that appear in the map and are therefore connected to our target region. However, this approach depends on the target region. Yet, it is intuitive that all connectivity maps using targets in, for example, the default mode network will look similar. To formalize this intuition, we need to consider the connectivity of _all_ pairs of regions simultaneously, a notion called functional connectome. By using unsupervised learning techniques, such as clustering, it is possible to identify groups of brain regions that are strongly connected to each other and weakly connected to the rest of the brain. This is the most common definition of a functional network. This approach allows for the division of the brain into networks, in an automatic and data-driven way, see {numref}`network-fig` (bottom, left).
+We have repeatedly mentioned  ***functional network***, but without really defining what it is. When using a connectivity map, the functional network is the set of regions that appear in the map and are therefore connected to our target region. However, this approach depends on the target region. Yet, it is intuitive that all connectivity maps using targets in, for example, the default mode network will look similar. To formalize this intuition, we need to consider the connectivity of _all_ pairs of regions simultaneously, a notion called functional connectome. By using unsupervised learning techniques, such as clustering, it is possible to identify groups of brain regions that are strongly connected to each other and weakly connected to the rest of the brain. This is the most common definition of a functional network. This approach allows for the division of the brain into networks, in an automatic and data-driven way, see {numref}`network-fig` (bottom, left).
 
 ```{admonition} Connectome
 :class: tip
@@ -681,7 +681,7 @@ warnings.filterwarnings("ignore")
 from nilearn import datasets # Fetch data using nilearn
 atlas_yeo = datasets.fetch_atlas_yeo_2011()        # the Yeo-Krienen atlas
 
-# initialisation de la figure
+# Initialize the figure
 fig = plt.figure(figsize=(24, 16), dpi=300)
 
 # Let's plot the Yeo-Krienen 7 clusters parcellation
@@ -693,31 +693,31 @@ plotting.plot_roi(atlas_yeo.thick_7, title='Yeo-Krienen atlas-7',
                   colorbar=True, cmap='Paired', axes=ax_plot)
 
 ax_plot = plt.subplot(4, 2, 2)
-plotting.plot_roi(math_img('(img==1).astype(\'float\')', img=atlas_yeo.thick_7), title='Visuel',
+plotting.plot_roi(math_img('(img==1).astype(\'float\')', img=atlas_yeo.thick_7), title='Visual',
                   colorbar=True, cmap='Paired', axes=ax_plot, vmin=1, vmax=7)
 
 ax_plot = plt.subplot(4, 2, 3)
-plotting.plot_roi(math_img('2 * (img==2).astype(\'float\')', img=atlas_yeo.thick_7), title='Sensorimoteur',
+plotting.plot_roi(math_img('2 * (img==2).astype(\'float\')', img=atlas_yeo.thick_7), title='Sensorimotor',
                   colorbar=True, cmap='Paired', axes=ax_plot, vmin=1, vmax=7)
 
 ax_plot = plt.subplot(4, 2, 4)
-plotting.plot_roi(math_img('3 * (img==3).astype(\'float\')', img=atlas_yeo.thick_7), title='Attentionnel dorsal',
+plotting.plot_roi(math_img('3 * (img==3).astype(\'float\')', img=atlas_yeo.thick_7), title='Dorsal Attention',
                   cut_coords=(-27, -5, 58), colorbar=True, cmap='Paired', axes=ax_plot, vmin=1, vmax=7)
 
 ax_plot = plt.subplot(4, 2, 5)
-plotting.plot_roi(math_img('4 * (img==4).astype(\'float\')', img=atlas_yeo.thick_7), title='Attentionnel ventral / salience',
+plotting.plot_roi(math_img('4 * (img==4).astype(\'float\')', img=atlas_yeo.thick_7), title='Ventral Attention / salience',
                   cut_coords=(-3, 19, 24), colorbar=True, cmap='Paired', axes=ax_plot, vmin=1, vmax=7)
 
 ax_plot = plt.subplot(4, 2, 6)
-plotting.plot_roi(math_img('5 * (img==5).astype(\'float\')', img=atlas_yeo.thick_7), title='mésolimbique',
+plotting.plot_roi(math_img('5 * (img==5).astype(\'float\')', img=atlas_yeo.thick_7), title='Mesolimbic',
                   colorbar=True, cmap='Paired', axes=ax_plot, vmin=1, vmax=7)
 
 ax_plot = plt.subplot(4, 2, 7)
-plotting.plot_roi(math_img('6 * (img==6).astype(\'float\')', img=atlas_yeo.thick_7), title='frontopariétal',
+plotting.plot_roi(math_img('6 * (img==6).astype(\'float\')', img=atlas_yeo.thick_7), title='Frontoparietal',
                   colorbar=True, cmap='Paired', axes=ax_plot, vmin=1, vmax=7)
 
 ax_plot = plt.subplot(4, 2, 8)
-plotting.plot_roi(math_img('7 * (img==7).astype(\'float\')', img=atlas_yeo.thick_7), title='mode par défaut',
+plotting.plot_roi(math_img('7 * (img==7).astype(\'float\')', img=atlas_yeo.thick_7), title='Default Mode',
                   colorbar=True, cmap='Paired', axes=ax_plot, vmin=1, vmax=7)
 
 # Glue the figure
@@ -730,7 +730,7 @@ glue("yeo-krienen-fig", fig, display=False)
 :align: center
   The Yeo-Krienen atlas {cite:p}`Yeo2011-sc` is constructed through clustering analysis from resting-state fMRI data of a large number of participants. The networks are defined at multiple resolutions in this altas (7 and 17). Here, the partition into 7 large distributed networks is presented. This figure is generated by python code using the [nilearn](https://nilearn.github.io/) library (click on + to see the code), and is distributed under the CC-BY license.
 ```
-There are standard atlases of resting-state networks that have been generated on a large number of participants. The atlas developed by Yeo, Krienen and colleagues {cite:p}`Yeo2011-sc` is widely used and identifies seven major networks, as seen in {numref}`yeo-krienen-fig`. Some of these networks have already been discussed in this chapter: the default mode network, the dorsal attention network, and the sensorimotor network. We should add two other associative networks: the frontoparietal and ventral attentional networks. There is also a visual network and a mesolimbic netwrok involving the temporal pole and orbitofrontal cortex. Note that this altas ignores all subcortical structures, and that there is no exact number of brain networks, but rather a hierarchy of more or less specialized networks.
+There are standard atlases of resting-state networks that have been generated on a large number of participants. The atlas developed by Yeo, Krienen and colleagues {cite:p}`Yeo2011-sc` is widely used and identifies seven major networks, as seen in {numref}`yeo-krienen-fig`. Some of these networks have already been discussed in this chapter: the default mode network, the dorsal attention network, and the sensorimotor network. We should add two other associative networks: the frontoparietal and ventral attentional networks. There is also a visual network and a mesolimbic network involving the temporal pole and orbitofrontal cortex. Note that this altas ignores all subcortical structures, and that there is no exact number of brain networks, but rather a hierarchy of more or less specialized networks.
 
 ```{admonition} Multiple resting-state networks
 :class: tip
@@ -802,7 +802,7 @@ To answer this question, read the following article by Shukla et al., "_Aberrant
  5. What filtering procedures were applied?
  6. In which stereotaxic space were the group analyses conducted?
  7. Which atlas of regions was used?
- 8. What type of connectivity measure is used in thise article?
+ 8. What type of connectivity measure is used in this article?
 ```
 
 ## Bonus
