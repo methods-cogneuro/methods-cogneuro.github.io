@@ -622,7 +622,7 @@ tseries = masker.transform(adhd.func[num_data], confounds=gb_signal)
 
 # Show the template
 ax_plot = plt.subplot2grid((2, 4), (0, 0), colspan=2)
-plotting.plot_roi(basc['scale122'], title="parcellisation", axes=ax_plot, colorbar=True, cmap="turbo")
+plotting.plot_roi(basc['scale122'], title="Parcellation", axes=ax_plot, colorbar=True, cmap="turbo")
 
 # We generate a connectome
 from nilearn.connectome import ConnectivityMeasure
@@ -639,8 +639,8 @@ part = np.squeeze(cut_tree(hier, n_clusters=10))
 
 # Show the connectome
 ax_plot = plt.subplot2grid((2, 4), (0, 2), rowspan=2, colspan=2)
-ax_plot.set_xlabel('régions')
-ax_plot.set_title('connectome')
+ax_plot.set_xlabel('Regions')
+ax_plot.set_title('Connectome')
 pos = ax_plot.imshow(conn[order, :][:, order], cmap='turbo', interpolation='nearest')
 fig.colorbar(pos, ax=ax_plot)
 
@@ -705,7 +705,7 @@ plotting.plot_roi(math_img('3 * (img==3).astype(\'float\')', img=atlas_yeo.thick
                   cut_coords=(-27, -5, 58), colorbar=True, cmap='Paired', axes=ax_plot, vmin=1, vmax=7)
 
 ax_plot = plt.subplot(4, 2, 5)
-plotting.plot_roi(math_img('4 * (img==4).astype(\'float\')', img=atlas_yeo.thick_7), title='Ventral Attention / salience',
+plotting.plot_roi(math_img('4 * (img==4).astype(\'float\')', img=atlas_yeo.thick_7), title='Ventral Attention / Salience',
                   cut_coords=(-3, 19, 24), colorbar=True, cmap='Paired', axes=ax_plot, vmin=1, vmax=7)
 
 ax_plot = plt.subplot(4, 2, 6)
