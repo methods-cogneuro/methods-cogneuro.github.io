@@ -15,23 +15,24 @@ kernelspec:
 
 # Introduction
 
-Ce livre, "Méthodes en neurosciences cognitives", présente les principales techniques de neuroimagerie utilisées pour étudier la cognition chez l'humain (et l'animal) et disposant d'une bonne résolution spatiale:
- * résonance magnétique (anatomique, fonctionnelle, et de diffusion),
- * tomographie par émission de positrons,
- * imagerie optique.
+This book, "Methods in cognitive neurosciences", presents the main neuroimaging techniques used to study cognition in humans (and non-human animals) with a good spatial resolution:
+ * Magnetic resonance imaging (MRI): structural, functional, and diffusion,
+ * Positron emission tomography (PET),
+ * Optical imaging.
 
-Ce livre est une entrée en matière et est destiné à des lecteurs qui découvrent ces méthodes pour la première fois. Ce livre vous fournira des connaissances théoriques sur les bases physiques et physiologiques de ces techniques de neuroimagerie. De plus, il propose une introduction aux principales techniques de traitement d’image et d’analyse statistique qui leur sont associées. Chaque chapitre comporte une série d'exercices qui incluent des exemples d'applications dans le cadre de projets de recherche en neurosciences cognitives.
+This book is intended as an introduction for readers discovering these neuroimaging methods for the first time. This book covers the theoretical foundations of the physical and physiological behind each technique. It also provides an introduction to the main image processing and statistical analysis methods involved in neuroimaging. Each chapter includes exercises and practical examples from cognitive neuroscience research projects to consolidate understating. 
 
 ```{warning}
-L'objectif de cet ouvrage n'est pas d'être un outil de référence de type "ouvrage spécialiste" qui explique tous les détails spécifiques liés à une technique donnée. Le but de ce livre est plutôt de présenter un survol de l'ensemble des techniques les plus conventionnelles en neuroscience cognitive de manière concise, pour que les lecteurs puissent en apprécier les forces et faiblesses, ainsi que comprendre comment choisir la technique la plus adaptée à un type de recherche spécifique.
+This resource is not indented to be a detailed reference tool for specialists, explaining all the specific details associated with a given technique. Instead, the goal is to present a concise overview of the most common techniques in cognitive neuroscience. It aims to help readers appreciate the strengths and weaknesses of each technique and understand how to select the most appropriate one to answer a specific research question.
 ```
 
-## Contribuer
-Ce projet est développé de manière collaborative. Toute suggestion est la bienvenue! Vous pouvez utiliser la page "[issue](https://github.com/PSY3018/psy3018.github.io/issues)" de Github pour faire une demande à l'équipe, ou décrire un problème. Vous pouvez également proposer directement un changement en effectuant une "pull request" sur la [page Github](https://github.com/PSY3018/psy3018.github.io) du livre.
+## Contributing
 
-## Contributeurs
+This project is being developed collaboratively. We welcome all suggestions! You can use the "[issue](https://github.com/methods-cogneuro/methods-cogneuro.github.io/issues)" page on Github to make a request to the team, or describe your problem. You can also propose a change directly by making a "pull request" on the book's [Github page](https://github.com/methods-cogneuro/methods-cogneuro.github.io).
 
-Le développement de ce livre a démarré afin de servir d'outil de référence pour le cours PSY3018, donné au baccalauréat en neurosciences cognitives de l'Université de Montréal. Le cours est donné principalement par le Dr Pierre Bellec, avec la contribution des auxiliaires d'enseignement ainsi que de multiples intervenants supplémentaires. Ce livre bénéficie également du retour constructif des étudiants ayant suivi le cours PSY3018 depuis sa création en 2018. Les contributions générales sont présentées ci-dessous. Des contributions spécifiques sont listées au sein de chaque chapitre.
+## Contributors
+
+This book was developed as a reference tool for the PSY3018 course, given in the bachelor's degree program in cognitive neuroscience at Université de Montréal. The course is primarily taught by Dr. Pierre Bellec, with contributions from teaching assistants and many additional contributors. This book also benefits from constructive feedback from students who have taken the PSY3018 course since its inception in 2018. General contributions are acknowledged below, with specific contributions listed within each chapter.
 
 <table>
   <tr>
@@ -41,10 +42,10 @@ Le développement de ce livre a démarré afin de servir d'outil de référence 
         <br /><sub><b>Pierre bellec</b></sub>
       </a>
       <br />
-        <a title="Contenu">🤔</a>
+        <a title="Content">🤔</a>
         <a title="Code">💻</a>
-        <a title="Quizz">⚠️</a>
-        <a title="Révision du texte">👀</a>
+        <a title="Quiz">⚠️</a>
+        <a title="Text revision">👀</a>
     </td>
     <td align="center">
       <a href="https://github.com/eddyfortier">
@@ -52,8 +53,8 @@ Le développement de ce livre a démarré afin de servir d'outil de référence 
         <br /><sub><b>Eddy Fortier</b></sub>
       </a>
       <br />
-        <a title="Contenu">🤔</a>
-        <a title="Révision du texte">👀</a>
+        <a title="Content">🤔</a>
+        <a title="Text revision">👀</a>
     </td>
     <td align="center">
       <a href="https://github.com/danjgale">
@@ -69,7 +70,7 @@ Le développement de ce livre a démarré afin de servir d'outil de référence 
         <br /><sub><b>Samuel Guay</b></sub>
       </a>
       <br />
-        <a title="Révision du texte">👀</a>
+        <a title="Text revision">👀</a>
     </td>  
     <td align="center">
       <a href="https://github.com/Xanthylajoie">
@@ -77,8 +78,8 @@ Le développement de ce livre a démarré afin de servir d'outil de référence 
         <br /><sub><b>Xanthy Lajoie</b></sub>
       </a>
       <br />
-        <a title="Contenu">🤔</a>
-        <a title="Révision du texte">👀</a>
+        <a title="Content">🤔</a>
+        <a title="Text revision">👀</a>
     </td>
   </tr>
   <tr>
@@ -88,7 +89,7 @@ Le développement de ce livre a démarré afin de servir d'outil de référence 
         <br /><sub><b>Élisabeth Loranger</b></sub>
       </a>
       <br />
-        <a title="Contenu">🤔</a>
+        <a title="Content">🤔</a>
     </td>
     <td align="center">
       <a href="https://github.com/sangfrois">
@@ -96,8 +97,8 @@ Le développement de ce livre a démarré afin de servir d'outil de référence 
         <br /><sub><b>François Lespinasse</b></sub>
       </a>
       <br />
-        <a title="Contenu">🤔</a>
-        <a title="Révision du texte">👀</a>
+        <a title="Content">🤔</a>
+        <a title="Text revision">👀</a>
     </td>
     <td align="center">
       <a href="https://github.com/me-pic">
@@ -105,8 +106,8 @@ Le développement de ce livre a démarré afin de servir d'outil de référence 
         <br /><sub><b>Marie-Eve Picard</b></sub>
       </a>
       <br />
-        <a title="Contenu">🤔</a>
-        <a title="Révision du texte">👀</a>
+        <a title="Content">🤔</a>
+        <a title="Text revision">👀</a>
     </td>
     <td align="center">
       <a href="https://github.com/anproulx">
@@ -114,24 +115,26 @@ Le développement de ce livre a démarré afin de servir d'outil de référence 
         <br /><sub><b>Andréanne Proulx</b></sub>
       </a>
       <br />
-        <a title="Contenu">🤔</a>
+        <a title="Content">🤔</a>
     </td>
   </tr>
 </table>
 
-## Remerciements
-Ce livre est dans une large mesure "reproductible": de nombreuses figures sont générées à l'aide de données ouvertes, avec du code accessible à même le livre. Cette technologie est rendue possible grâce aux projets suivants:
- * [jupyter book](https://jupyterbook.org) est l'outil utilisé pour générer le livre. Ce projet repose lui-même sur l'outil de documentation [sphinx](https://www.sphinx-doc.org).
- * La librairie [nilearn](https://nilearn.github.io/) en [python](https://www.python.org/), notamment pour la partie sur l'IRM structurelle, l'IRM fonctionnelle et les modèles statistiques.
- * La librairie [Dipy](https://dipy.org), notamment pour la partie sur l'IRM de diffusion.
- * La librairie [MNE python](https://mne.tools/stable/index.html) est utilisée dans le chapitre portant sur l'imagerie optique.
- * Les visualisations d'images cérébrales utilisées dans le cours proviennent en partie de jeux de données publiques. L'origine des données est précisée dans la description de chacune des figures.
- * Le logo provient du site <a href="https://www.vecteezy.com/free-vector/brain">Brain Vectors by Vecteezy</a>
- * Certaines images du livre ont été obtenues sous droits illimités pour diffusion web et limités pour impression (500k copies) via [shutterstock](https://www.shutterstock.com) par P. Bellec.
+## Acknowledgements
 
- Les auteurs sont très reconnaissants pour l'énorme travail et la générosité des communautés qui créent et maintiennent tous ces projets!
+This book is to a large extent "reproducible": many of the figures are generated using open data, with code accessible right from the book. This technology is made possible by the following projects:
+ * [jupyter book](https://jupyterbook.org) is the tool used to generate the book. This project itself is based on [sphinx](https://www.sphinx-doc.org) documentation tool.
+ * The [nilearn](https://nilearn.github.io/) library in [python](https://www.python.org/), notably for the structural MRI, functional MRI and statistical models sections.
+ * The [Dipy](https://dipy.org) library, notably for the section on diffusion MRI.
+ * The [MNE python](https://mne.tools/stable/index.html) library is used in the chapter on optical imaging.
+ * The brain image visualizations used in the course come in part from public datasets. The origin of the data is indicated in the description of each figure.
+ * The logo comes from <a href="https://www.vecteezy.com/free-vector/brain">Brain Vectors by Vecteezy</a>
+ * Some images in the book were obtained under unlimited rights for web distribution and limited rights for print (500k copies) via [shutterstock](https://www.shutterstock.com) by P. Bellec.
 
- ## Statistiques
- La génération des figures pour les différents chapitres du livre a requis les temps suivants:
+ The authors are very grateful for the hard work and generosity of the communities that create and maintain all these projects!
+
+ ## Statistics
+
+ Generating the figures for the various chapters of the book took the following time:
  ```{nb-exec-table}
 ```
