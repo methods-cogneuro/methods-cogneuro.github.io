@@ -16,14 +16,14 @@ kernelspec:
 # Introduction
 
 This book, "Methods in cognitive neurosciences", presents the main neuroimaging techniques used to study cognition in humans (and non-human animals) with a good spatial resolution:
- * magnetic resonance imaging (structural, functional, and diffusion),
- * positron emission tomography,
- * optical imaging.
+ * Magnetic resonance imaging (MRI): structural, functional, and diffusion,
+ * Positron emission tomography (PET),
+ * Optical imaging.
 
-This book is intended as an introduction for readers discovering these neuroimaging methods for the first time, This book will provide the theoretical knowledge of the physical and physiological bases of these neuroimaging techniques. It also provides an introduction to the main image processing and statistical analysis techniques involved. Each chapter includes a series of exercises with examples of applications in cognitive neuroscience research projects. 
+This book is intended as an introduction for readers discovering these neuroimaging methods for the first time. This book covers the theoretical foundations of the physical and physiological behind each technique. It also provides an introduction to the main image processing and statistical analysis methods involved in neuroimaging. Each chapter includes exercises and practical examples from cognitive neuroscience research projects to consolidate understating. 
 
 ```{warning}
-The aim of this resource is not to be a reference tool of the "specialist book" type, explaining all the specific details associated with a given technique. Rather, the goal of this book is to present an overview of the most conventional techniques in cognitive neuroscience in a concise manner, so that readers can appreciate their strengths and weaknesses, as well as understand how to choose the technique best suited to a specific type of research.
+This resource is not indented to be a detailed reference tool for specialists, explaining all the specific details associated with a given technique. Instead, the goal is to present a concise overview of the most common techniques in cognitive neuroscience. It aims to help readers appreciate the strengths and weaknesses of each technique and understand how to select the most appropriate one to answer a specific research question.
 ```
 
 ## Contributing
@@ -32,7 +32,7 @@ This project is being developed collaboratively. We welcome all suggestions! You
 
 ## Contributors
 
-The development of this book was initiated to serve as a reference tool for the PSY3018 course, given at the Université de Montréal's bachelor's degree program in cognitive neuroscience. The course is taught primarily by Dr. Pierre Bellec, with contributions from teaching assistants and many additional contributors. This book also benefits from constructive feedback from students who have taken the PSY3018 course since its inception in 2018. The general contributions are presented below. Specific contributions are listed within each chapter.
+This book was developed as a reference tool for the PSY3018 course, given in the bachelor's degree program in cognitive neuroscience at Université de Montréal. The course is primarily taught by Dr. Pierre Bellec, with contributions from teaching assistants and many additional contributors. This book also benefits from constructive feedback from students who have taken the PSY3018 course since its inception in 2018. General contributions are acknowledged below, with specific contributions listed within each chapter.
 
 <table>
   <tr>
@@ -127,7 +127,7 @@ This book is to a large extent "reproducible": many of the figures are generated
  * The [nilearn](https://nilearn.github.io/) library in [python](https://www.python.org/), notably for the structural MRI, functional MRI and statistical models sections.
  * The [Dipy](https://dipy.org) library, notably for the section on diffusion MRI.
  * The [MNE python](https://mne.tools/stable/index.html) library is used in the chapter on optical imaging.
- * The brain image visualizations used in the course com in part from public datasets. The origin of the data is indicated in the description of each figure.
+ * The brain image visualizations used in the course come in part from public datasets. The origin of the data is indicated in the description of each figure.
  * The logo comes from <a href="https://www.vecteezy.com/free-vector/brain">Brain Vectors by Vecteezy</a>
  * Some images in the book were obtained under unlimited rights for web distribution and limited rights for print (500k copies) via [shutterstock](https://www.shutterstock.com) by P. Bellec.
 
